@@ -1,0 +1,365 @@
+<style type='text/css'> 
+			 body { 
+				 background-color: #000000; 
+				 font-family: Verdana, Geneva, sans-serif; 
+				 text-align: center; 
+			 } 
+ 
+			 small { 
+				 font-size: 0.8em; 
+			 } 
+ 
+			 table { 
+				 border: 3px solid #FFFFFF; 
+				 border-collapse: collapse; 
+				 border-spacing: 0px; 
+				 width: 1200px; 
+				 margin-left: auto; 
+				 margin-right: auto; 
+			 } 
+			 .innertable { 
+				 border: 3px solid #FFFFFF; 
+				 border-collapse: collapse; 
+				 border-spacing: 0px; 
+				 width: 744px; 
+				 margin-left: auto; 
+				 margin-right: auto;
+				 text-align: center;  
+			 } 
+ 			.lefttable { 
+				 border: 3px solid #FFFFFF; 
+				 border-collapse: collapse; 
+				 border-spacing: 0px; 
+				 width: 744px; 
+				 margin-left: auto; 
+				 margin-right: auto;
+				 text-align: left;  
+			 } 
+			 tr.heading { 
+				 background-color: #5792FF; 
+				 color: #000000; 
+				 font-size: 0.9em; 
+				 font-weight: bold; 
+			 } 
+ 
+			 tr.subheading { 
+				 background-color: #002C7E; 
+				 color: #FFFFFF; 
+				 font-weight: bold; 		
+				 font-size: 0.9em; 
+				 text-align: justify; 
+			 } 
+ 
+			 tr.section { 
+				 background-color: #47747A; 
+				 color: #000000; 
+				 cursor: pointer; 
+				 font-weight: bold; 
+				 font-size: 0.9em; 
+				 text-align: justify; 
+			 } 
+ 
+			 tr.subsection { 
+				 cursor: pointer; 
+			 } 
+ 
+			 tr.content { 
+				 background-color: #C6FFEC; 
+				 color: #000000; 
+				 font-size: 0.9em; 
+				 display: table-row; 
+			 } 
+ 
+			 td, th { 
+				 padding: 4px; 
+				 text-align: inherit\0/; 
+			 } 
+ 
+			 td.justified { 
+				 text-align: Centre; 
+			 } 
+ 
+			 td.pass { 
+				 font-weight: bold; 
+				 color: #3DB700; 
+			 } 
+ 
+			 td.fail { 
+				 font-weight: bold; 
+				 color: red; 
+			 } 
+ 
+			 td.done, td.screenshot { 
+				 font-weight: bold; 
+				 color: black; 
+			 } 
+			 
+			  td.inprogress{ 
+				 font-weight: bold; 
+				 color: orange; 
+			 } 
+ 
+			 td.debug { 
+				 font-weight: bold; 
+				 color: blue; 
+			 } 
+ 
+			 td.warning { 
+				 font-weight: bold; 
+				 color: orange; 
+			 } 
+		 </style>  
+ <script src="./Screenshot/go.js"></script>
+    <script src="./Screenshot/goSamples.js"></script>
+
+		  <script id="code">
+ var nodeIdCounter = -1; // use a sequence to guarantee key uniqueness as we add/remove/modify nodes
+
+        function init() {
+            if (window.goSamples) goSamples();  // init for these samples -- you don't need to call this
+            var $ = go.GraphObject.make;  // for conciseness in defining templates
+
+            myDiagram =
+              $(go.Diagram, "myDiagramDiv", // must be the ID or reference to div
+                {
+                    initialContentAlignment: go.Spot.Center,
+                    initialViewportSpot: go.Spot.TopCenter,
+                    initialAutoScale: go.Diagram.Uniform,
+                    maxSelectionCount: 1, // users can select only one part at a time
+                    validCycle: go.Diagram.CycleDestinationTree, // make sure users can only create trees
+                    "clickCreatingTool.archetypeNodeData": {}, // allow double-click in background to create a new node
+                    "clickCreatingTool.insertPart": function (loc) {  // customize the data for the new node
+                        this.archetypeNodeData = {
+                            key: getNextKey(), // assign the key based on the number of nodes
+                            name: "(new person)",
+                            macID: ""
+                        };
+                        return go.ClickCreatingTool.prototype.insertPart.call(this, loc);
+                    },
+                    layout:
+                      $(go.TreeLayout,
+                        {
+                            treeStyle: go.TreeLayout.StyleLastParents,
+                            arrangement: go.TreeLayout.ArrangementHorizontal,
+                            // properties for most of the tree:
+                            angle: 90,
+                            layerSpacing: 35,
+                            // properties for the "last parents":
+                            alternateAngle: 90,
+                            alternateLayerSpacing: 35,
+                            alternateAlignment: go.TreeLayout.AlignmentBus,
+                            alternateNodeSpacing: 20
+                        }),
+                    "undoManager.isEnabled": true // enable undo & redo
+                });
+
+            
+
+            
+
+            var levelColors = ["#AC193D/#BF1E4B", "#2672EC/#2E8DEF", "#8C0095/#A700AE", "#5133AB/#643EBF",
+                               "#008299/#00A0B1", "#D24726/#DC572E", "#008A00/#00A600", "#094AB2/#0A5BC4"];
+
+            // override TreeLayout.commitNodes to also modify the background brush based on the tree depth level
+            myDiagram.layout.commitNodes = function () {
+                go.TreeLayout.prototype.commitNodes.call(myDiagram.layout);  // do the standard behavior
+                // then go through all of the vertexes and set their corresponding node's Shape.fill
+                // to a brush dependent on the TreeVertex.level value
+                myDiagram.layout.network.vertexes.each(function (v) {
+                    if (v.node) {
+                        var level = v.level % (levelColors.length);
+                        var colors = levelColors[level].split("/");
+                        var shape = v.node.findObject("SHAPE");
+                        if (shape) shape.fill = $(go.Brush, "Linear", { 0: colors[0], 1: colors[1], start: go.Spot.Left, end: go.Spot.Right });
+                    }
+                });
+            };
+
+            // This function is used to find a suitable ID when modifying/creating nodes.
+            // We used the counter combined with findNodeDataForKey to ensure uniqueness.
+            function getNextKey() {
+                var key = nodeIdCounter;
+                while (myDiagram.model.findNodeDataForKey(key.toString()) !== null) {
+                    key = nodeIdCounter -= 1;
+                }
+                return key.toString();
+            }
+
+            
+
+           
+            // This function provides a common style for most of the TextBlocks.
+            // Some of these values may be overridden in a particular TextBlock.
+            function textStyle() {
+                return { font: "9pt  Segoe UI,sans-serif", stroke: "white" };
+            }
+
+            // This converter is used by the Picture.
+            function findHeadShot(key) {
+                //alert(key)
+		if(key.indexOf("TGStick") > -1){
+			//alert("images/HS" + key.split("-",1) + ".png");
+		return "./Screenshot/HS" + key.split("-",1) + ".png"
+}
+		else{
+			//alert("/Screenshot/HS" + (key.split("-",1)+"").split("_",1) + ".png");
+                return "./Screenshot/HS" + (key.split("-",1)+"").split("_",1) + ".png"
+}
+            }
+
+            myDiagram.addDiagramListener("SelectionDeleting",
+      function (e) {
+          if (e.diagram.selection.count > 0) {
+              e.cancel = true;
+              showMessage("Cannot delete multiple selected parts");
+          }
+      });
+
+            // define the Node template
+            myDiagram.nodeTemplate =
+              $(go.Node, "Auto",
+                // for sorting, have the Node.text be the data.name
+                new go.Binding("text", "name"),
+                // bind the Part.layerName to control the Node's layer depending on whether it isSelected
+                new go.Binding("layerName", "isSelected", function (sel) { return sel ? "Foreground" : ""; }).ofObject(),
+                // define the node's outer shape
+                $(go.Shape, "Rectangle",
+                  {
+                      name: "SHAPE", fill: "white", stroke: null,
+                      // set the port properties:
+                      portId: "", fromLinkable: false, toLinkable: false, cursor: "pointer"
+                  }),
+                $(go.Panel, "Horizontal",
+                  $(go.Picture,
+                    {
+                        name: 'Picture',
+                        desiredSize: new go.Size(50, 50),
+                        margin: new go.Margin(6, 8, 6, 10),
+                    },
+                    new go.Binding("source", "key", findHeadShot)),
+                  // define the panel where the text will appear
+                  $(go.Panel, "Table",
+                    {
+                        maxSize: new go.Size(150, 999),
+                        margin: new go.Margin(6, 10, 0, 3),
+                        defaultAlignment: go.Spot.Left
+                    },
+                    $(go.RowColumnDefinition, { column: 2, width: 4 }),
+                    $(go.TextBlock, textStyle(),  // the name
+                      {
+                          row: 0, column: 0, columnSpan: 5,
+                          font: "12pt Segoe UI,sans-serif",
+                          editable: false, isMultiline: false,
+                          minSize: new go.Size(10, 16)
+                      },
+                      new go.Binding("text", "name").makeTwoWay()),
+                    $(go.TextBlock, "macID: ", textStyle(),
+                      { row: 1, column: 0,columnSpan: 5,
+                      editable: false, isMultiline: false },
+                      new go.Binding("text", "macID", function (v) { return "macID: " + v; })),
+                    //$(go.TextBlock, textStyle(),
+                    //  {
+                    //      row: 1, column: 1, columnSpan: 4,
+                    //      editable: false, isMultiline: false,
+                    //      minSize: new go.Size(10, 14),
+                    //      margin: new go.Margin(0, 0, 0, 3)
+                    //  },
+                    //  new go.Binding("text", "macID").makeTwoWay()),
+                    $(go.TextBlock, textStyle(),
+                      { row: 2, column: 0 },
+                      new go.Binding("text", "key", function (v) { return "ID: " + v; })),
+                    $(go.TextBlock, textStyle(),
+                      { name: "boss", row: 2, column: 3, }, // we include a name so we can access this TextBlock when deleting Nodes/Links
+                      new go.Binding("text", "parent", function (v) { return "P:" + v; })),
+                    $(go.TextBlock, textStyle(),  // the comments
+                      {
+                          row: 3, column: 0, columnSpan: 5,
+                          font: "italic 9pt sans-serif",
+                          wrap: go.TextBlock.WrapFit,
+                          editable: true,  // by default newlines are allowed
+                          minSize: new go.Size(10, 14)
+                      },
+                      new go.Binding("text", "comments").makeTwoWay())
+                  )  // end Table Panel
+                ) // end Horizontal Panel
+              );  // end Node
+
+            
+            // define the Link template
+            myDiagram.linkTemplate =
+              $(go.Link, go.Link.Orthogonal,
+                { corner: 5, relinkableFrom: false, relinkableTo: false },
+                $(go.Shape, { strokeWidth: 4, stroke: "#00a4a4" }));  // the link shape
+
+            // read in the JSON-format data from the "mySavedModel" element
+            load();
+
+
+            // support editing the properties of the selected person in HTML
+            if (window.Inspector) myInspector = new Inspector('myInspector', myDiagram,
+              {
+                  properties: {
+                      'key': { readOnly: true },
+                      'comments': {}
+                  }
+              });
+        }
+
+        // Show the diagram's model in JSON format
+        function save() {
+            document.getElementById("mySavedModel").value = myDiagram.model.toJson();
+            myDiagram.isModified = false;
+        }
+        function load() {
+            var data = {
+                "class": "go.TreeModel",
+                "nodeDataArray": CHARTDATA
+            }
+            myDiagram.model = go.Model.fromJson(data);
+        }
+
+        // Show the diagram's model in JSON format
+
+        function save() {
+
+            document.getElementById("mySavedModel").value = myDiagram.model.toJson();
+
+        }
+</script>
+
+ <script>
+			 function toggleMenu(objID) { 
+				 if (!document.getElementById) return; 
+				 var ob = document.getElementById(objID).style; 
+				 if(ob.display === 'none') { 
+					 try { 
+						 ob.display='table-row-group'; 
+					 } catch(ex) { 
+						 ob.display='block'; 
+					 } 
+				 } 
+				 else { 
+					 ob.display='none'; 
+				 } 
+			 } 
+			 function toggleSubMenu(objId) { 
+				 for(i=1; i<10000; i++) { 
+					 var ob = document.getElementById(objId.concat(i)); 
+					 if(ob === null) { 
+						 break; 
+					 } 
+					 if(ob.style.display === 'none') { 
+						 try { 
+							 ob.style.display='table-row'; 
+						 } catch(ex) { 
+							 ob.style.display='block'; 
+						 } 
+					 } 
+					 else { 
+						 ob.style.display='none'; 
+					 } 
+				 } 
+			 } 
+		 </script> 
+		 
+		 

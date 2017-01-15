@@ -1,0 +1,282 @@
+{
+    "listOfEnvironments": {
+        "isopBeta": {
+            "DeviceList": {
+                "flashtest6@yopmail.com": {
+                    "Boiler Module": {
+                        "mac_id": "::21c:2bff:fe08:30e7",
+                        "model": "SLR2",
+                        "version": "07094640"
+                    },
+                    "HUB": {
+                        "model": "NANO2",
+                        "version": "1.0.0-4302-0.0"
+                    },
+                    "Thermostat": {
+                        "mac_id": "::21e:5e09:200:54a1",
+                        "model": "SLT2",
+                        "version": "05105300"
+                    },
+                    "credentials": {
+                        "password": "password1",
+                        "username": "flashtest6@yopmail.com"
+                    }
+                },
+                "tester32_v6": {
+                    "Boiler Module": {
+                        "mac_id": "::21e:5e09:201:8606",
+                        "model": "SLR2",
+                        "version": "07114640"
+                    },
+                    "HUB": {
+                        "model": "NANO2",
+                        "version": "1.0.0-4302-0.0"
+                    },
+                    "Thermostat": {
+                        "mac_id": "::21e:5e09:20d:31d0",
+                        "model": "SLT3",
+                        "version": "02100203"
+                    },
+                    "credentials": {
+                        "password": "Password1",
+                        "username": "tester1"
+                    }
+                }
+            }
+        },
+        "isopInternProd": {
+            "DeviceList": {
+                "auto1_v6": {
+                    "Boiler Module": {
+                        "mac_id": "::21c:2bff:fe08:a4ae",
+                        "model": "SLR2",
+                        "version": "07114640"
+                    },
+                    "HUB": {
+                        "model": "NANO2",
+                        "version": "1.0.0-4354-0.0"
+                    },
+                    "Thermostat": {
+                        "mac_id": "::21e:5e09:20d:31d0",
+                        "model": "SLT3",
+                        "version": "02100204"
+                    },
+                    "credentials": {
+                        "password": "password1",
+                        "username": "auto1_v6"
+                    }
+                },
+                "flashtest6@yopmail.com": {
+                    "errors": [
+                        {
+                            "code": "USERNAME_PASSWORD_ERROR",
+                            "links": [],
+                            "title": "Username or password not specified or invalid"
+                        }
+                    ]
+                },
+                "ranga1": {
+                    "Boiler Module": {
+                        "mac_id": "::21e:5e09:20d:ef9",
+                        "model": "SLR1",
+                        "version": "07114640"
+                    },
+                    "HUB": {
+                        "model": "NANO2",
+                        "version": "1.0.0-4302-0.0"
+                    },
+                    "Thermostat": {
+                        "mac_id": "::21e:5e09:20c:2a35",
+                        "model": "SLT3",
+                        "version": "02100203"
+                    },
+                    "credentials": {
+                        "password": "password1",
+                        "username": "ranga1"
+                    }
+                },
+                "ranga2": {
+                    "Boiler Module": {
+                        "mac_id": "::21c:2bff:fe07:8536",
+                        "model": "SLR1",
+                        "version": "07114640"
+                    },
+                    "HUB": {
+                        "model": "NANO1",
+                        "version": "1.0.0-4283-0.0"
+                    },
+                    "Thermostat": {
+                        "mac_id": "::1e:5e09:20c:2801",
+                        "model": "SLT3",
+                        "version": "02100203"
+                    },
+                    "credentials": {
+                        "password": "password1",
+                        "username": "ranga2"
+                    }
+                },
+                "tester2": {
+                    "errors": [
+                        {
+                            "code": "USERNAME_PASSWORD_ERROR",
+                            "links": [],
+                            "title": "Username or password not specified or invalid"
+                        }
+                    ]
+                },
+                "tester2_v6": {
+                    "Boiler Module": {
+                        "mac_id": "::21c:2bff:fe07:7a72",
+                        "model": "SLR2",
+                        "version": "07114640"
+                    },
+                    "HUB": {
+                        "model": "NANO1",
+                        "version": "1.0.0-4283-0.0"
+                    },
+                    "Thermostat": {
+                        "mac_id": "::1e:5e09:20b:1b1d",
+                        "model": "SLT3",
+                        "version": "02100203"
+                    },
+                    "credentials": {
+                        "password": "Password1",
+                        "username": "tester2_v6"
+                    }
+                },
+                "tester4_v6@yopmail.com": {
+                    "errors": [
+                        {
+                            "code": "USERNAME_PASSWORD_ERROR",
+                            "links": [],
+                            "title": "Username or password not specified or invalid"
+                        }
+                    ]
+                }
+            }
+        },
+        "isopProd": {
+            "DeviceList": {
+                "flashtest6@yopmail.com": {
+                    "errors": [
+                        {
+                            "code": "USERNAME_PASSWORD_ERROR",
+                            "links": [],
+                            "title": "Username or password not specified or invalid"
+                        }
+                    ]
+                },
+                "iosprelive": {
+                    "Boiler Module": {
+                        "mac_id": "::21c:2bff:fe09:4b6b",
+                        "model": "SLR2",
+                        "version": "07114640"
+                    },
+                    "HUB": {
+                        "model": "NANO2",
+                        "version": "1.0.0-4302-0.0"
+                    },
+                    "Thermostat": {
+                        "mac_id": "::21e:5e09:202:8e3a",
+                        "model": "SLT2",
+                        "version": "05105300"
+                    },
+                    "credentials": {
+                        "password": "Password1",
+                        "username": "iosprelive"
+                    }
+                },
+                "iosprelivetest1": {
+                    "Boiler Module": {
+                        "mac_id": "::21c:2bff:fe09:4b7e",
+                        "model": "SLR2",
+                        "version": "07114640"
+                    },
+                    "HUB": {
+                        "model": "NANO2",
+                        "version": "1.0.0-4302-0.0"
+                    },
+                    "Thermostat": {
+                        "mac_id": "::21e:5e09:203:ac77",
+                        "model": "SLT2",
+                        "version": "05115300"
+                    },
+                    "credentials": {
+                        "password": "password1",
+                        "username": "iosprelivetest1"
+                    }
+                },
+                "tester1_v6": {
+                    "Boiler Module": {
+                        "mac_id": "::21c:2bff:fe09:4b6e",
+                        "model": "SLR2",
+                        "version": "07114640"
+                    },
+                    "HUB": {
+                        "model": "NANO2",
+                        "version": "1.0.0-4302-0.0"
+                    },
+                    "Thermostat": {
+                        "mac_id": "::21e:5e09:20d:285b",
+                        "model": "SLT3",
+                        "version": "02100203"
+                    },
+                    "credentials": {
+                        "password": "password1",
+                        "username": "tester1_v6"
+                    }
+                },
+                "tester4_v6@yopmail.com": {
+                    "credentials": {
+                        "password": "password1",
+                        "username": "tester4_v6@yopmail.com"
+                    }
+                }
+            }
+        },
+        "isopStaging": {
+            "DeviceList": {
+                "flashtest6@yopmail.com": {
+                    "Boiler Module": {
+                        "mac_id": "::21c:2bff:fe08:30e7",
+                        "model": "SLR2",
+                        "version": "07094640"
+                    },
+                    "HUB": {
+                        "model": "NANO2",
+                        "version": "1.0.0-4302-0.0"
+                    },
+                    "Thermostat": {
+                        "mac_id": "::21e:5e09:200:54a1",
+                        "model": "SLT2",
+                        "version": "05105300"
+                    },
+                    "credentials": {
+                        "password": "password1",
+                        "username": "flashtest6@yopmail.com"
+                    }
+                },
+                "tester32_v6": {
+                    "Boiler Module": {
+                        "mac_id": "::21e:5e09:201:8606",
+                        "model": "SLR2",
+                        "version": "07114640"
+                    },
+                    "HUB": {
+                        "model": "NANO2",
+                        "version": "1.0.0-4302-0.0"
+                    },
+                    "Thermostat": {
+                        "mac_id": "::21e:5e09:20d:31d0",
+                        "model": "SLT3",
+                        "version": "02100203"
+                    },
+                    "credentials": {
+                        "password": "Password1",
+                        "username": "tester1"
+                    }
+                }
+            }
+        }
+    }
+}

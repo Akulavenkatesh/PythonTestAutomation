@@ -1,0 +1,360 @@
+{
+    "DeviceModelID": "SLP2",
+    "DeviceVersion": "02155120",
+    "ListOfEndPoints": {
+        "09": {
+            "EndPoint": "09",
+            "ListOfClusters": {
+                "0000_Basic Cluster": {
+                    "ClusterID": "0000",
+                    "ClusterName": "Basic Cluster",
+                    "ClusterType": "server",
+                    "ListOfAttributes": {
+                        "0000_zclVersion": {
+                            "AttributeID": "0000",
+                            "AttributeName": "zclVersion",
+                            "AttributeType": "20",
+                            "DefaultValue": "01",
+                            "ReportableConfigState": "FFFF,FFFF,FF"
+                        },
+                        "0001_applicationVersion": {
+                            "AttributeID": "0001",
+                            "AttributeName": "applicationVersion",
+                            "AttributeType": "20",
+                            "DefaultValue": "2F",
+                            "ReportableConfigState": "FFFF,FFFF,FF"
+                        },
+                        "0002_stackVersion": {
+                            "AttributeID": "0002",
+                            "AttributeName": "stackVersion",
+                            "AttributeType": "20",
+                            "DefaultValue": "02",
+                            "ReportableConfigState": "FFFF,FFFF,FF"
+                        },
+                        "0003_hardwareVersion": {
+                            "AttributeID": "0003",
+                            "AttributeName": "hardwareVersion",
+                            "AttributeType": "20",
+                            "DefaultValue": "01",
+                            "ReportableConfigState": "FFFF,FFFF,FF"
+                        },
+                        "0004_manufacturerName": {
+                            "AttributeID": "0004",
+                            "AttributeName": "manufacturerName",
+                            "AttributeType": "42",
+                            "DefaultValue": "Computime",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "0005_modelIdentifier": {
+                            "AttributeID": "0005",
+                            "AttributeName": "modelIdentifier",
+                            "AttributeType": "42",
+                            "DefaultValue": "SLP2",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "0006_dateCode": {
+                            "AttributeID": "0006",
+                            "AttributeName": "dateCode",
+                            "AttributeType": "42",
+                            "DefaultValue": "20160603",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "0007_powerSource": {
+                            "AttributeID": "0007",
+                            "AttributeName": "powerSource",
+                            "AttributeType": "30",
+                            "DefaultValue": "01",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        }
+                    }
+                },
+                "0001_Power Configuration Cluster": {
+                    "ClusterID": "0001",
+                    "ClusterName": "Power Configuration Cluster",
+                    "ClusterType": "server",
+                    "ListOfAttributes": {
+                        "0000_mainsVoltage": {
+                            "AttributeID": "0000",
+                            "AttributeName": "mainsVoltage",
+                            "AttributeType": "21",
+                            "DefaultValue": "0986",
+                            "ReportableConfigState": "FFFF,FFFF,FFFF"
+                        },
+                        "0001_mainsFrequency": {
+                            "AttributeID": "0001",
+                            "AttributeName": "mainsFrequency",
+                            "AttributeType": "20",
+                            "DefaultValue": "19",
+                            "ReportableConfigState": "FFFF,FFFF,FF"
+                        }
+                    }
+                },
+                "0002_Device Temperature Configuration Cluster": {
+                    "ClusterID": "0002",
+                    "ClusterName": "Device Temperature Configuration Cluster",
+                    "ClusterType": "server",
+                    "ListOfAttributes": {
+                        "0000_currentTemperature": {
+                            "AttributeID": "0000",
+                            "AttributeName": "currentTemperature",
+                            "AttributeType": "29",
+                            "DefaultValue": "0020",
+                            "ReportableConfigState": "FFFF,FFFF,8000"
+                        }
+                    }
+                },
+                "0003_Identify Cluster": {
+                    "ClusterID": "0003",
+                    "ClusterName": "Identify Cluster",
+                    "ClusterType": "server",
+                    "ListOfAttributes": {
+                        "0000_identifyTime": {
+                            "AttributeID": "0000",
+                            "AttributeName": "identifyTime",
+                            "AttributeType": "21",
+                            "DefaultValue": "0000",
+                            "ReportableConfigState": "FFFF,FFFF,FFFF"
+                        }
+                    }
+                },
+                "0004_Groups Cluster": {
+                    "ClusterID": "0004",
+                    "ClusterName": "Groups Cluster",
+                    "ClusterType": "server",
+                    "ListOfAttributes": {
+                        "0000_nameSupport": {
+                            "AttributeID": "0000",
+                            "AttributeName": "nameSupport",
+                            "AttributeType": "18",
+                            "DefaultValue": "80",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        }
+                    }
+                },
+                "0005_Scenes Cluster": {
+                    "ClusterID": "0005",
+                    "ClusterName": "Scenes Cluster",
+                    "ClusterType": "server",
+                    "ListOfAttributes": {
+                        "0000_sceneCount": {
+                            "AttributeID": "0000",
+                            "AttributeName": "sceneCount",
+                            "AttributeType": "20",
+                            "DefaultValue": "00",
+                            "ReportableConfigState": "FFFF,FFFF,FF"
+                        },
+                        "0001_currentScene": {
+                            "AttributeID": "0001",
+                            "AttributeName": "currentScene",
+                            "AttributeType": "20",
+                            "DefaultValue": "00",
+                            "ReportableConfigState": "FFFF,FFFF,FF"
+                        },
+                        "0002_currentGroup": {
+                            "AttributeID": "0002",
+                            "AttributeName": "currentGroup",
+                            "AttributeType": "21",
+                            "DefaultValue": "0000",
+                            "ReportableConfigState": "FFFF,FFFF,FFFF"
+                        },
+                        "0003_sceneValid": {
+                            "AttributeID": "0003",
+                            "AttributeName": "sceneValid",
+                            "AttributeType": "10",
+                            "DefaultValue": "00",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "0004_nameSupport": {
+                            "AttributeID": "0004",
+                            "AttributeName": "nameSupport",
+                            "AttributeType": "18",
+                            "DefaultValue": "80",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        }
+                    }
+                },
+                "0006_On/Off Cluster": {
+                    "ClusterID": "0006",
+                    "ClusterName": "On/Off Cluster",
+                    "ClusterType": "server",
+                    "ListOfAttributes": {
+                        "0000_onOff": {
+                            "AttributeID": "0000",
+                            "AttributeName": "onOff",
+                            "AttributeType": "10",
+                            "DefaultValue": "01",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        }
+                    }
+                },
+                "0009_Alarms Cluster": {
+                    "ClusterID": "0009",
+                    "ClusterName": "Alarms Cluster",
+                    "ClusterType": "server",
+                    "ListOfAttributes": {}
+                },
+                "0019_OTA Cluster": {
+                    "ClusterID": "0019",
+                    "ClusterName": "OTA Cluster",
+                    "ClusterType": "client",
+                    "ListOfAttributes": {
+                        "0000_upgradeServerId": {
+                            "AttributeID": "0000",
+                            "AttributeName": "upgradeServerId",
+                            "AttributeType": "F0",
+                            "DefaultValue": "0021ED000009054F",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "0001_file Offset": {
+                            "AttributeID": "0001",
+                            "AttributeName": "file Offset",
+                            "AttributeType": "23",
+                            "DefaultValue": "0001F77E",
+                            "ReportableConfigState": "FFFF,FFFF,FFFFFFFF"
+                        },
+                        "0002_current File Version": {
+                            "AttributeID": "0002",
+                            "AttributeName": "current File Version",
+                            "AttributeType": "23",
+                            "DefaultValue": "02155120",
+                            "ReportableConfigState": "FFFF,FFFF,FFFFFFFF"
+                        },
+                        "0003_current ZigBee Stack Version": {
+                            "AttributeID": "0003",
+                            "AttributeName": "current ZigBee Stack Version",
+                            "AttributeType": "21",
+                            "DefaultValue": "0002",
+                            "ReportableConfigState": "FFFF,FFFF,FFFF"
+                        },
+                        "0004_downloaded File Version": {
+                            "AttributeID": "0004",
+                            "AttributeName": "downloaded File Version",
+                            "AttributeType": "23",
+                            "DefaultValue": "02155120",
+                            "ReportableConfigState": "FFFF,FFFF,FFFFFFFF"
+                        },
+                        "0005_downloaded ZigBee Stack Version": {
+                            "AttributeID": "0005",
+                            "AttributeName": "downloaded ZigBee Stack Version",
+                            "AttributeType": "21",
+                            "DefaultValue": "FFFF",
+                            "ReportableConfigState": "FFFF,FFFF,FFFF"
+                        },
+                        "0006_image Upgrade Status": {
+                            "AttributeID": "0006",
+                            "AttributeName": "image Upgrade Status",
+                            "AttributeType": "30",
+                            "DefaultValue": "00",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "0007_manufacturerId": {
+                            "AttributeID": "0007",
+                            "AttributeName": "manufacturerId",
+                            "AttributeType": "21",
+                            "DefaultValue": "1039",
+                            "ReportableConfigState": "FFFF,FFFF,FFFF"
+                        },
+                        "0008_imageTypeId": {
+                            "AttributeID": "0008",
+                            "AttributeName": "imageTypeId",
+                            "AttributeType": "21",
+                            "DefaultValue": "0102",
+                            "ReportableConfigState": "FFFF,FFFF,FFFF"
+                        }
+                    }
+                },
+                "0702_Metering Cluster": {
+                    "ClusterID": "0702",
+                    "ClusterName": "Metering Cluster",
+                    "ClusterType": "server",
+                    "ListOfAttributes": {
+                        "0000_currentSummationDelivered": {
+                            "AttributeID": "0000",
+                            "AttributeName": "currentSummationDelivered",
+                            "AttributeType": "25",
+                            "DefaultValue": "000000000000",
+                            "ReportableConfigState": "FFFF,FFFF,FFFFFFFFFFFF"
+                        },
+                        "0001_currentSummationReceived": {
+                            "AttributeID": "0001",
+                            "AttributeName": "currentSummationReceived",
+                            "AttributeType": "25",
+                            "DefaultValue": "000000000000",
+                            "ReportableConfigState": "FFFF,FFFF,FFFFFFFFFFFF"
+                        },
+                        "0006_powerFactor": {
+                            "AttributeID": "0006",
+                            "AttributeName": "powerFactor",
+                            "AttributeType": "28",
+                            "DefaultValue": "FF",
+                            "ReportableConfigState": "FFFF,FFFF,80"
+                        },
+                        "0200_status": {
+                            "AttributeID": "0200",
+                            "AttributeName": "status",
+                            "AttributeType": "18",
+                            "DefaultValue": "00",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "0300_unitOfMeasure": {
+                            "AttributeID": "0300",
+                            "AttributeName": "unitOfMeasure",
+                            "AttributeType": "30",
+                            "DefaultValue": "00",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "0301_multiplier": {
+                            "AttributeID": "0301",
+                            "AttributeName": "multiplier",
+                            "AttributeType": "22",
+                            "DefaultValue": "000001",
+                            "ReportableConfigState": "FFFF,FFFF,FFFFFF"
+                        },
+                        "0302_divisor": {
+                            "AttributeID": "0302",
+                            "AttributeName": "divisor",
+                            "AttributeType": "22",
+                            "DefaultValue": "0003E8",
+                            "ReportableConfigState": "FFFF,FFFF,FFFFFF"
+                        },
+                        "0303_summationFormatting": {
+                            "AttributeID": "0303",
+                            "AttributeName": "summationFormatting",
+                            "AttributeType": "18",
+                            "DefaultValue": "00",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "0304_demandFormatting": {
+                            "AttributeID": "0304",
+                            "AttributeName": "demandFormatting",
+                            "AttributeType": "18",
+                            "DefaultValue": "00",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "0305_histoticConsumptionFormatting": {
+                            "AttributeID": "0305",
+                            "AttributeName": "histoticConsumptionFormatting",
+                            "AttributeType": "18",
+                            "DefaultValue": "00",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "0306_meteringDeviceType": {
+                            "AttributeID": "0306",
+                            "AttributeName": "meteringDeviceType",
+                            "AttributeType": "18",
+                            "DefaultValue": "00",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "0400_instantaneousDemand": {
+                            "AttributeID": "0400",
+                            "AttributeName": "instantaneousDemand",
+                            "AttributeType": "2A",
+                            "DefaultValue": "000000",
+                            "ReportableConfigState": "FFFF,FFFF,800000"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

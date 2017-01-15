@@ -1,0 +1,29 @@
+{
+    "result_folder":"",
+    "kit_detail":{
+        "BM":{
+            "type":"SLR1",
+            "version":"0715"
+        },
+        "TH":{
+            "type":"SLT3",
+            "version":"0210"
+        }
+    }
+    "Scenario1":{
+        "id":"",
+        "description":"",
+        "current_status":"Passed",
+        "time_stamp":"",
+        "time_duration":"",
+        "feature_filename":""
+    },
+    "Scenario2":{
+        "id":"",
+        "description":"",
+        "current_status":"Passed",
+        "time_stamp":"",
+        "time_duration":"",
+        "feature_filename":""
+    }
+}

@@ -1,0 +1,763 @@
+{
+    "nodes": {
+        "list_of_nodes": {
+            "SP": {
+                "list_of_endpoints": {
+                    "09": {
+                        "list_of_clusters": {
+                            "0005": {
+                                "cluster_name": "Scenes Cluster",
+                                "list_of_attributes": {
+                                    "0002": {
+                                        "attrbute_name": "currentGroup",
+                                        "attrbute_type": "21"
+                                    },
+                                    "0001": {
+                                        "attrbute_name": "currentScene",
+                                        "attrbute_type": "20"
+                                    },
+                                    "0003": {
+                                        "attrbute_name": "sceneValid",
+                                        "attrbute_type": "10"
+                                    },
+                                    "0004": {
+                                        "attrbute_name": "nameSupport",
+                                        "attrbute_type": "18"
+                                    },
+                                    "0000": {
+                                        "attrbute_name": "sceneCount",
+                                        "attrbute_type": "20"
+                                    }
+                                }
+                            },
+                            "0019": {
+                                "cluster_name": "OTA Cluster",
+                                "list_of_attributes": {
+                                    "0005": {
+                                        "attrbute_name": "downloaded ZigBee Stack Version",
+                                        "attrbute_type": "21"
+                                    },
+                                    "0001": {
+                                        "attrbute_name": "file Offset",
+                                        "attrbute_type": "23"
+                                    },
+                                    "0002": {
+                                        "attrbute_name": "current File Version",
+                                        "attrbute_type": "23"
+                                    },
+                                    "0003": {
+                                        "attrbute_name": "current ZigBee Stack Version",
+                                        "attrbute_type": "21"
+                                    },
+                                    "0008": {
+                                        "attrbute_name": "imageTypeId",
+                                        "attrbute_type": "21"
+                                    },
+                                    "0006": {
+                                        "attrbute_name": "image Upgrade Status",
+                                        "attrbute_type": "30"
+                                    },
+                                    "0004": {
+                                        "attrbute_name": "downloaded File Version",
+                                        "attrbute_type": "23"
+                                    },
+                                    "0000": {
+                                        "attrbute_name": "upgradeServerId",
+                                        "attrbute_type": "F0"
+                                    },
+                                    "0007": {
+                                        "attrbute_name": "manufacturerId",
+                                        "attrbute_type": "21"
+                                    }
+                                }
+                            },
+                            "0003": {
+                                "cluster_name": "Identify Cluster",
+                                "list_of_attributes": {
+                                    "0000": {
+                                        "attrbute_name": "identifyTime",
+                                        "attrbute_type": "21"
+                                    }
+                                }
+                            },
+                            "0006": {
+                                "cluster_name": "On/Off Cluster",
+                                "list_of_attributes": {
+                                    "0000": {
+                                        "attrbute_name": "onOff",
+                                        "attrbute_type": "10"
+                                    }
+                                }
+                            },
+                            "0702": {
+                                "cluster_name": "Metering Cluster",
+                                "list_of_attributes": {
+                                    "0304": {
+                                        "attrbute_name": "demandFormatting",
+                                        "attrbute_type": "18"
+                                    },
+                                    "0001": {
+                                        "attrbute_name": "currentSummationReceived",
+                                        "attrbute_type": "25"
+                                    },
+                                    "0300": {
+                                        "attrbute_name": "unitOfMeasure",
+                                        "attrbute_type": "30"
+                                    },
+                                    "0305": {
+                                        "attrbute_name": "histoticConsumptionFormatting",
+                                        "attrbute_type": "18"
+                                    },
+                                    "0400": {
+                                        "attrbute_name": "instantaneousDemand",
+                                        "attrbute_type": "2A"
+                                    },
+                                    "0306": {
+                                        "attrbute_name": "meteringDeviceType",
+                                        "attrbute_type": "18"
+                                    },
+                                    "0301": {
+                                        "attrbute_name": "multiplier",
+                                        "attrbute_type": "22"
+                                    },
+                                    "0200": {
+                                        "attrbute_name": "status",
+                                        "attrbute_type": "18"
+                                    },
+                                    "0303": {
+                                        "attrbute_name": "summationFormatting",
+                                        "attrbute_type": "18"
+                                    },
+                                    "0000": {
+                                        "attrbute_name": "currentSummationDelivered",
+                                        "attrbute_type": "25"
+                                    },
+                                    "0302": {
+                                        "attrbute_name": "divisor",
+                                        "attrbute_type": "22"
+                                    }
+                                }
+                            },
+                            "0000": {
+                                "cluster_name": "Basic Cluster",
+                                "list_of_attributes": {
+                                    "0005": {
+                                        "attrbute_name": "modelIdentifier",
+                                        "attrbute_type": "42"
+                                    },
+                                    "0001": {
+                                        "attrbute_name": "applicationVersion",
+                                        "attrbute_type": "20"
+                                    },
+                                    "0002": {
+                                        "attrbute_name": "stackVersion",
+                                        "attrbute_type": "20"
+                                    },
+                                    "0003": {
+                                        "attrbute_name": "hardwareVersion",
+                                        "attrbute_type": "20"
+                                    },
+                                    "0006": {
+                                        "attrbute_name": "dateCode",
+                                        "attrbute_type": "42"
+                                    },
+                                    "0004": {
+                                        "attrbute_name": "manufacturerName",
+                                        "attrbute_type": "42"
+                                    },
+                                    "0000": {
+                                        "attrbute_name": "zclVersion",
+                                        "attrbute_type": "20"
+                                    },
+                                    "0007": {
+                                        "attrbute_name": "powerSource",
+                                        "attrbute_type": "30"
+                                    }
+                                }
+                            },
+                            "0004": {
+                                "cluster_name": "Groups Cluster",
+                                "list_of_attributes": {
+                                    "0000": {
+                                        "attrbute_name": "nameSupport",
+                                        "attrbute_type": "18"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "node_id": "C58A"
+            },
+            "BM": {
+                "list_of_endpoints": {
+                    "05": {
+                        "list_of_clusters": {
+                            "0009": {
+                                "cluster_name": "Alarms Cluster",
+                                "list_of_attributes": {
+                                    "0000": {
+                                        "attrbute_name": "alarmCount",
+                                        "attrbute_type": "21"
+                                    }
+                                }
+                            },
+                            "000A": {
+                                "cluster_name": "Time Cluster",
+                                "list_of_attributes": {}
+                            },
+                            "0003": {
+                                "cluster_name": "Identify Cluster",
+                                "list_of_attributes": {
+                                    "0000": {
+                                        "attrbute_name": "identifyTime",
+                                        "attrbute_type": "21"
+                                    }
+                                }
+                            },
+                            "0019": {
+                                "cluster_name": "OTA Cluster",
+                                "list_of_attributes": {
+                                    "0005": {
+                                        "attrbute_name": "downloaded ZigBee Stack Version",
+                                        "attrbute_type": "21"
+                                    },
+                                    "0001": {
+                                        "attrbute_name": "file Offset",
+                                        "attrbute_type": "23"
+                                    },
+                                    "0003": {
+                                        "attrbute_name": "current ZigBee Stack Version",
+                                        "attrbute_type": "21"
+                                    },
+                                    "0008": {
+                                        "attrbute_name": "imageTypeId",
+                                        "attrbute_type": "21"
+                                    },
+                                    "0002": {
+                                        "attrbute_name": "current File Version",
+                                        "attrbute_type": "23"
+                                    },
+                                    "0006": {
+                                        "attrbute_name": "image Upgrade Status",
+                                        "attrbute_type": "30"
+                                    },
+                                    "0004": {
+                                        "attrbute_name": "downloaded File Version",
+                                        "attrbute_type": "23"
+                                    },
+                                    "0000": {
+                                        "attrbute_name": "upgradeServerId",
+                                        "attrbute_type": "F0"
+                                    },
+                                    "0007": {
+                                        "attrbute_name": "manufacturerId",
+                                        "attrbute_type": "21"
+                                    }
+                                }
+                            },
+                            "FD00": {
+                                "cluster_name": "BG Cluster",
+                                "list_of_attributes": {
+                                    "0005": {
+                                        "attrbute_name": "rateEstimate",
+                                        "attrbute_type": "21"
+                                    },
+                                    "0009": {
+                                        "attrbute_name": "advanceOffset",
+                                        "attrbute_type": "20"
+                                    },
+                                    "0001": {
+                                        "attrbute_name": "delayCompensationTime",
+                                        "attrbute_type": "21"
+                                    },
+                                    "0003": {
+                                        "attrbute_name": "propThreshold",
+                                        "attrbute_type": "20"
+                                    },
+                                    "0031": {
+                                        "attrbute_name": "frostProtectionSetpoint",
+                                        "attrbute_type": "29"
+                                    },
+                                    "0000": {
+                                        "attrbute_name": "algorithmModeSelector",
+                                        "attrbute_type": "18"
+                                    },
+                                    "0029": {
+                                        "attrbute_name": "previousHeatSetpoint",
+                                        "attrbute_type": "29"
+                                    },
+                                    "0025": {
+                                        "attrbute_name": "holidayEndTime",
+                                        "attrbute_type": "21"
+                                    },
+                                    "0023": {
+                                        "attrbute_name": "holidayStartTime",
+                                        "attrbute_type": "21"
+                                    },
+                                    "0011": {
+                                        "attrbute_name": "systemConfiguration",
+                                        "attrbute_type": "30"
+                                    },
+                                    "0002": {
+                                        "attrbute_name": "delayCompensatedTemperature",
+                                        "attrbute_type": "29"
+                                    },
+                                    "0021": {
+                                        "attrbute_name": "holidayModeActive",
+                                        "attrbute_type": "30"
+                                    },
+                                    "0022": {
+                                        "attrbute_name": "holidayStartDate",
+                                        "attrbute_type": "42"
+                                    },
+                                    "0006": {
+                                        "attrbute_name": "minOffCycles",
+                                        "attrbute_type": "20"
+                                    },
+                                    "0027": {
+                                        "attrbute_name": "previousHeatMode",
+                                        "attrbute_type": "30"
+                                    },
+                                    "0004": {
+                                        "attrbute_name": "integral",
+                                        "attrbute_type": "20"
+                                    },
+                                    "0026": {
+                                        "attrbute_name": "holidaySetpoint",
+                                        "attrbute_type": "29"
+                                    },
+                                    "000A": {
+                                        "attrbute_name": "advanceFactor",
+                                        "attrbute_type": "20"
+                                    },
+                                    "0024": {
+                                        "attrbute_name": "holidayEndDate",
+                                        "attrbute_type": "42"
+                                    },
+                                    "0008": {
+                                        "attrbute_name": "minDeltaT",
+                                        "attrbute_type": "20"
+                                    },
+                                    "0020": {
+                                        "attrbute_name": "holidayModeEnabled",
+                                        "attrbute_type": "30"
+                                    },
+                                    "0007": {
+                                        "attrbute_name": "optStartMax",
+                                        "attrbute_type": "20"
+                                    },
+                                    "0030": {
+                                        "attrbute_name": "firstScheduleSet",
+                                        "attrbute_type": "30"
+                                    },
+                                    "0028": {
+                                        "attrbute_name": "previousWaterMode",
+                                        "attrbute_type": "30"
+                                    }
+                                }
+                            },
+                            "0201": {
+                                "cluster_name": "Thermostat Cluster",
+                                "list_of_attributes": {
+                                    "0029": {
+                                        "attrbute_name": "thermostatRunningState",
+                                        "attrbute_type": "19"
+                                    },
+                                    "0021": {
+                                        "attrbute_name": "numberOfWeeklyTransitions",
+                                        "attrbute_type": "20"
+                                    },
+                                    "0015": {
+                                        "attrbute_name": "minHeatSetpointLimit",
+                                        "attrbute_type": "29"
+                                    },
+                                    "0022": {
+                                        "attrbute_name": "numberOfDailyTransitions",
+                                        "attrbute_type": "20"
+                                    },
+                                    "0012": {
+                                        "attrbute_name": "occupiedHeatingSetpoint",
+                                        "attrbute_type": "29"
+                                    },
+                                    "0016": {
+                                        "attrbute_name": "maxHeatSetpointLimit",
+                                        "attrbute_type": "29"
+                                    },
+                                    "001B": {
+                                        "attrbute_name": "controlSequenceOfOperation",
+                                        "attrbute_type": "30"
+                                    },
+                                    "0000": {
+                                        "attrbute_name": "localTemperature",
+                                        "attrbute_type": "29"
+                                    },
+                                    "0024": {
+                                        "attrbute_name": "temperatureSetpointHoldDuration",
+                                        "attrbute_type": "21"
+                                    },
+                                    "0020": {
+                                        "attrbute_name": "startOfWeek",
+                                        "attrbute_type": "30"
+                                    },
+                                    "0023": {
+                                        "attrbute_name": "temperatureSetpointHold",
+                                        "attrbute_type": "30"
+                                    },
+                                    "001D": {
+                                        "attrbute_name": "alarmMask",
+                                        "attrbute_type": "18"
+                                    },
+                                    "0011": {
+                                        "attrbute_name": "occupiedCoolingSetpoint",
+                                        "attrbute_type": "29"
+                                    },
+                                    "001C": {
+                                        "attrbute_name": "systemMode",
+                                        "attrbute_type": "30"
+                                    }
+                                }
+                            },
+                            "0000": {
+                                "cluster_name": "Basic Cluster",
+                                "list_of_attributes": {
+                                    "0005": {
+                                        "attrbute_name": "modelIdentifier",
+                                        "attrbute_type": "42"
+                                    },
+                                    "0001": {
+                                        "attrbute_name": "applicationVersion",
+                                        "attrbute_type": "20"
+                                    },
+                                    "0003": {
+                                        "attrbute_name": "hardwareVersion",
+                                        "attrbute_type": "20"
+                                    },
+                                    "0010": {
+                                        "attrbute_name": "locationDescription",
+                                        "attrbute_type": "42"
+                                    },
+                                    "0013": {
+                                        "attrbute_name": "alarmMask",
+                                        "attrbute_type": "18"
+                                    },
+                                    "0002": {
+                                        "attrbute_name": "stackVersion",
+                                        "attrbute_type": "20"
+                                    },
+                                    "0006": {
+                                        "attrbute_name": "dateCode",
+                                        "attrbute_type": "42"
+                                    },
+                                    "0004": {
+                                        "attrbute_name": "manufacturerName",
+                                        "attrbute_type": "42"
+                                    },
+                                    "0000": {
+                                        "attrbute_name": "zclVersion",
+                                        "attrbute_type": "20"
+                                    },
+                                    "0007": {
+                                        "attrbute_name": "powerSource",
+                                        "attrbute_type": "30"
+                                    }
+                                }
+                            },
+                            "0402": {
+                                "cluster_name": "Temperature Measurement Cluster",
+                                "list_of_attributes": {}
+                            }
+                        }
+                    },
+                    "07": {
+                        "list_of_clusters": {
+                            "0402": {
+                                "cluster_name": "Temperature Measurement Cluster",
+                                "list_of_attributes": {
+                                    "0001": {
+                                        "attrbute_name": "minMeasuredValue",
+                                        "attrbute_type": "29"
+                                    },
+                                    "0002": {
+                                        "attrbute_name": "maxMeasuredValue",
+                                        "attrbute_type": "29"
+                                    },
+                                    "0000": {
+                                        "attrbute_name": "measuredValue",
+                                        "attrbute_type": "29"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "08": {
+                        "list_of_clusters": {
+                            "0402": {
+                                "cluster_name": "Temperature Measurement Cluster",
+                                "list_of_attributes": {
+                                    "0001": {
+                                        "attrbute_name": "minMeasuredValue",
+                                        "attrbute_type": "29"
+                                    },
+                                    "0002": {
+                                        "attrbute_name": "maxMeasuredValue",
+                                        "attrbute_type": "29"
+                                    },
+                                    "0000": {
+                                        "attrbute_name": "measuredValue",
+                                        "attrbute_type": "29"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "06": {
+                        "list_of_clusters": {
+                            "0201": {
+                                "cluster_name": "Thermostat Cluster",
+                                "list_of_attributes": {
+                                    "0029": {
+                                        "attrbute_name": "thermostatRunningState",
+                                        "attrbute_type": "19"
+                                    },
+                                    "0021": {
+                                        "attrbute_name": "numberOfWeeklyTransitions",
+                                        "attrbute_type": "20"
+                                    },
+                                    "0015": {
+                                        "attrbute_name": "minHeatSetpointLimit",
+                                        "attrbute_type": "29"
+                                    },
+                                    "0022": {
+                                        "attrbute_name": "numberOfDailyTransitions",
+                                        "attrbute_type": "20"
+                                    },
+                                    "0012": {
+                                        "attrbute_name": "occupiedHeatingSetpoint",
+                                        "attrbute_type": "29"
+                                    },
+                                    "0016": {
+                                        "attrbute_name": "maxHeatSetpointLimit",
+                                        "attrbute_type": "29"
+                                    },
+                                    "001B": {
+                                        "attrbute_name": "controlSequenceOfOperation",
+                                        "attrbute_type": "30"
+                                    },
+                                    "0000": {
+                                        "attrbute_name": "localTemperature",
+                                        "attrbute_type": "29"
+                                    },
+                                    "0024": {
+                                        "attrbute_name": "temperatureSetpointHoldDuration",
+                                        "attrbute_type": "21"
+                                    },
+                                    "0020": {
+                                        "attrbute_name": "startOfWeek",
+                                        "attrbute_type": "30"
+                                    },
+                                    "0023": {
+                                        "attrbute_name": "temperatureSetpointHold",
+                                        "attrbute_type": "30"
+                                    },
+                                    "001D": {
+                                        "attrbute_name": "alarmMask",
+                                        "attrbute_type": "18"
+                                    },
+                                    "0011": {
+                                        "attrbute_name": "occupiedCoolingSetpoint",
+                                        "attrbute_type": "29"
+                                    },
+                                    "001C": {
+                                        "attrbute_name": "systemMode",
+                                        "attrbute_type": "30"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "node_id": "B672"
+            },
+            "TH": {
+                "list_of_endpoints": {
+                    "09": {
+                        "list_of_clusters": {
+                            "0009": {
+                                "cluster_name": "Alarms Cluster",
+                                "list_of_attributes": {}
+                            },
+                            "000A": {
+                                "cluster_name": "Time Cluster",
+                                "list_of_attributes": {}
+                            },
+                            "0204": {
+                                "cluster_name": "Thermostat UI Cluster",
+                                "list_of_attributes": {
+                                    "0001": {
+                                        "attrbute_name": "keypadLockout",
+                                        "attrbute_type": "30"
+                                    },
+                                    "0000": {
+                                        "attrbute_name": "temperatureDisplayMode",
+                                        "attrbute_type": "30"
+                                    }
+                                }
+                            },
+                            "0001": {
+                                "cluster_name": "Power Configuration Cluster",
+                                "list_of_attributes": {
+                                    "0020": {
+                                        "attrbute_name": "batteryVoltage",
+                                        "attrbute_type": "20"
+                                    },
+                                    "0021": {
+                                        "attrbute_name": "batteryPercentageRemaining",
+                                        "attrbute_type": "20"
+                                    },
+                                    "0035": {
+                                        "attrbute_name": "batteryAlarmMask",
+                                        "attrbute_type": "18"
+                                    },
+                                    "0036": {
+                                        "attrbute_name": "batteryVoltageMinThreshold",
+                                        "attrbute_type": "20"
+                                    }
+                                }
+                            },
+                            "0003": {
+                                "cluster_name": "Identify Cluster",
+                                "list_of_attributes": {}
+                            },
+                            "0019": {
+                                "cluster_name": "OTA Cluster",
+                                "list_of_attributes": {
+                                    "0005": {
+                                        "attrbute_name": "downloaded ZigBee Stack Version",
+                                        "attrbute_type": "21"
+                                    },
+                                    "0001": {
+                                        "attrbute_name": "file Offset",
+                                        "attrbute_type": "23"
+                                    },
+                                    "0002": {
+                                        "attrbute_name": "current File Version",
+                                        "attrbute_type": "23"
+                                    },
+                                    "0003": {
+                                        "attrbute_name": "current ZigBee Stack Version",
+                                        "attrbute_type": "21"
+                                    },
+                                    "0008": {
+                                        "attrbute_name": "imageTypeId",
+                                        "attrbute_type": "21"
+                                    },
+                                    "0006": {
+                                        "attrbute_name": "image Upgrade Status",
+                                        "attrbute_type": "30"
+                                    },
+                                    "0004": {
+                                        "attrbute_name": "downloaded File Version",
+                                        "attrbute_type": "23"
+                                    },
+                                    "0000": {
+                                        "attrbute_name": "upgradeServerId",
+                                        "attrbute_type": "F0"
+                                    },
+                                    "0007": {
+                                        "attrbute_name": "manufacturerId",
+                                        "attrbute_type": "21"
+                                    }
+                                }
+                            },
+                            "FD00": {
+                                "cluster_name": "BG Cluster",
+                                "list_of_attributes": {}
+                            },
+                            "0020": {
+                                "cluster_name": "Poll Control Cluster",
+                                "list_of_attributes": {
+                                    "0001": {
+                                        "attrbute_name": "longPollInterval",
+                                        "attrbute_type": "23"
+                                    },
+                                    "0002": {
+                                        "attrbute_name": "shortPollInterval",
+                                        "attrbute_type": "21"
+                                    },
+                                    "0000": {
+                                        "attrbute_name": "checkInInterval",
+                                        "attrbute_type": "23"
+                                    }
+                                }
+                            },
+                            "0201": {
+                                "cluster_name": "Thermostat Cluster",
+                                "list_of_attributes": {}
+                            },
+                            "0000": {
+                                "cluster_name": "Basic Cluster",
+                                "list_of_attributes": {
+                                    "0005": {
+                                        "attrbute_name": "modelIdentifier",
+                                        "attrbute_type": "42"
+                                    },
+                                    "0001": {
+                                        "attrbute_name": "applicationVersion",
+                                        "attrbute_type": "20"
+                                    },
+                                    "0003": {
+                                        "attrbute_name": "hardwareVersion",
+                                        "attrbute_type": "20"
+                                    },
+                                    "0010": {
+                                        "attrbute_name": "locationDescription",
+                                        "attrbute_type": "42"
+                                    },
+                                    "0007": {
+                                        "attrbute_name": "powerSource",
+                                        "attrbute_type": "30"
+                                    },
+                                    "0002": {
+                                        "attrbute_name": "stackVersion",
+                                        "attrbute_type": "20"
+                                    },
+                                    "0006": {
+                                        "attrbute_name": "dateCode",
+                                        "attrbute_type": "42"
+                                    },
+                                    "0004": {
+                                        "attrbute_name": "manufacturerName",
+                                        "attrbute_type": "42"
+                                    },
+                                    "0000": {
+                                        "attrbute_name": "zclVersion",
+                                        "attrbute_type": "20"
+                                    }
+                                }
+                            },
+                            "0402": {
+                                "cluster_name": "Temperature Measurement Cluster",
+                                "list_of_attributes": {
+                                    "0001": {
+                                        "attrbute_name": "minMeasuredValue",
+                                        "attrbute_type": "29"
+                                    },
+                                    "0002": {
+                                        "attrbute_name": "maxMeasuredValue",
+                                        "attrbute_type": "29"
+                                    },
+                                    "0000": {
+                                        "attrbute_name": "measuredValue",
+                                        "attrbute_type": "29"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "node_id": "9ADA"
+            }
+        }
+    }
+}

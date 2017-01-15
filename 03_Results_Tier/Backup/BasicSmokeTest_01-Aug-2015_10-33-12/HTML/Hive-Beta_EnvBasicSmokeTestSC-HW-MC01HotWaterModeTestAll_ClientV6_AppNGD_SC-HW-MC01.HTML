@@ -1,0 +1,2651 @@
+<!DOCTYPE html>
+<html>
+<head>
+         <meta charset='UTF-8'>
+         <title>Hive Application - SC-HW-MC01 Automation Execution Results</title>
+<style type='text/css'> 
+			 body { 
+				 background-color: #000000; 
+				 font-family: Verdana, Geneva, sans-serif; 
+				 text-align: center; 
+			 } 
+ 
+			 small { 
+				 font-size: 0.8em; 
+			 } 
+ 
+			 table { 
+				 border: 3px solid #FFFFFF; 
+				 border-collapse: collapse; 
+				 border-spacing: 0px; 
+				 width: 1200px; 
+				 margin-left: auto; 
+				 margin-right: auto; 
+			 } 
+			 .innertable { 
+				 border: 3px solid #FFFFFF; 
+				 border-collapse: collapse; 
+				 border-spacing: 0px; 
+				 width: 744px; 
+				 margin-left: auto; 
+				 margin-right: auto;
+				 text-align: center;  
+			 } 
+ 			.lefttable { 
+				 border: 3px solid #FFFFFF; 
+				 border-collapse: collapse; 
+				 border-spacing: 0px; 
+				 width: 744px; 
+				 margin-left: auto; 
+				 margin-right: auto;
+				 text-align: left;  
+			 } 
+			 tr.heading { 
+				 background-color: #5792FF; 
+				 color: #000000; 
+				 font-size: 0.9em; 
+				 font-weight: bold; 
+			 } 
+ 
+			 tr.subheading { 
+				 background-color: #002C7E; 
+				 color: #FFFFFF; 
+				 font-weight: bold; 		
+				 font-size: 0.9em; 
+				 text-align: justify; 
+			 } 
+ 
+			 tr.section { 
+				 background-color: #47747A; 
+				 color: #000000; 
+				 cursor: pointer; 
+				 font-weight: bold; 
+				 font-size: 0.9em; 
+				 text-align: justify; 
+			 } 
+ 
+			 tr.subsection { 
+				 cursor: pointer; 
+			 } 
+ 
+			 tr.content { 
+				 background-color: #C6FFEC; 
+				 color: #000000; 
+				 font-size: 0.9em; 
+				 display: table-row; 
+			 } 
+ 
+			 td, th { 
+				 padding: 4px; 
+				 text-align: inherit\0/; 
+			 } 
+ 
+			 td.justified { 
+				 text-align: Centre; 
+			 } 
+ 
+			 td.pass { 
+				 font-weight: bold; 
+				 color: #3DB700; 
+			 } 
+ 
+			 td.fail { 
+				 font-weight: bold; 
+				 color: red; 
+			 } 
+ 
+			 td.done, td.screenshot { 
+				 font-weight: bold; 
+				 color: black; 
+			 } 
+			 
+			  td.inprogress{ 
+				 font-weight: bold; 
+				 color: orange; 
+			 } 
+ 
+			 td.debug { 
+				 font-weight: bold; 
+				 color: blue; 
+			 } 
+ 
+			 td.warning { 
+				 font-weight: bold; 
+				 color: orange; 
+			 } 
+		 </style>  
+ 
+		 <script> 
+			 function toggleMenu(objID) { 
+				 if (!document.getElementById) return; 
+				 var ob = document.getElementById(objID).style; 
+				 if(ob.display === 'none') { 
+					 try { 
+						 ob.display='table-row-group'; 
+					 } catch(ex) { 
+						 ob.display='block'; 
+					 } 
+				 } 
+				 else { 
+					 ob.display='none'; 
+				 } 
+			 } 
+			 function toggleSubMenu(objId) { 
+				 for(i=1; i<10000; i++) { 
+					 var ob = document.getElementById(objId.concat(i)); 
+					 if(ob === null) { 
+						 break; 
+					 } 
+					 if(ob.style.display === 'none') { 
+						 try { 
+							 ob.style.display='table-row'; 
+						 } catch(ex) { 
+							 ob.style.display='block'; 
+						 } 
+					 } 
+					 else { 
+						 ob.style.display='none'; 
+					 } 
+				 } 
+			 } 
+		 </script> 
+		 
+		 
+</head>
+<body>
+<table id='header'>
+<colgroup>
+<col style='width: 25%' />
+<col style='width: 25%' />
+<col style='width: 25%' />
+<col style='width: 25%' />
+</colgroup>
+<thead>
+<tr class='heading'>
+<th colspan='4' style='font-family:Copperplate Gothic Bold; font-size:1.4em;'>
+Hive Application - SC-HW-MC01 Automation Execution Results
+</th>
+</tr>
+<tr class='subheading'>
+<th>&nbsp;Date&nbsp;&&nbsp;Time</th>
+<th>&nbsp;:&nbsp;01-Aug-2015 10:33:14</th>
+<th>&nbsp;Iterations</th>
+<th>&nbsp;:&nbsp;1</th>
+</tr>
+<tr class='subheading'>
+<th>&nbsp;Terminal</th>
+<th>&nbsp;:&nbsp;Mac</th>
+<th>&nbsp;Executed&nbsp;on</th>
+<th>&nbsp;:&nbsp;34:36:3b:cb:48:8c</th>
+</tr>
+<tr class='subheading'>
+<th>&nbsp;Node&nbsp;ID</th>
+<th>&nbsp;:&nbsp;B684</th>
+<th>&nbsp;End&nbsp;Point</th>
+<th>&nbsp;:&nbsp;05 - Central Heating</th>
+</tr>
+</thead>
+</table>
+<table id='main'>
+<colgroup>
+<col style='width: 5%' />
+<col style='width: 10%' />
+<col style='width: 12%' />
+<col style='width: 65%' />
+<col style='width: 8%' />
+</colgroup>
+<thead>
+<tr class='heading'>
+<th>Log_No</th>
+<th>Time_Stamp</th>
+<th>Validation Type</th>
+<th>Log_Details</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='section'>
+<td colspan='5' onclick="toggleMenu('Iteration1')">+ Iteration: 1</td>
+</tr>
+</tbody>
+<tbody id='Iteration1' style='display:table-row-group'>
+<tr class='subheading subsection'>
+<td colspan='5' onclick="toggleSubMenu('Iteration1Scenario Details')">&nbsp;+ Scenario Details</td>
+</tr>
+<tr class='content' id='Iteration1Scenario Details1'>
+<td>1</td>
+<td><small>01-Aug-2015 10:33:14</small></td>
+<td class='justified'>Test</td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD><B>Feature: </B>Validate the various mode changes for Hot Water</TD>
+</TR>
+<TR>
+<TD><B>Scenario: </B>SC-HW-MC01_Validate the Mode change for Hot Water on the Boiler Module </TD>
+</TR>
+</TABLE>
+</td><td class='done'>DONE</td>
+</tr>
+<tr class='content' id='Iteration1Scenario Details2'>
+<td></td>
+<td><small></small></td>
+<td class='justified'></td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD><B>Given : </B>The Hive product is paired and setup for <B>Hot</B> <B>Water</B> with <B>Platform API</B> Validation</TD>
+</TR>
+</TABLE>
+</td><td class=''></td>
+</tr>
+<tr class='content' id='Iteration1Scenario Details3'>
+<td></td>
+<td><small></small></td>
+<td class='justified'></td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD><B>When : </B><B>Mode</B> is automatically changed to <B>Always</B> <B>OFF</B> on the <B>Web App</B></TD>
+</TR>
+</TABLE>
+</td><td class=''></td>
+</tr>
+<tr class='content' id='Iteration1Scenario Details4'>
+<td></td>
+<td><small></small></td>
+<td class='justified'></td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD><B>Then : </B>Automatically validate current mode as <B>Always</B> <B>OFF</B></TD>
+</TR>
+</TABLE>
+</td><td class=''></td>
+</tr>
+<tr class='content' id='Iteration1Scenario Details5'>
+<td></td>
+<td><small></small></td>
+<td class='justified'></td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD><B>When : </B><B>Mode</B> is automatically changed to <B>Always</B> <B>ON</B> on the <B>Web App</B></TD>
+</TR>
+</TABLE>
+</td><td class=''></td>
+</tr>
+<tr class='content' id='Iteration1Scenario Details6'>
+<td></td>
+<td><small></small></td>
+<td class='justified'></td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD><B>Then : </B>Automatically validate current mode as <B>Always</B> <B>ON</B></TD>
+</TR>
+</TABLE>
+</td><td class=''></td>
+</tr>
+<tr class='content' id='Iteration1Scenario Details7'>
+<td></td>
+<td><small></small></td>
+<td class='justified'></td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD><B>When : </B><B>Mode</B> is automatically changed to <B>Always</B> <B>OFF</B> on the <B>Web App</B></TD>
+</TR>
+</TABLE>
+</td><td class=''></td>
+</tr>
+<tr class='content' id='Iteration1Scenario Details8'>
+<td></td>
+<td><small></small></td>
+<td class='justified'></td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD><B>Then : </B>Automatically validate current mode as <B>Always</B> <B>OFF</B></TD>
+</TR>
+</TABLE>
+</td><td class=''></td>
+</tr>
+<tr class='content' id='Iteration1Scenario Details9'>
+<td></td>
+<td><small></small></td>
+<td class='justified'></td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD><B>When : </B><B>Mode</B> is automatically changed to AUTO on the <B>Web App</B></TD>
+</TR>
+</TABLE>
+</td><td class=''></td>
+</tr>
+<tr class='content' id='Iteration1Scenario Details10'>
+<td></td>
+<td><small></small></td>
+<td class='justified'></td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD><B>Then : </B>Automatically validate current mode as AUTO</TD>
+</TR>
+</TABLE>
+</td><td class=''></td>
+</tr>
+<tr class='content' id='Iteration1Scenario Details11'>
+<td></td>
+<td><small></small></td>
+<td class='justified'></td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD><B>When : </B><B>Mode</B> is automatically changed to <B>Always</B> <B>OFF</B> on the <B>Web App</B></TD>
+</TR>
+</TABLE>
+</td><td class=''></td>
+</tr>
+<tr class='content' id='Iteration1Scenario Details12'>
+<td></td>
+<td><small></small></td>
+<td class='justified'></td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD><B>Then : </B>Automatically validate current mode as <B>Always</B> <B>OFF</B></TD>
+</TR>
+</TABLE>
+</td><td class=''></td>
+</tr>
+<tr class='content' id='Iteration1Scenario Details13'>
+<td></td>
+<td><small></small></td>
+<td class='justified'></td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD><B>When : </B><B>Mode</B> is automatically changed to <B>BOOST</B> on the <B>Web App</B></TD>
+</TR>
+</TABLE>
+</td><td class=''></td>
+</tr>
+<tr class='content' id='Iteration1Scenario Details14'>
+<td></td>
+<td><small></small></td>
+<td class='justified'></td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD><B>Then : </B>Automatically validate current mode as <B>BOOST</B></TD>
+</TR>
+</TABLE>
+</td><td class=''></td>
+</tr>
+<tr class='content' id='Iteration1Scenario Details15'>
+<td></td>
+<td><small></small></td>
+<td class='justified'></td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD><B>When : </B><B>Mode</B> is automatically changed to <B>Always</B> <B>ON</B> on the <B>Web App</B></TD>
+</TR>
+</TABLE>
+</td><td class=''></td>
+</tr>
+<tr class='content' id='Iteration1Scenario Details16'>
+<td></td>
+<td><small></small></td>
+<td class='justified'></td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD><B>Then : </B>Automatically validate current mode as <B>Always</B> <B>ON</B></TD>
+</TR>
+</TABLE>
+</td><td class=''></td>
+</tr>
+<tr class='content' id='Iteration1Scenario Details17'>
+<td></td>
+<td><small></small></td>
+<td class='justified'></td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD><B>When : </B><B>Mode</B> is automatically changed to AUTO on the <B>Web App</B></TD>
+</TR>
+</TABLE>
+</td><td class=''></td>
+</tr>
+<tr class='content' id='Iteration1Scenario Details18'>
+<td></td>
+<td><small></small></td>
+<td class='justified'></td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD><B>Then : </B>Automatically validate current mode as AUTO</TD>
+</TR>
+</TABLE>
+</td><td class=''></td>
+</tr>
+<tr class='content' id='Iteration1Scenario Details19'>
+<td></td>
+<td><small></small></td>
+<td class='justified'></td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD><B>When : </B><B>Mode</B> is automatically changed to <B>Always</B> <B>ON</B> on the <B>Web App</B></TD>
+</TR>
+</TABLE>
+</td><td class=''></td>
+</tr>
+<tr class='content' id='Iteration1Scenario Details20'>
+<td></td>
+<td><small></small></td>
+<td class='justified'></td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD><B>Then : </B>Automatically validate current mode as <B>Always</B> <B>ON</B></TD>
+</TR>
+</TABLE>
+</td><td class=''></td>
+</tr>
+<tr class='content' id='Iteration1Scenario Details21'>
+<td></td>
+<td><small></small></td>
+<td class='justified'></td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD><B>When : </B><B>Mode</B> is automatically changed to <B>BOOST</B> on the <B>Web App</B></TD>
+</TR>
+</TABLE>
+</td><td class=''></td>
+</tr>
+<tr class='content' id='Iteration1Scenario Details22'>
+<td></td>
+<td><small></small></td>
+<td class='justified'></td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD><B>Then : </B>Automatically validate current mode as <B>BOOST</B></TD>
+</TR>
+</TABLE>
+</td><td class=''></td>
+</tr>
+<tr class='content' id='Iteration1Scenario Details23'>
+<td></td>
+<td><small></small></td>
+<td class='justified'></td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD><B>When : </B><B>Mode</B> is automatically changed to AUTO on the <B>Web App</B></TD>
+</TR>
+</TABLE>
+</td><td class=''></td>
+</tr>
+<tr class='content' id='Iteration1Scenario Details24'>
+<td></td>
+<td><small></small></td>
+<td class='justified'></td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD><B>Then : </B>Automatically validate current mode as AUTO</TD>
+</TR>
+</TABLE>
+</td><td class=''></td>
+</tr>
+<tr class='content' id='Iteration1Scenario Details25'>
+<td></td>
+<td><small></small></td>
+<td class='justified'></td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD><B>When : </B><B>Mode</B> is automatically changed to <B>BOOST</B> on the <B>Web App</B></TD>
+</TR>
+</TABLE>
+</td><td class=''></td>
+</tr>
+<tr class='content' id='Iteration1Scenario Details26'>
+<td></td>
+<td><small></small></td>
+<td class='justified'></td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD><B>Then : </B>Automatically validate current mode as <B>BOOST</B></TD>
+</TR>
+</TABLE>
+</td><td class=''></td>
+</tr>
+<tr class='content' id='Iteration1Scenario Details27'>
+<td></td>
+<td><small></small></td>
+<td class='justified'></td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD><B>When : </B><B>Mode</B> is automatically changed to <B>Always</B> <B>OFF</B> on the <B>Web App</B></TD>
+</TR>
+</TABLE>
+</td><td class=''></td>
+</tr>
+<tr class='content' id='Iteration1Scenario Details28'>
+<td></td>
+<td><small></small></td>
+<td class='justified'></td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD><B>Then : </B>Automatically validate current mode as <B>Always</B> <B>OFF</B></TD>
+</TR>
+</TABLE>
+</td><td class=''></td>
+</tr>
+<tr class='content' id='Iteration1Scenario Details29'>
+<td>29</td>
+<td><small>01-Aug-2015 10:33:22</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR>
+<TD>Web App : The Hive Desktop Application is successfully Logged in</TD>
+</TR>
+</TABLE>
+</td><td class='pass'><a href='./../Screenshot/HiveBasicSmokeTestSC-HW-MC01HotWaterModeTestAll_ClientV6_AppNGD-SC-HW-MC01-1.png'>PASS</a></td>
+</tr>
+<tr class='subheading subsection'>
+<td colspan='5' onclick="toggleSubMenu('Iteration1Initial Setup before test')">&nbsp;+ Initial Setup before test</td>
+</tr>
+<tr class='content' id='Iteration1Initial Setup before test1'>
+<td>1</td>
+<td><small>01-Aug-2015 10:33:23</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test  and Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always OFF</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='done'>DONE</td>
+</tr>
+<tr class='subheading subsection'>
+<td colspan='5' onclick="toggleSubMenu('Iteration1Set Always OFF Mode')">&nbsp;+ Set Always OFF Mode</td>
+</tr>
+<tr class='content' id='Iteration1Set Always OFF Mode1'>
+<td>1</td>
+<td><small>01-Aug-2015 10:33:36</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR>
+<TD>Web APP : Successfully Hot Water Mode mode is set to <B>OFF</TD>
+</TR>
+</TABLE>
+</td><td class='pass'><a href='./../Screenshot/HiveBasicSmokeTestSC-HW-MC01HotWaterModeTestAll_ClientV6_AppNGD-SC-HW-MC01-2.png'>PASS</a></td>
+</tr>
+<tr class='content' id='Iteration1Set Always OFF Mode2'>
+<td>2</td>
+<td><small>01-Aug-2015 10:33:36</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD>Automatically Setting up <B>Always OFF</B> Mode </TD>
+</TR>
+</TABLE>
+</td><td class='done'>DONE</td>
+</tr>
+<tr class='content' id='Iteration1Set Always OFF Mode3'>
+<td>3</td>
+<td><small>01-Aug-2015 10:33:38</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test  and Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always OFF</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='subheading subsection'>
+<td colspan='5' onclick="toggleSubMenu('Iteration1Validate Always OFF Mode')">&nbsp;+ Validate Always OFF Mode</td>
+</tr>
+<tr class='content' id='Iteration1Validate Always OFF Mode1'>
+<td>1</td>
+<td><small>01-Aug-2015 10:33:38</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD>Validating <B>Always OFF </B>Mode for every <B>3 second(s) </B>for a duration of <B>0.2 minute(s)</TD>
+</TR>
+</TABLE>
+</td><td class='done'>DONE</td>
+</tr>
+<tr class='content' id='Iteration1Validate Always OFF Mode2'>
+<td>2</td>
+<td><small>01-Aug-2015 10:33:39</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test  and Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always OFF</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='content' id='Iteration1Validate Always OFF Mode3'>
+<td>3</td>
+<td><small>01-Aug-2015 10:33:43</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test  and Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always OFF</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='content' id='Iteration1Validate Always OFF Mode4'>
+<td>4</td>
+<td><small>01-Aug-2015 10:33:47</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test  and Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always OFF</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='content' id='Iteration1Validate Always OFF Mode5'>
+<td>5</td>
+<td><small>01-Aug-2015 10:33:51</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test  and Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always OFF</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='subheading subsection'>
+<td colspan='5' onclick="toggleSubMenu('Iteration1Set Always ON Mode')">&nbsp;+ Set Always ON Mode</td>
+</tr>
+<tr class='content' id='Iteration1Set Always ON Mode1'>
+<td>1</td>
+<td><small>01-Aug-2015 10:34:02</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR>
+<TD>Web APP : Successfully Hot Water Mode mode is set to <B>MANUAL</TD>
+</TR>
+</TABLE>
+</td><td class='pass'><a href='./../Screenshot/HiveBasicSmokeTestSC-HW-MC01HotWaterModeTestAll_ClientV6_AppNGD-SC-HW-MC01-3.png'>PASS</a></td>
+</tr>
+<tr class='content' id='Iteration1Set Always ON Mode2'>
+<td>2</td>
+<td><small>01-Aug-2015 10:34:02</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD>Automatically Setting up <B>Always ON</B> Mode </TD>
+</TR>
+</TABLE>
+</td><td class='done'>DONE</td>
+</tr>
+<tr class='content' id='Iteration1Set Always ON Mode3'>
+<td>3</td>
+<td><small>01-Aug-2015 10:34:03</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test Values</FONT></TH>
+<TH><FONT COLOR=BLACK>Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always ON</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=RED><B>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='fail'>FAIL</td>
+</tr>
+<tr class='subheading subsection'>
+<td colspan='5' onclick="toggleSubMenu('Iteration1Validate Always ON Mode')">&nbsp;+ Validate Always ON Mode</td>
+</tr>
+<tr class='content' id='Iteration1Validate Always ON Mode1'>
+<td>1</td>
+<td><small>01-Aug-2015 10:34:03</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD>Validating <B>Always ON </B>Mode for every <B>3 second(s) </B>for a duration of <B>0.2 minute(s)</TD>
+</TR>
+</TABLE>
+</td><td class='done'>DONE</td>
+</tr>
+<tr class='content' id='Iteration1Validate Always ON Mode2'>
+<td>2</td>
+<td><small>01-Aug-2015 10:34:05</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test Values</FONT></TH>
+<TH><FONT COLOR=BLACK>Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always ON</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=RED><B>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='fail'>FAIL</td>
+</tr>
+<tr class='content' id='Iteration1Validate Always ON Mode3'>
+<td>3</td>
+<td><small>01-Aug-2015 10:34:09</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test Values</FONT></TH>
+<TH><FONT COLOR=BLACK>Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always ON</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=RED><B>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='fail'>FAIL</td>
+</tr>
+<tr class='content' id='Iteration1Validate Always ON Mode4'>
+<td>4</td>
+<td><small>01-Aug-2015 10:34:13</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test Values</FONT></TH>
+<TH><FONT COLOR=BLACK>Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always ON</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=RED><B>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='fail'>FAIL</td>
+</tr>
+<tr class='content' id='Iteration1Validate Always ON Mode5'>
+<td>5</td>
+<td><small>01-Aug-2015 10:34:17</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test Values</FONT></TH>
+<TH><FONT COLOR=BLACK>Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always ON</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=RED><B>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='fail'>FAIL</td>
+</tr>
+<tr class='subheading subsection'>
+<td colspan='5' onclick="toggleSubMenu('Iteration1Set Always OFF Mode')">&nbsp;+ Set Always OFF Mode</td>
+</tr>
+<tr class='content' id='Iteration1Set Always OFF Mode1'>
+<td>1</td>
+<td><small>01-Aug-2015 10:34:28</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR>
+<TD>Web APP : Successfully Hot Water Mode mode is set to <B>OFF</TD>
+</TR>
+</TABLE>
+</td><td class='pass'><a href='./../Screenshot/HiveBasicSmokeTestSC-HW-MC01HotWaterModeTestAll_ClientV6_AppNGD-SC-HW-MC01-4.png'>PASS</a></td>
+</tr>
+<tr class='content' id='Iteration1Set Always OFF Mode2'>
+<td>2</td>
+<td><small>01-Aug-2015 10:34:28</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD>Automatically Setting up <B>Always OFF</B> Mode </TD>
+</TR>
+</TABLE>
+</td><td class='done'>DONE</td>
+</tr>
+<tr class='content' id='Iteration1Set Always OFF Mode3'>
+<td>3</td>
+<td><small>01-Aug-2015 10:34:30</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test  and Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always OFF</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='subheading subsection'>
+<td colspan='5' onclick="toggleSubMenu('Iteration1Validate Always OFF Mode')">&nbsp;+ Validate Always OFF Mode</td>
+</tr>
+<tr class='content' id='Iteration1Validate Always OFF Mode1'>
+<td>1</td>
+<td><small>01-Aug-2015 10:34:30</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD>Validating <B>Always OFF </B>Mode for every <B>3 second(s) </B>for a duration of <B>0.2 minute(s)</TD>
+</TR>
+</TABLE>
+</td><td class='done'>DONE</td>
+</tr>
+<tr class='content' id='Iteration1Validate Always OFF Mode2'>
+<td>2</td>
+<td><small>01-Aug-2015 10:34:31</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test  and Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always OFF</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='content' id='Iteration1Validate Always OFF Mode3'>
+<td>3</td>
+<td><small>01-Aug-2015 10:34:35</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test  and Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always OFF</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='content' id='Iteration1Validate Always OFF Mode4'>
+<td>4</td>
+<td><small>01-Aug-2015 10:34:39</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test  and Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always OFF</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='content' id='Iteration1Validate Always OFF Mode5'>
+<td>5</td>
+<td><small>01-Aug-2015 10:34:43</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test  and Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always OFF</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='subheading subsection'>
+<td colspan='5' onclick="toggleSubMenu('Iteration1Set AUTO Mode')">&nbsp;+ Set AUTO Mode</td>
+</tr>
+<tr class='content' id='Iteration1Set AUTO Mode1'>
+<td>1</td>
+<td><small>01-Aug-2015 10:34:54</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR>
+<TD>Web APP : Successfully Hot Water Mode mode is set to <B>AUTO</TD>
+</TR>
+</TABLE>
+</td><td class='pass'><a href='./../Screenshot/HiveBasicSmokeTestSC-HW-MC01HotWaterModeTestAll_ClientV6_AppNGD-SC-HW-MC01-5.png'>PASS</a></td>
+</tr>
+<tr class='content' id='Iteration1Set AUTO Mode2'>
+<td>2</td>
+<td><small>01-Aug-2015 10:34:54</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD>Automatically Setting up <B>AUTO</B> Mode </TD>
+</TR>
+</TABLE>
+</td><td class='done'>DONE</td>
+</tr>
+<tr class='content' id='Iteration1Set AUTO Mode3'>
+<td>3</td>
+<td><small>01-Aug-2015 10:34:55</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test  and Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>AUTO-OFF</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='subheading subsection'>
+<td colspan='5' onclick="toggleSubMenu('Iteration1Validate AUTO Mode')">&nbsp;+ Validate AUTO Mode</td>
+</tr>
+<tr class='content' id='Iteration1Validate AUTO Mode1'>
+<td>1</td>
+<td><small>01-Aug-2015 10:34:55</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD>Validating <B>AUTO </B>Mode for every <B>3 second(s) </B>for a duration of <B>0.2 minute(s)</TD>
+</TR>
+</TABLE>
+</td><td class='done'>DONE</td>
+</tr>
+<tr class='content' id='Iteration1Validate AUTO Mode2'>
+<td>2</td>
+<td><small>01-Aug-2015 10:34:56</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test  and Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>AUTO-OFF</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='content' id='Iteration1Validate AUTO Mode3'>
+<td>3</td>
+<td><small>01-Aug-2015 10:35:00</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test  and Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>AUTO-OFF</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='content' id='Iteration1Validate AUTO Mode4'>
+<td>4</td>
+<td><small>01-Aug-2015 10:35:05</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test  and Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>AUTO-OFF</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='content' id='Iteration1Validate AUTO Mode5'>
+<td>5</td>
+<td><small>01-Aug-2015 10:35:09</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test  and Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>AUTO-OFF</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='subheading subsection'>
+<td colspan='5' onclick="toggleSubMenu('Iteration1Set Always OFF Mode')">&nbsp;+ Set Always OFF Mode</td>
+</tr>
+<tr class='content' id='Iteration1Set Always OFF Mode1'>
+<td>1</td>
+<td><small>01-Aug-2015 10:35:20</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR>
+<TD>Web APP : Successfully Hot Water Mode mode is set to <B>OFF</TD>
+</TR>
+</TABLE>
+</td><td class='pass'><a href='./../Screenshot/HiveBasicSmokeTestSC-HW-MC01HotWaterModeTestAll_ClientV6_AppNGD-SC-HW-MC01-6.png'>PASS</a></td>
+</tr>
+<tr class='content' id='Iteration1Set Always OFF Mode2'>
+<td>2</td>
+<td><small>01-Aug-2015 10:35:20</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD>Automatically Setting up <B>Always OFF</B> Mode </TD>
+</TR>
+</TABLE>
+</td><td class='done'>DONE</td>
+</tr>
+<tr class='content' id='Iteration1Set Always OFF Mode3'>
+<td>3</td>
+<td><small>01-Aug-2015 10:35:21</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test  and Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always OFF</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='subheading subsection'>
+<td colspan='5' onclick="toggleSubMenu('Iteration1Validate Always OFF Mode')">&nbsp;+ Validate Always OFF Mode</td>
+</tr>
+<tr class='content' id='Iteration1Validate Always OFF Mode1'>
+<td>1</td>
+<td><small>01-Aug-2015 10:35:21</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD>Validating <B>Always OFF </B>Mode for every <B>3 second(s) </B>for a duration of <B>0.2 minute(s)</TD>
+</TR>
+</TABLE>
+</td><td class='done'>DONE</td>
+</tr>
+<tr class='content' id='Iteration1Validate Always OFF Mode2'>
+<td>2</td>
+<td><small>01-Aug-2015 10:35:22</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test  and Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always OFF</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='content' id='Iteration1Validate Always OFF Mode3'>
+<td>3</td>
+<td><small>01-Aug-2015 10:35:26</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test  and Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always OFF</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='content' id='Iteration1Validate Always OFF Mode4'>
+<td>4</td>
+<td><small>01-Aug-2015 10:35:30</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test  and Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always OFF</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='content' id='Iteration1Validate Always OFF Mode5'>
+<td>5</td>
+<td><small>01-Aug-2015 10:35:35</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test  and Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always OFF</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='subheading subsection'>
+<td colspan='5' onclick="toggleSubMenu('Iteration1Set BOOST Mode')">&nbsp;+ Set BOOST Mode</td>
+</tr>
+<tr class='content' id='Iteration1Set BOOST Mode1'>
+<td>1</td>
+<td><small>01-Aug-2015 10:35:45</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR>
+<TD>Web APP : Successfully Hot Water Mode mode is set to <B>BOOST</TD>
+</TR>
+</TABLE>
+</td><td class='pass'><a href='./../Screenshot/HiveBasicSmokeTestSC-HW-MC01HotWaterModeTestAll_ClientV6_AppNGD-SC-HW-MC01-7.png'>PASS</a></td>
+</tr>
+<tr class='content' id='Iteration1Set BOOST Mode2'>
+<td>2</td>
+<td><small>01-Aug-2015 10:35:46</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD>Automatically Setting up <B>BOOST</B> Mode </TD>
+</TR>
+</TABLE>
+</td><td class='done'>DONE</td>
+</tr>
+<tr class='content' id='Iteration1Set BOOST Mode3'>
+<td>3</td>
+<td><small>01-Aug-2015 10:35:47</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test Values</FONT></TH>
+<TH><FONT COLOR=BLACK>Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>BOOST</FONT></TD>
+<TD ><FONT COLOR=RED><B>OVERRIDE</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=RED><B>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='fail'>FAIL</td>
+</tr>
+<tr class='subheading subsection'>
+<td colspan='5' onclick="toggleSubMenu('Iteration1Validate BOOST Mode')">&nbsp;+ Validate BOOST Mode</td>
+</tr>
+<tr class='content' id='Iteration1Validate BOOST Mode1'>
+<td>1</td>
+<td><small>01-Aug-2015 10:35:47</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD>Validating <B>BOOST </B>Mode for every <B>3 second(s) </B>for a duration of <B>0.2 minute(s)</TD>
+</TR>
+</TABLE>
+</td><td class='done'>DONE</td>
+</tr>
+<tr class='content' id='Iteration1Validate BOOST Mode2'>
+<td>2</td>
+<td><small>01-Aug-2015 10:35:48</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test Values</FONT></TH>
+<TH><FONT COLOR=BLACK>Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>BOOST</FONT></TD>
+<TD ><FONT COLOR=RED><B>OVERRIDE</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=RED><B>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='fail'>FAIL</td>
+</tr>
+<tr class='content' id='Iteration1Validate BOOST Mode3'>
+<td>3</td>
+<td><small>01-Aug-2015 10:35:52</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test Values</FONT></TH>
+<TH><FONT COLOR=BLACK>Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>BOOST</FONT></TD>
+<TD ><FONT COLOR=RED><B>OVERRIDE</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=RED><B>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='fail'>FAIL</td>
+</tr>
+<tr class='content' id='Iteration1Validate BOOST Mode4'>
+<td>4</td>
+<td><small>01-Aug-2015 10:35:56</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test Values</FONT></TH>
+<TH><FONT COLOR=BLACK>Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>BOOST</FONT></TD>
+<TD ><FONT COLOR=RED><B>OVERRIDE</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=RED><B>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='fail'>FAIL</td>
+</tr>
+<tr class='content' id='Iteration1Validate BOOST Mode5'>
+<td>5</td>
+<td><small>01-Aug-2015 10:36:01</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test Values</FONT></TH>
+<TH><FONT COLOR=BLACK>Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>BOOST</FONT></TD>
+<TD ><FONT COLOR=RED><B>OVERRIDE</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=RED><B>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='fail'>FAIL</td>
+</tr>
+<tr class='subheading subsection'>
+<td colspan='5' onclick="toggleSubMenu('Iteration1Set Always ON Mode')">&nbsp;+ Set Always ON Mode</td>
+</tr>
+<tr class='content' id='Iteration1Set Always ON Mode1'>
+<td>1</td>
+<td><small>01-Aug-2015 10:36:20</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR>
+<TD>Web APP : Successfully Hot Water Mode mode is set to <B>MANUAL</TD>
+</TR>
+</TABLE>
+</td><td class='pass'><a href='./../Screenshot/HiveBasicSmokeTestSC-HW-MC01HotWaterModeTestAll_ClientV6_AppNGD-SC-HW-MC01-8.png'>PASS</a></td>
+</tr>
+<tr class='content' id='Iteration1Set Always ON Mode2'>
+<td>2</td>
+<td><small>01-Aug-2015 10:36:21</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD>Automatically Setting up <B>Always ON</B> Mode </TD>
+</TR>
+</TABLE>
+</td><td class='done'>DONE</td>
+</tr>
+<tr class='content' id='Iteration1Set Always ON Mode3'>
+<td>3</td>
+<td><small>01-Aug-2015 10:36:22</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test Values</FONT></TH>
+<TH><FONT COLOR=BLACK>Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always ON</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=RED><B>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='fail'>FAIL</td>
+</tr>
+<tr class='subheading subsection'>
+<td colspan='5' onclick="toggleSubMenu('Iteration1Validate Always ON Mode')">&nbsp;+ Validate Always ON Mode</td>
+</tr>
+<tr class='content' id='Iteration1Validate Always ON Mode1'>
+<td>1</td>
+<td><small>01-Aug-2015 10:36:22</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD>Validating <B>Always ON </B>Mode for every <B>3 second(s) </B>for a duration of <B>0.2 minute(s)</TD>
+</TR>
+</TABLE>
+</td><td class='done'>DONE</td>
+</tr>
+<tr class='content' id='Iteration1Validate Always ON Mode2'>
+<td>2</td>
+<td><small>01-Aug-2015 10:36:23</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test Values</FONT></TH>
+<TH><FONT COLOR=BLACK>Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always ON</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=RED><B>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='fail'>FAIL</td>
+</tr>
+<tr class='content' id='Iteration1Validate Always ON Mode3'>
+<td>3</td>
+<td><small>01-Aug-2015 10:36:27</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test Values</FONT></TH>
+<TH><FONT COLOR=BLACK>Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always ON</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=RED><B>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='fail'>FAIL</td>
+</tr>
+<tr class='content' id='Iteration1Validate Always ON Mode4'>
+<td>4</td>
+<td><small>01-Aug-2015 10:36:31</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test Values</FONT></TH>
+<TH><FONT COLOR=BLACK>Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always ON</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=RED><B>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='fail'>FAIL</td>
+</tr>
+<tr class='content' id='Iteration1Validate Always ON Mode5'>
+<td>5</td>
+<td><small>01-Aug-2015 10:36:35</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test Values</FONT></TH>
+<TH><FONT COLOR=BLACK>Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always ON</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=RED><B>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='fail'>FAIL</td>
+</tr>
+<tr class='subheading subsection'>
+<td colspan='5' onclick="toggleSubMenu('Iteration1Set AUTO Mode')">&nbsp;+ Set AUTO Mode</td>
+</tr>
+<tr class='content' id='Iteration1Set AUTO Mode1'>
+<td>1</td>
+<td><small>01-Aug-2015 10:36:47</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR>
+<TD>Web APP : Successfully Hot Water Mode mode is set to <B>AUTO</TD>
+</TR>
+</TABLE>
+</td><td class='pass'><a href='./../Screenshot/HiveBasicSmokeTestSC-HW-MC01HotWaterModeTestAll_ClientV6_AppNGD-SC-HW-MC01-9.png'>PASS</a></td>
+</tr>
+<tr class='content' id='Iteration1Set AUTO Mode2'>
+<td>2</td>
+<td><small>01-Aug-2015 10:36:47</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD>Automatically Setting up <B>AUTO</B> Mode </TD>
+</TR>
+</TABLE>
+</td><td class='done'>DONE</td>
+</tr>
+<tr class='content' id='Iteration1Set AUTO Mode3'>
+<td>3</td>
+<td><small>01-Aug-2015 10:36:48</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test  and Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>AUTO-OFF</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='subheading subsection'>
+<td colspan='5' onclick="toggleSubMenu('Iteration1Validate AUTO Mode')">&nbsp;+ Validate AUTO Mode</td>
+</tr>
+<tr class='content' id='Iteration1Validate AUTO Mode1'>
+<td>1</td>
+<td><small>01-Aug-2015 10:36:48</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD>Validating <B>AUTO </B>Mode for every <B>3 second(s) </B>for a duration of <B>0.2 minute(s)</TD>
+</TR>
+</TABLE>
+</td><td class='done'>DONE</td>
+</tr>
+<tr class='content' id='Iteration1Validate AUTO Mode2'>
+<td>2</td>
+<td><small>01-Aug-2015 10:36:49</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test  and Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>AUTO-OFF</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='content' id='Iteration1Validate AUTO Mode3'>
+<td>3</td>
+<td><small>01-Aug-2015 10:36:53</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test  and Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>AUTO-OFF</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='content' id='Iteration1Validate AUTO Mode4'>
+<td>4</td>
+<td><small>01-Aug-2015 10:36:57</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test  and Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>AUTO-OFF</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='content' id='Iteration1Validate AUTO Mode5'>
+<td>5</td>
+<td><small>01-Aug-2015 10:37:01</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test  and Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>AUTO-OFF</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='subheading subsection'>
+<td colspan='5' onclick="toggleSubMenu('Iteration1Set Always ON Mode')">&nbsp;+ Set Always ON Mode</td>
+</tr>
+<tr class='content' id='Iteration1Set Always ON Mode1'>
+<td>1</td>
+<td><small>01-Aug-2015 10:37:12</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR>
+<TD>Web APP : Successfully Hot Water Mode mode is set to <B>MANUAL</TD>
+</TR>
+</TABLE>
+</td><td class='pass'><a href='./../Screenshot/HiveBasicSmokeTestSC-HW-MC01HotWaterModeTestAll_ClientV6_AppNGD-SC-HW-MC01-10.png'>PASS</a></td>
+</tr>
+<tr class='content' id='Iteration1Set Always ON Mode2'>
+<td>2</td>
+<td><small>01-Aug-2015 10:37:13</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD>Automatically Setting up <B>Always ON</B> Mode </TD>
+</TR>
+</TABLE>
+</td><td class='done'>DONE</td>
+</tr>
+<tr class='content' id='Iteration1Set Always ON Mode3'>
+<td>3</td>
+<td><small>01-Aug-2015 10:37:14</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test Values</FONT></TH>
+<TH><FONT COLOR=BLACK>Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always ON</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=RED><B>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='fail'>FAIL</td>
+</tr>
+<tr class='subheading subsection'>
+<td colspan='5' onclick="toggleSubMenu('Iteration1Validate Always ON Mode')">&nbsp;+ Validate Always ON Mode</td>
+</tr>
+<tr class='content' id='Iteration1Validate Always ON Mode1'>
+<td>1</td>
+<td><small>01-Aug-2015 10:37:14</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD>Validating <B>Always ON </B>Mode for every <B>3 second(s) </B>for a duration of <B>0.2 minute(s)</TD>
+</TR>
+</TABLE>
+</td><td class='done'>DONE</td>
+</tr>
+<tr class='content' id='Iteration1Validate Always ON Mode2'>
+<td>2</td>
+<td><small>01-Aug-2015 10:37:15</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test Values</FONT></TH>
+<TH><FONT COLOR=BLACK>Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always ON</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=RED><B>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='fail'>FAIL</td>
+</tr>
+<tr class='content' id='Iteration1Validate Always ON Mode3'>
+<td>3</td>
+<td><small>01-Aug-2015 10:37:19</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test Values</FONT></TH>
+<TH><FONT COLOR=BLACK>Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always ON</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=RED><B>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='fail'>FAIL</td>
+</tr>
+<tr class='content' id='Iteration1Validate Always ON Mode4'>
+<td>4</td>
+<td><small>01-Aug-2015 10:37:23</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test Values</FONT></TH>
+<TH><FONT COLOR=BLACK>Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always ON</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=RED><B>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='fail'>FAIL</td>
+</tr>
+<tr class='content' id='Iteration1Validate Always ON Mode5'>
+<td>5</td>
+<td><small>01-Aug-2015 10:37:27</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test Values</FONT></TH>
+<TH><FONT COLOR=BLACK>Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always ON</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=RED><B>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='fail'>FAIL</td>
+</tr>
+<tr class='subheading subsection'>
+<td colspan='5' onclick="toggleSubMenu('Iteration1Set BOOST Mode')">&nbsp;+ Set BOOST Mode</td>
+</tr>
+<tr class='content' id='Iteration1Set BOOST Mode1'>
+<td>1</td>
+<td><small>01-Aug-2015 10:37:39</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR>
+<TD>Web APP : Successfully Hot Water Mode mode is set to <B>BOOST</TD>
+</TR>
+</TABLE>
+</td><td class='pass'><a href='./../Screenshot/HiveBasicSmokeTestSC-HW-MC01HotWaterModeTestAll_ClientV6_AppNGD-SC-HW-MC01-11.png'>PASS</a></td>
+</tr>
+<tr class='content' id='Iteration1Set BOOST Mode2'>
+<td>2</td>
+<td><small>01-Aug-2015 10:37:39</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD>Automatically Setting up <B>BOOST</B> Mode </TD>
+</TR>
+</TABLE>
+</td><td class='done'>DONE</td>
+</tr>
+<tr class='content' id='Iteration1Set BOOST Mode3'>
+<td>3</td>
+<td><small>01-Aug-2015 10:37:40</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test Values</FONT></TH>
+<TH><FONT COLOR=BLACK>Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>BOOST</FONT></TD>
+<TD ><FONT COLOR=RED><B>OVERRIDE</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=RED><B>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='fail'>FAIL</td>
+</tr>
+<tr class='subheading subsection'>
+<td colspan='5' onclick="toggleSubMenu('Iteration1Validate BOOST Mode')">&nbsp;+ Validate BOOST Mode</td>
+</tr>
+<tr class='content' id='Iteration1Validate BOOST Mode1'>
+<td>1</td>
+<td><small>01-Aug-2015 10:37:40</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD>Validating <B>BOOST </B>Mode for every <B>3 second(s) </B>for a duration of <B>0.2 minute(s)</TD>
+</TR>
+</TABLE>
+</td><td class='done'>DONE</td>
+</tr>
+<tr class='content' id='Iteration1Validate BOOST Mode2'>
+<td>2</td>
+<td><small>01-Aug-2015 10:37:42</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test Values</FONT></TH>
+<TH><FONT COLOR=BLACK>Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>BOOST</FONT></TD>
+<TD ><FONT COLOR=RED><B>OVERRIDE</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=RED><B>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='fail'>FAIL</td>
+</tr>
+<tr class='content' id='Iteration1Validate BOOST Mode3'>
+<td>3</td>
+<td><small>01-Aug-2015 10:37:46</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test Values</FONT></TH>
+<TH><FONT COLOR=BLACK>Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>BOOST</FONT></TD>
+<TD ><FONT COLOR=RED><B>OVERRIDE</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=RED><B>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='fail'>FAIL</td>
+</tr>
+<tr class='content' id='Iteration1Validate BOOST Mode4'>
+<td>4</td>
+<td><small>01-Aug-2015 10:37:50</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test Values</FONT></TH>
+<TH><FONT COLOR=BLACK>Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>BOOST</FONT></TD>
+<TD ><FONT COLOR=RED><B>OVERRIDE</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=RED><B>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='fail'>FAIL</td>
+</tr>
+<tr class='content' id='Iteration1Validate BOOST Mode5'>
+<td>5</td>
+<td><small>01-Aug-2015 10:37:55</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test Values</FONT></TH>
+<TH><FONT COLOR=BLACK>Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>BOOST</FONT></TD>
+<TD ><FONT COLOR=RED><B>OVERRIDE</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=RED><B>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='fail'>FAIL</td>
+</tr>
+<tr class='subheading subsection'>
+<td colspan='5' onclick="toggleSubMenu('Iteration1Set AUTO Mode')">&nbsp;+ Set AUTO Mode</td>
+</tr>
+<tr class='content' id='Iteration1Set AUTO Mode1'>
+<td>1</td>
+<td><small>01-Aug-2015 10:38:13</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR>
+<TD>Web APP : Successfully Hot Water Mode mode is set to <B>AUTO</TD>
+</TR>
+</TABLE>
+</td><td class='pass'><a href='./../Screenshot/HiveBasicSmokeTestSC-HW-MC01HotWaterModeTestAll_ClientV6_AppNGD-SC-HW-MC01-12.png'>PASS</a></td>
+</tr>
+<tr class='content' id='Iteration1Set AUTO Mode2'>
+<td>2</td>
+<td><small>01-Aug-2015 10:38:14</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD>Automatically Setting up <B>AUTO</B> Mode </TD>
+</TR>
+</TABLE>
+</td><td class='done'>DONE</td>
+</tr>
+<tr class='content' id='Iteration1Set AUTO Mode3'>
+<td>3</td>
+<td><small>01-Aug-2015 10:38:15</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test  and Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>AUTO-OFF</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='subheading subsection'>
+<td colspan='5' onclick="toggleSubMenu('Iteration1Validate AUTO Mode')">&nbsp;+ Validate AUTO Mode</td>
+</tr>
+<tr class='content' id='Iteration1Validate AUTO Mode1'>
+<td>1</td>
+<td><small>01-Aug-2015 10:38:15</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD>Validating <B>AUTO </B>Mode for every <B>3 second(s) </B>for a duration of <B>0.2 minute(s)</TD>
+</TR>
+</TABLE>
+</td><td class='done'>DONE</td>
+</tr>
+<tr class='content' id='Iteration1Validate AUTO Mode2'>
+<td>2</td>
+<td><small>01-Aug-2015 10:38:16</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test  and Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>AUTO-OFF</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='content' id='Iteration1Validate AUTO Mode3'>
+<td>3</td>
+<td><small>01-Aug-2015 10:38:20</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test  and Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>AUTO-OFF</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='content' id='Iteration1Validate AUTO Mode4'>
+<td>4</td>
+<td><small>01-Aug-2015 10:38:24</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test  and Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>AUTO-OFF</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='content' id='Iteration1Validate AUTO Mode5'>
+<td>5</td>
+<td><small>01-Aug-2015 10:38:28</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test  and Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>AUTO-OFF</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='subheading subsection'>
+<td colspan='5' onclick="toggleSubMenu('Iteration1Set BOOST Mode')">&nbsp;+ Set BOOST Mode</td>
+</tr>
+<tr class='content' id='Iteration1Set BOOST Mode1'>
+<td>1</td>
+<td><small>01-Aug-2015 10:38:39</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR>
+<TD>Web APP : Successfully Hot Water Mode mode is set to <B>BOOST</TD>
+</TR>
+</TABLE>
+</td><td class='pass'><a href='./../Screenshot/HiveBasicSmokeTestSC-HW-MC01HotWaterModeTestAll_ClientV6_AppNGD-SC-HW-MC01-13.png'>PASS</a></td>
+</tr>
+<tr class='content' id='Iteration1Set BOOST Mode2'>
+<td>2</td>
+<td><small>01-Aug-2015 10:38:40</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD>Automatically Setting up <B>BOOST</B> Mode </TD>
+</TR>
+</TABLE>
+</td><td class='done'>DONE</td>
+</tr>
+<tr class='content' id='Iteration1Set BOOST Mode3'>
+<td>3</td>
+<td><small>01-Aug-2015 10:38:41</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test Values</FONT></TH>
+<TH><FONT COLOR=BLACK>Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>BOOST</FONT></TD>
+<TD ><FONT COLOR=RED><B>OVERRIDE</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=RED><B>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='fail'>FAIL</td>
+</tr>
+<tr class='subheading subsection'>
+<td colspan='5' onclick="toggleSubMenu('Iteration1Validate BOOST Mode')">&nbsp;+ Validate BOOST Mode</td>
+</tr>
+<tr class='content' id='Iteration1Validate BOOST Mode1'>
+<td>1</td>
+<td><small>01-Aug-2015 10:38:41</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD>Validating <B>BOOST </B>Mode for every <B>3 second(s) </B>for a duration of <B>0.2 minute(s)</TD>
+</TR>
+</TABLE>
+</td><td class='done'>DONE</td>
+</tr>
+<tr class='content' id='Iteration1Validate BOOST Mode2'>
+<td>2</td>
+<td><small>01-Aug-2015 10:38:42</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test Values</FONT></TH>
+<TH><FONT COLOR=BLACK>Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>BOOST</FONT></TD>
+<TD ><FONT COLOR=RED><B>OVERRIDE</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=RED><B>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='fail'>FAIL</td>
+</tr>
+<tr class='content' id='Iteration1Validate BOOST Mode3'>
+<td>3</td>
+<td><small>01-Aug-2015 10:38:46</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test Values</FONT></TH>
+<TH><FONT COLOR=BLACK>Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>BOOST</FONT></TD>
+<TD ><FONT COLOR=RED><B>OVERRIDE</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=RED><B>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='fail'>FAIL</td>
+</tr>
+<tr class='content' id='Iteration1Validate BOOST Mode4'>
+<td>4</td>
+<td><small>01-Aug-2015 10:38:50</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test Values</FONT></TH>
+<TH><FONT COLOR=BLACK>Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>BOOST</FONT></TD>
+<TD ><FONT COLOR=RED><B>OVERRIDE</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=RED><B>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='fail'>FAIL</td>
+</tr>
+<tr class='content' id='Iteration1Validate BOOST Mode5'>
+<td>5</td>
+<td><small>01-Aug-2015 10:38:54</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test Values</FONT></TH>
+<TH><FONT COLOR=BLACK>Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>BOOST</FONT></TD>
+<TD ><FONT COLOR=RED><B>OVERRIDE</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=RED><B>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='fail'>FAIL</td>
+</tr>
+<tr class='subheading subsection'>
+<td colspan='5' onclick="toggleSubMenu('Iteration1Set Always OFF Mode')">&nbsp;+ Set Always OFF Mode</td>
+</tr>
+<tr class='content' id='Iteration1Set Always OFF Mode1'>
+<td>1</td>
+<td><small>01-Aug-2015 10:39:13</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR>
+<TD>Web APP : Successfully Hot Water Mode mode is set to <B>OFF</TD>
+</TR>
+</TABLE>
+</td><td class='pass'><a href='./../Screenshot/HiveBasicSmokeTestSC-HW-MC01HotWaterModeTestAll_ClientV6_AppNGD-SC-HW-MC01-14.png'>PASS</a></td>
+</tr>
+<tr class='content' id='Iteration1Set Always OFF Mode2'>
+<td>2</td>
+<td><small>01-Aug-2015 10:39:14</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD>Automatically Setting up <B>Always OFF</B> Mode </TD>
+</TR>
+</TABLE>
+</td><td class='done'>DONE</td>
+</tr>
+<tr class='content' id='Iteration1Set Always OFF Mode3'>
+<td>3</td>
+<td><small>01-Aug-2015 10:39:15</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test  and Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always OFF</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='subheading subsection'>
+<td colspan='5' onclick="toggleSubMenu('Iteration1Validate Always OFF Mode')">&nbsp;+ Validate Always OFF Mode</td>
+</tr>
+<tr class='content' id='Iteration1Validate Always OFF Mode1'>
+<td>1</td>
+<td><small>01-Aug-2015 10:39:15</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD>Validating <B>Always OFF </B>Mode for every <B>3 second(s) </B>for a duration of <B>0.2 minute(s)</TD>
+</TR>
+</TABLE>
+</td><td class='done'>DONE</td>
+</tr>
+<tr class='content' id='Iteration1Validate Always OFF Mode2'>
+<td>2</td>
+<td><small>01-Aug-2015 10:39:16</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test  and Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always OFF</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='content' id='Iteration1Validate Always OFF Mode3'>
+<td>3</td>
+<td><small>01-Aug-2015 10:39:20</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test  and Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always OFF</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='content' id='Iteration1Validate Always OFF Mode4'>
+<td>4</td>
+<td><small>01-Aug-2015 10:39:24</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test  and Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always OFF</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='content' id='Iteration1Validate Always OFF Mode5'>
+<td>5</td>
+<td><small>01-Aug-2015 10:39:28</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test  and Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>Always OFF</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+</tbody>
+</table>
+<table>
+<script type='text/javascript'>
+window.onload = function () {
+CanvasJS.addColorSet('chartshades',
+[//colorSet Array
+'lightgreen',
+'red'           
+]);
+var chart = new CanvasJS.Chart('chartContainer',
+{
+colorSet: 'chartshades',
+zoomEnabled: true,
+title:{
+fontColor: '#C6FFEC',
+text: 'Execution Status'
+},
+animationEnabled: true,
+backgroundColor: 'black',
+legend:{
+fontColor: '#C6FFEC',
+verticalAlign: 'bottom',
+horizontalAlign: 'center'
+},data: [{        
+indexLabelFontSize: 20,
+indexLabelFontFamily: 'Monospace',     
+indexLabelFontColor: '#C6FFEC', 
+indexLabelLineColor: '#C6FFEC',     
+indexLabelPlacement: 'auto',
+type: 'pie',       
+showInLegend: true,
+toolTipContent: '{y} - <strong>#percent%</strong>',
+dataPoints: [
+{  y: 49, legendText:'PASS', indexLabel: '{y}' },
+{  y: 30, legendText:'FAIL' , indexLabel: '{y}'}
+]}]});chart.render();}
+</script>
+<script type='text/javascript' src='./../Screenshot/canvasjs.min.js'></script>
+<tr  class='content' ><td><div id='chartContainer' style='height: 300px; width: 100%;'></div></td></tr></table>
+<table id='footer'>
+<colgroup>
+<col style='width: 25%' />
+<col style='width: 25%' />
+<col style='width: 25%' />
+<col style='width: 25%' />
+</colgroup>
+<tfoot>
+<tr class='heading'>
+<th colspan='4'>Execution Duration: 6 minute(s), 17 seconds</th>
+</tr>
+<tr class='subheading'>
+<td class='pass'>&nbsp;Steps passed</td>
+<td class='pass'>&nbsp;: 49</td>
+<td class='fail'>&nbsp;Steps failed</td>
+<td class='fail'>&nbsp;: 30</td>
+</tr>
+</tfoot>
+</table>
+</body>
+</html>

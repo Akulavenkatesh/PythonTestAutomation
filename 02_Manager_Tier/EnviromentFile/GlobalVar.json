@@ -1,0 +1,235 @@
+{
+	"globalVariables": {
+		"apiValidationType": "Zigbee API",
+		"appium_port": "4723",
+		"appium_udid": "FA3BWW903023",
+		"atZigbeeNode": "EE7C",
+		"atZigbeeSPNode": "B672",
+		"atZigbeeTHNode": "B672",
+		"batch_execution": {
+			"result_folder_name": "Tester26_v6_BasicSmokeTest_Heating_26-Jan-2016_12-31-51",
+			"status": "No"
+		},
+		"clientList": {
+			"client1": "Android App",
+			"client2": "iOS App",
+			"client3": "Web App",
+			"client4": "Thermostat"
+		},
+		"currentAppVersion": "V6",
+		"currentEnvironment": "isopInternProd",
+		"listOfEnvironments": {
+			"isopBeta": {
+				"androidV5": {
+					"appActivity": "uk.co.centrica.hive.ui.base.HiveNavDrawerActivity",
+					"appFileName": "Hive-productPlayStoreISOPBeta-release-1.1.0.79.apk",
+					"appPackage": "uk.co.centrica.hive.isopbeta",
+					"deviceName": "Hive Android",
+					"platformVersion": "5.0"
+				},
+				"androidV6": {
+					"appActivity": "uk.co.centrica.hive.ui.base.HiveBottomDrawerActivity",
+					"appFileName": "Hive-productV6BetaInternalTesters-release-1.2.0.72.apk",
+					"appPackage": "uk.co.centrica.hive.v6.beta.internaltesters",
+					"deviceName": "HiveAndroid",
+					"platformVersion": "5.0"
+				},
+				"common": {
+					"appFolderName": "isopBeta",
+					"platformAPIURL": "https://api-beta.bgchprod.info",
+					"superToken": ""
+				},
+				"iOSV6": {
+					"appFileName": "Hive_new.ipa",
+					"bundleID": "uk.co.britishgas.hive",
+					"deviceName": "Test iPhone",
+					"platformVersion": "9.2",
+					"udid": "8d25ba7d4a8f82f1a32cc35d907ad2a928b6e808"
+				},
+				"webV5": {
+					"browserName": "Firefox",
+					"loginURL": "https://beta-my.hivehome.com/login"
+				},
+				"webV6": {
+					"browserName": "Firefox",
+					"loginURL": "https://beta-my.hivehome.com/login"
+				}
+			},
+			"isopInternProd": {
+				"androidV5": {
+					"appActivity": "uk.co.centrica.hive.ui.base.HiveBottomDrawerActivity",
+					"appFileName": "Hive-productV6Internalprod-release-1.2.0.10.apk",
+					"appPackage": "uk.co.centrica.hive.v6.internalprod",
+					"deviceName": "Hive Android",
+					"platformVersion": "5.0"
+				},
+				"androidV6": {
+					"appActivity": "uk.co.centrica.hive.ui.base.HiveBottomDrawerActivity",
+					"appFileName": "Hive-productV6Internalprod-release-1.2.0.72.apk",
+					"appPackage": "uk.co.centrica.hive.v6.internalprod",
+					"deviceName": "HiveAndroid",
+					"platformVersion": "5.0"
+				},
+				"common": {
+					"appFolderName": "isopInternProd",
+					"platformAPIURL": "https://api.internalprod.zoo.alertme.com",
+					"superToken": ""
+				},
+				"iOSV5": {
+					"appFileName": "Hive_73.ipa",
+					"bundleID": "uk.co.britishgas.hive",
+					"deviceName": "iPhone",
+					"platformVersion": "8.4",
+					"udid": "8d25ba7d4a8f82f1a32cc35d907ad2a928b6e808"
+				},
+				"iOSV6": {
+					"appFileName": "Hive_109 2.ipa",
+					"bundleID": "uk.co.britishgas.hive",
+					"deviceName": "Test iPhone",
+					"platformVersion": "8.4",
+					"udid": "8d25ba7d4a8f82f1a32cc35d907ad2a928b6e808"
+				},
+				"webV5": {
+					"browserName": "Firefox",
+					"loginURL": "https://intprod-my.hivehome.net/login"
+				},
+				"webV6": {
+					"browserName": "Firefox",
+					"loginURL": "http://intprod-my.hivehome.net/dashboard"
+				}
+			},
+			"isopProd": {
+				"androidV5": {
+					"appActivity": "uk.co.centrica.hive.ui.base.HiveBottomDrawerActivity",
+					"appFileName": "Hive-productV6Internalprod-release-1.2.0.10.apk",
+					"appPackage": "uk.co.centrica.hive.v6.internalprod",
+					"deviceName": "Hive Android",
+					"platformVersion": "5.0"
+				},
+				"androidV6": {
+					"appActivity": "uk.co.centrica.hive.ui.base.HiveBottomDrawerActivity",
+					"appFileName": "Hive-productPlayStore-release-1.2.0.35.apk",
+					"appPackage": "uk.co.centrica.hive",
+					"deviceName": "HiveAndroid",
+					"platformVersion": "5.1"
+				},
+				"common": {
+					"appFolderName": "isopProd",
+					"platformAPIURL": "https://api-prod.bgchprod.info",
+					"superToken": ""
+				},
+				"iOSV5": {
+					"appFileName": "Hive_73.ipa",
+					"bundleID": "uk.co.britishgas.hive",
+					"deviceName": "iPhone",
+					"platformVersion": "8.4",
+					"udid": "8d25ba7d4a8f82f1a32cc35d907ad2a928b6e808"
+				},
+				"iOSV6": {
+					"appFileName": "Hive_106.ipa",
+					"bundleID": "uk.co.britishgas.hive",
+					"deviceName": "iPhone",
+					"platformVersion": "8.4",
+					"udid": "8d25ba7d4a8f82f1a32cc35d907ad2a928b6e808"
+				},
+				"webV5": {
+					"browserName": "Firefox",
+					"loginURL": "https://my.hivehome.com/login"
+				},
+				"webV6": {
+					"browserName": "Firefox",
+					"loginURL": "https://my.hivehome.com/dashboard"
+				}
+			},
+			"isopStaging": {
+				"androidV5": {
+					"appActivity": "uk.co.centrica.hive.ui.base.HiveBottomDrawerActivity",
+					"appFileName": "Hive-productV6Internalprod-release-1.2.0.4.apk",
+					"appPackage": "uk.co.centrica.hive.v6.internalprod",
+					"deviceName": "Hive Test",
+					"platformVersion": "5.5"
+				},
+				"androidV6": {
+					"appActivity": "uk.co.centrica.hive.ui.base.HiveBottomDrawerActivity",
+					"appFileName": "Hive-productV6Internalprod-release-1.2.0.4.apk",
+					"appPackage": "uk.co.centrica.hive.v6.internalprod",
+					"deviceName": "Hive Test",
+					"platformVersion": "5.5"
+				},
+				"common": {
+					"appFolderName": "isopStaging",
+					"platformAPIURL": "https://api.internalprod.zoo.alertme.com",
+					"superToken": ""
+				},
+				"iOSV5": {
+					"appFileName": "Hive_73.ipa",
+					"bundleID": "uk.co.britishgas.hive",
+					"deviceName": "Test Android",
+					"platformVersion": "8.3"
+				},
+				"iOSV6": {
+					"appFileName": "Hive_73.ipa",
+					"bundleID": "uk.co.britishgas.hive",
+					"deviceName": "Test Android",
+					"platformVersion": "8.3"
+				},
+				"webV5": {
+					"browserName": "Firefox",
+					"loginURL": "https://intprod-my.hivehome.net/login"
+				},
+				"webV6": {
+					"browserName": "Firefox",
+					"loginURL": "https://intprod-my.hivehome.net/login"
+				}
+			},
+			"isopBetaUS": {
+				"androidV5": {
+					"appActivity": "uk.co.centrica.hive.ui.base.HiveNavDrawerActivity",
+					"appFileName": "Hive-productPlayStoreISOPBeta-release-1.1.0.79.apk",
+					"appPackage": "uk.co.centrica.hive.isopbeta",
+					"deviceName": "Hive Android",
+					"platformVersion": "5.0"
+				},
+				"androidV6": {
+					"appActivity": "uk.co.centrica.hive.ui.base.HiveBottomDrawerActivity",
+					"appFileName": "Hive-productV6BetaInternalTesters-release-1.2.0.72.apk",
+					"appPackage": "uk.co.centrica.hive.v6.beta.internaltesters",
+					"deviceName": "HiveAndroid",
+					"platformVersion": "5.0"
+				},
+				"common": {
+					"appFolderName": "isopBetaUS",
+					"platformAPIURL": "https://api.de-beta.nacho.tech:8443",
+					"superToken": ""
+				},
+				"iOSV6": {
+					"appFileName": "Hive_new.ipa",
+					"bundleID": "uk.co.britishgas.hive",
+					"deviceName": "Test iPhone",
+					"platformVersion": "9.2",
+					"udid": "8d25ba7d4a8f82f1a32cc35d907ad2a928b6e808"
+				},
+				"webV5": {
+					"browserName": "Firefox",
+					"loginURL": "https://beta-my.hivehome.com/login"
+				},
+				"webV6": {
+					"browserName": "Firefox",
+					"loginURL": "https://beta-my.hivehome.com/login"
+				}
+			}
+		},
+		"mainClient": "Web App",
+		"password": "Password1",
+		"resultFolderLabel": "BasicSmokeTest",
+		"secondClient": "Web App",
+		"secondClientValidateFlag": "NO",
+		"test_suite": "BasicSmokeTest_Heating",
+		"userName": "tester25_v6",
+		"validation": {
+			"checkInterval": "10",
+			"duration": "60",
+			"timeUnits": "seconds"
+		}
+	}
+}

@@ -1,0 +1,22 @@
+{
+    "TGStick": {
+        "nodeID": "0000",
+        "macID": "000D6F0004181F2B",
+        "name": "TGStick",
+        "type": "COO",
+        "endPoints": [],
+        "childNodes": [
+            "873E"
+        ]
+    },
+    "SLT4_1": {
+        "nodeID": "873E",
+        "macID": "001E5E09021994F1",
+        "name": "SLT4",
+        "type": "FFD",
+        "endPoints": [
+            "05"
+        ],
+        "childNodes": []
+    }
+}

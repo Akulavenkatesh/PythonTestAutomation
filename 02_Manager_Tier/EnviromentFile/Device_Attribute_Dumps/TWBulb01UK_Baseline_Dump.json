@@ -1,0 +1,375 @@
+{
+    "DeviceModelID": "TWBulb01UK",
+    "DeviceVersion": "11090002",
+    "ListOfEndPoints": {
+        "01": {
+            "EndPoint": "01",
+            "ListOfClusters": {
+                "0000_Basic Cluster": {
+                    "ClusterID": "0000",
+                    "ClusterName": "Basic Cluster",
+                    "ClusterType": "server",
+                    "ListOfAttributes": {
+                        "0000_zclVersion": {
+                            "AttributeID": "0000",
+                            "AttributeName": "zclVersion",
+                            "AttributeType": "20",
+                            "DefaultValue": "03",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        },
+                        "0001_applicationVersion": {
+                            "AttributeID": "0001",
+                            "AttributeName": "applicationVersion",
+                            "AttributeType": "20",
+                            "DefaultValue": "01",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        },
+                        "0002_stackVersion": {
+                            "AttributeID": "0002",
+                            "AttributeName": "stackVersion",
+                            "AttributeType": "20",
+                            "DefaultValue": "02",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        },
+                        "0003_hardwareVersion": {
+                            "AttributeID": "0003",
+                            "AttributeName": "hardwareVersion",
+                            "AttributeType": "20",
+                            "DefaultValue": "01",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        },
+                        "0004_manufacturerName": {
+                            "AttributeID": "0004",
+                            "AttributeName": "manufacturerName",
+                            "AttributeType": "42",
+                            "DefaultValue": "Aurora",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "0005_modelIdentifier": {
+                            "AttributeID": "0005",
+                            "AttributeName": "modelIdentifier",
+                            "AttributeType": "42",
+                            "DefaultValue": "TWBulb01UK",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        },
+                        "0006_dateCode": {
+                            "AttributeID": "0006",
+                            "AttributeName": "dateCode",
+                            "AttributeType": "42",
+                            "DefaultValue": "20160525",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        },
+                        "0007_powerSource": {
+                            "AttributeID": "0007",
+                            "AttributeName": "powerSource",
+                            "AttributeType": "30",
+                            "DefaultValue": "01",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        },
+                        "4000_*** Unknown attribute": {
+                            "AttributeID": "4000",
+                            "AttributeName": "*** Unknown attribute",
+                            "AttributeType": "42",
+                            "DefaultValue": "2.1",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        }
+                    }
+                },
+                "0003_Identify Cluster": {
+                    "ClusterID": "0003",
+                    "ClusterName": "Identify Cluster",
+                    "ClusterType": "server",
+                    "ListOfAttributes": {
+                        "0000_identifyTime": {
+                            "AttributeID": "0000",
+                            "AttributeName": "identifyTime",
+                            "AttributeType": "21",
+                            "DefaultValue": "0000",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        }
+                    }
+                },
+                "0004_Groups Cluster": {
+                    "ClusterID": "0004",
+                    "ClusterName": "Groups Cluster",
+                    "ClusterType": "server",
+                    "ListOfAttributes": {
+                        "0000_nameSupport": {
+                            "AttributeID": "0000",
+                            "AttributeName": "nameSupport",
+                            "AttributeType": "18",
+                            "DefaultValue": "00",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        }
+                    }
+                },
+                "0005_Scenes Cluster": {
+                    "ClusterID": "0005",
+                    "ClusterName": "Scenes Cluster",
+                    "ClusterType": "server",
+                    "ListOfAttributes": {
+                        "0000_sceneCount": {
+                            "AttributeID": "0000",
+                            "AttributeName": "sceneCount",
+                            "AttributeType": "20",
+                            "DefaultValue": "00",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        },
+                        "0001_currentScene": {
+                            "AttributeID": "0001",
+                            "AttributeName": "currentScene",
+                            "AttributeType": "20",
+                            "DefaultValue": "00",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        },
+                        "0002_currentGroup": {
+                            "AttributeID": "0002",
+                            "AttributeName": "currentGroup",
+                            "AttributeType": "21",
+                            "DefaultValue": "0000",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        },
+                        "0003_sceneValid": {
+                            "AttributeID": "0003",
+                            "AttributeName": "sceneValid",
+                            "AttributeType": "10",
+                            "DefaultValue": "00",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        },
+                        "0004_nameSupport": {
+                            "AttributeID": "0004",
+                            "AttributeName": "nameSupport",
+                            "AttributeType": "18",
+                            "DefaultValue": "00",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        },
+                        "0005_lastConfiguredBy": {
+                            "AttributeID": "0005",
+                            "AttributeName": "lastConfiguredBy",
+                            "AttributeType": "F0",
+                            "DefaultValue": "FFFFFFFFFFFFFFFF",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        }
+                    }
+                },
+                "0006_On/Off Cluster": {
+                    "ClusterID": "0006",
+                    "ClusterName": "On/Off Cluster",
+                    "ClusterType": "server",
+                    "ListOfAttributes": {
+                        "0000_onOff": {
+                            "AttributeID": "0000",
+                            "AttributeName": "onOff",
+                            "AttributeType": "10",
+                            "DefaultValue": "01",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        }
+                    }
+                },
+                "0008_Level Control Cluster": {
+                    "ClusterID": "0008",
+                    "ClusterName": "Level Control Cluster",
+                    "ClusterType": "server",
+                    "ListOfAttributes": {
+                        "0000_currentLevel": {
+                            "AttributeID": "0000",
+                            "AttributeName": "currentLevel",
+                            "AttributeType": "20",
+                            "DefaultValue": "FE",
+                            "ReportableConfigState": "FFFF,FFFF,FF"
+                        },
+                        "0010_onOffTransitionTime": {
+                            "AttributeID": "0010",
+                            "AttributeName": "onOffTransitionTime",
+                            "AttributeType": "21",
+                            "DefaultValue": "0003",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        }
+                    }
+                },
+                "0019_OTA Cluster": {
+                    "ClusterID": "0019",
+                    "ClusterName": "OTA Cluster",
+                    "ClusterType": "client",
+                    "ListOfAttributes": {
+                        "0000_upgradeServerId": {
+                            "AttributeID": "0000",
+                            "AttributeName": "upgradeServerId",
+                            "AttributeType": "F0",
+                            "DefaultValue": "0021ED000009054F",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        },
+                        "0001_file Offset": {
+                            "AttributeID": "0001",
+                            "AttributeName": "file Offset",
+                            "AttributeType": "23",
+                            "DefaultValue": "00000000",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        },
+                        "0002_current File Version": {
+                            "AttributeID": "0002",
+                            "AttributeName": "current File Version",
+                            "AttributeType": "23",
+                            "DefaultValue": "11090002",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        },
+                        "0006_image Upgrade Status": {
+                            "AttributeID": "0006",
+                            "AttributeName": "image Upgrade Status",
+                            "AttributeType": "30",
+                            "DefaultValue": "00",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        },
+                        "0007_manufacturerId": {
+                            "AttributeID": "0007",
+                            "AttributeName": "manufacturerId",
+                            "AttributeType": "21",
+                            "DefaultValue": "1168",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        },
+                        "0008_imageTypeId": {
+                            "AttributeID": "0008",
+                            "AttributeName": "imageTypeId",
+                            "AttributeType": "21",
+                            "DefaultValue": "0102",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        }
+                    }
+                },
+                "0300_Color Control Cluster": {
+                    "ClusterID": "0300",
+                    "ClusterName": "Color Control Cluster",
+                    "ClusterType": "server",
+                    "ListOfAttributes": {
+                        "0002_remainingTime": {
+                            "AttributeID": "0002",
+                            "AttributeName": "remainingTime",
+                            "AttributeType": "21",
+                            "DefaultValue": "0000",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        },
+                        "0003_currentX": {
+                            "AttributeID": "0003",
+                            "AttributeName": "currentX",
+                            "AttributeType": "21",
+                            "DefaultValue": "616B",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        },
+                        "0004_currentY": {
+                            "AttributeID": "0004",
+                            "AttributeName": "currentY",
+                            "AttributeType": "21",
+                            "DefaultValue": "607D",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        },
+                        "0007_colorTemperature": {
+                            "AttributeID": "0007",
+                            "AttributeName": "colorTemperature",
+                            "AttributeType": "21",
+                            "DefaultValue": "00FA",
+                            "ReportableConfigState": "FFFF,FFFF,FFFF"
+                        },
+                        "0008_colorMode": {
+                            "AttributeID": "0008",
+                            "AttributeName": "colorMode",
+                            "AttributeType": "30",
+                            "DefaultValue": "02",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        },
+                        "0010_numberOfPrimaries": {
+                            "AttributeID": "0010",
+                            "AttributeName": "numberOfPrimaries",
+                            "AttributeType": "20",
+                            "DefaultValue": "03",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        },
+                        "0011_primary1X": {
+                            "AttributeID": "0011",
+                            "AttributeName": "primary1X",
+                            "AttributeType": "21",
+                            "DefaultValue": "AE13",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        },
+                        "0012_primary1Y": {
+                            "AttributeID": "0012",
+                            "AttributeName": "primary1Y",
+                            "AttributeType": "21",
+                            "DefaultValue": "4F5B",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        },
+                        "0013_primaryIntensity": {
+                            "AttributeID": "0013",
+                            "AttributeName": "primaryIntensity",
+                            "AttributeType": "20",
+                            "DefaultValue": "54",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        },
+                        "0015_primary2X": {
+                            "AttributeID": "0015",
+                            "AttributeName": "primary2X",
+                            "AttributeType": "21",
+                            "DefaultValue": "1C28",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        },
+                        "0016_primary2Y": {
+                            "AttributeID": "0016",
+                            "AttributeName": "primary2Y",
+                            "AttributeType": "21",
+                            "DefaultValue": "D1EA",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        },
+                        "0017_primary2Intensity": {
+                            "AttributeID": "0017",
+                            "AttributeName": "primary2Intensity",
+                            "AttributeType": "20",
+                            "DefaultValue": "54",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        },
+                        "0019_primary3X": {
+                            "AttributeID": "0019",
+                            "AttributeName": "primary3X",
+                            "AttributeType": "21",
+                            "DefaultValue": "2147",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        },
+                        "001A_primary3Y": {
+                            "AttributeID": "001A",
+                            "AttributeName": "primary3Y",
+                            "AttributeType": "21",
+                            "DefaultValue": "0A3D",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        },
+                        "001B_primary3Intensity": {
+                            "AttributeID": "001B",
+                            "AttributeName": "primary3Intensity",
+                            "AttributeType": "20",
+                            "DefaultValue": "54",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        },
+                        "400A_*** Unknown Attribute": {
+                            "AttributeID": "400A",
+                            "AttributeName": "*** Unknown Attribute",
+                            "AttributeType": "19",
+                            "DefaultValue": "0010",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        },
+                        "400B_*** Unknown Attribute": {
+                            "AttributeID": "400B",
+                            "AttributeName": "*** Unknown Attribute",
+                            "AttributeType": "21",
+                            "DefaultValue": "0099",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        },
+                        "400C_*** Unknown Attribute": {
+                            "AttributeID": "400C",
+                            "AttributeName": "*** Unknown Attribute",
+                            "AttributeType": "21",
+                            "DefaultValue": "0172",
+                            "ReportableConfigState": "ZCL_UNREPORTABLE_ATTRIBUTE"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

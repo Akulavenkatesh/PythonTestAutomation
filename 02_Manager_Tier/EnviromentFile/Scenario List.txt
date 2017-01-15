@@ -1,0 +1,47 @@
+Feature: Validate the schedules for the central heating end point in the boiler module
+
+  Scenario Outline: SC-CH-SH01-01_Set the given default 'six' event schedule for the given day and verify the same for Central Heating
+    
+  Scenario Outline: SC-CH-SH02-01_Set the given customized 'six' event schedule for the given day and verify the same for Central Heating
+    
+  Scenario Outline: SC-CH-SH02-02_Set the given customized 'four' event schedule for the given day and verify the same for Central Heating
+ 
+  Scenario Outline: SC-CH-SH02-03_Set the given customized 'two' event schedule for the given day and verify the same for Central Heating
+   
+  Scenario Outline: SC-CH-SH04-01_Set the given 'six' event schedule with earliest possible event time for the given day of the week and verify the same for Central Heating
+    
+  Scenario Outline: SC-CH-SH04-02_Set the given 'four' event schedule with earliest possible event time for the given day of the week and verify the same for Central Heating
+    
+  Scenario Outline: SC-CH-SH04-03_Set the given 'two' event schedule with earliest possible event time for the given day of the week and verify the same for Central Heating
+   
+  Scenario Outline: SC-CH-SH05-01_Set the given 'six' event schedule with latest possible event time for the given day of the week and verify the same for Central Heating
+    
+  Scenario Outline: SC-CH-SH05-02_Set the given 'four' event schedule with latest possible event time for the given day of the week and verify the same for Central Heating
+   
+  Scenario Outline: SC-CH-SH05-03_Set the given 'two' event schedule with latest possible event time for the given day of the week and verify the same for Central Heating
+  
+  Scenario Outline: SC-CH-SH06-01_Set the given 'six' event schedule with 'two' consicutive 'frost' Target Temperature for the given day and verify the same for Central Heating
+   
+  Scenario Outline: SC-CH-SH06-02_Set the given 'four' event schedule with 'two' consicutive 'frost' Target Temperature for the given day and verify the same for Central Heating
+    
+  Scenario Outline: SC-CH-SH06-03_Set the given 'two' event schedule with 'two' consicutive 'frost' Target Temperature for the given day and verify the same for Central Heating
+    
+  Scenario Outline: SC-CH-SH07-01_Set the given 'six' event schedule with 'all' Target Temperature as 'frost' for the given day and verify the same for Central Heating
+    
+  Scenario Outline: SC-CH-SH07-02_Set the given 'four' event schedule with 'all' Target Temperature as 'frost' for the given day and verify the same for Central Heating
+   
+  Scenario Outline: SC-CH-SH07-03_Set the given 'two' event schedule with 'all' Target Temperature as 'frost' for the given day and verify the same for Central Heating
+   
+  Scenario Outline: SC-CH-SH08-01_Set the given 'six' event schedule with 'two' consicutive Target Temperature 'greater than Room Temperature' for the given day and verify the same for Central Heating
+   
+  Scenario Outline: SC-CH-SH08-02_Set the given 'four' event schedule with 'two' consicutive Target Temperature 'greater than Room Temperature' for the given day and verify the same for Central Heating
+    
+  Scenario Outline: SC-CH-SH08-03_Set the given 'two' event schedule with 'two' consicutive Target Temperature 'greater than Room Temperature' for the given day and verify the same for Central Heating
+   
+  Scenario Outline: SC-CH-SH09-01_Set the given 'six' event schedule with 'all' Target Temperature 'greater than Room Temperature' for the given day and verify the same for Central Heating
+    
+  Scenario Outline: SC-CH-SH09-02_Set the given 'four' event schedule with 'all' Target Temperature 'greater than Room Temperature' for the given day and verify the same for Central Heating
+    
+  Scenario Outline: SC-CH-SH09-03_Set the given 'two' event schedule with 'all' Target Temperature as 'greater than Room Temperature' for the given day and verify the same for Central Heating
+   
+   

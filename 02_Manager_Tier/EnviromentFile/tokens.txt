@@ -1,0 +1,10 @@
+isopTrial,apiUsername,'keith.gough@bgch.co.uk'isopTrial,apiPassword,'your password'isopTrial,url,'http://api.explore.zoo.bgchprod.info/api'isopTrial,imageList,[{'latestVersion':'','groupId':''}]isopStage,superToken,''isopStage,apiUsername,'ranga@yopmail.com'
+isopStage,apiPassword,'password1'
+isopStage,url,'https://api.staging.zoo.alertme.com/omnia'
+isopStage,imageList,[{'latestVersion':'','groupId':''}]isopBeta,superToken,''isopBeta,apiUsername,'flashtest4@yopmail.com'isopBeta,apiPassword,'password1'isopBeta,url,'http://api-beta.bgchprod.info/api'isopBeta,imageList,[{'latestVersion':'','groupId':''}]isopIntProd,superToken,''isopIntProd,apiUsername,'Android_N1_v6_single@yopmail.com'isopIntProd,apiPassword,'password2'isopIntProd,url,'https://api.internalprod.zoo.alertme.com'isopIntProd,imageList,[{'latestVersion':'','groupId':''}]
+
+isopDev,superToken,''
+isopDev,url,'http://api.dev.bgchprod.info/api'
+isopDev,imageList,[{'latestVersion':'','groupId':''}]
+
+

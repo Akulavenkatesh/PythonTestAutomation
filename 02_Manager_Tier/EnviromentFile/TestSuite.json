@@ -1,0 +1,20 @@
+{
+    'SLP2c_1':{
+        'TestSuite1':{
+        	'name': 'AAAAA',
+        	'command': 'behave --tags=test1'
+        }
+    },
+    'TGStick':{
+        'nodeID':'0000',
+        'endPoints':[
+            
+        ],
+        'macID':'0021ED000009054F',
+        'name':'TGStick',
+        'type':'COO',
+        'childNodes':[
+            'F4A3'
+        ]
+    }
+}

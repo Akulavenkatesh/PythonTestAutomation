@@ -1,0 +1,19 @@
+@BasicSmokeTest  - Basic Smoke test scenarios
+@FullSmokeTest  - Full Smoke test scenarios
+@Heating - Central Heating Scenarios
+@HotWater - Hot Water Scenarios
+@ScheduleTest - Schedule Scenarios
+@Verify - Verification Scenarios
+@Validate- Validation Scenarios
+@WholeWeek - Schedule Scenarios set for full week
+@Random - Random Schedule scenari
+@V5_App - V5 App Related scenarios
+@V6_App - V6 App related Scenarios
+@All_APP - Scenario that runs on All app
+@6_Event - Six Event Schedule scenarios
+@4_Event - Four Event Schedule scenarios
+@2_Event - Two Event Schedule scenarios
+@Device  - Device Scenarios
+@WebMobile - Web or Mobile Scenarios
+@All_Client - Scenarios that can run on all clients
+@NGD - NGD-WPS scenarios

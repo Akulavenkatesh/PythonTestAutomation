@@ -1,0 +1,654 @@
+{
+    "DeviceModelID": "SLR2",
+    "DeviceVersion": "08044640",
+    "ListOfEndPoints": {
+        "05": {
+            "EndPoint": "05",
+            "ListOfClusters": {
+                "0000_Basic Cluster": {
+                    "ClusterID": "0000",
+                    "ClusterName": "Basic Cluster",
+                    "ClusterType": "server",
+                    "ListOfAttributes": {
+                        "0000_zclVersion": {
+                            "AttributeID": "0000",
+                            "AttributeName": "zclVersion",
+                            "AttributeType": "20",
+                            "DefaultValue": "01",
+                            "ReportableConfigState": "FFFF,FFFF,FF"
+                        },
+                        "0001_applicationVersion": {
+                            "AttributeID": "0001",
+                            "AttributeName": "applicationVersion",
+                            "AttributeType": "20",
+                            "DefaultValue": "84",
+                            "ReportableConfigState": "FFFF,FFFF,FF"
+                        },
+                        "0002_stackVersion": {
+                            "AttributeID": "0002",
+                            "AttributeName": "stackVersion",
+                            "AttributeType": "20",
+                            "DefaultValue": "04",
+                            "ReportableConfigState": "FFFF,FFFF,FF"
+                        },
+                        "0003_hardwareVersion": {
+                            "AttributeID": "0003",
+                            "AttributeName": "hardwareVersion",
+                            "AttributeType": "20",
+                            "DefaultValue": "01",
+                            "ReportableConfigState": "FFFF,FFFF,FF"
+                        },
+                        "0004_manufacturerName": {
+                            "AttributeID": "0004",
+                            "AttributeName": "manufacturerName",
+                            "AttributeType": "42",
+                            "DefaultValue": "Computime",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "0005_modelIdentifier": {
+                            "AttributeID": "0005",
+                            "AttributeName": "modelIdentifier",
+                            "AttributeType": "42",
+                            "DefaultValue": "SLR2",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "0006_dateCode": {
+                            "AttributeID": "0006",
+                            "AttributeName": "dateCode",
+                            "AttributeType": "42",
+                            "DefaultValue": "20160722",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "0007_powerSource": {
+                            "AttributeID": "0007",
+                            "AttributeName": "powerSource",
+                            "AttributeType": "30",
+                            "DefaultValue": "01",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "0010_locationDescription": {
+                            "AttributeID": "0010",
+                            "AttributeName": "locationDescription",
+                            "AttributeType": "42",
+                            "DefaultValue": "",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "0013_alarmMask": {
+                            "AttributeID": "0013",
+                            "AttributeName": "alarmMask",
+                            "AttributeType": "18",
+                            "DefaultValue": "00",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        }
+                    }
+                },
+                "0003_Identify Cluster": {
+                    "ClusterID": "0003",
+                    "ClusterName": "Identify Cluster",
+                    "ClusterType": "server",
+                    "ListOfAttributes": {
+                        "0000_identifyTime": {
+                            "AttributeID": "0000",
+                            "AttributeName": "identifyTime",
+                            "AttributeType": "21",
+                            "DefaultValue": "0000",
+                            "ReportableConfigState": "FFFF,FFFF,FFFF"
+                        }
+                    }
+                },
+                "0009_Alarms Cluster": {
+                    "ClusterID": "0009",
+                    "ClusterName": "Alarms Cluster",
+                    "ClusterType": "server",
+                    "ListOfAttributes": {
+                        "0000_alarmCount": {
+                            "AttributeID": "0000",
+                            "AttributeName": "alarmCount",
+                            "AttributeType": "21",
+                            "DefaultValue": "0000",
+                            "ReportableConfigState": "FFFF,FFFF,FFFF"
+                        }
+                    }
+                },
+                "000A_Time Cluster": {
+                    "ClusterID": "000A",
+                    "ClusterName": "Time Cluster",
+                    "ClusterType": "client",
+                    "ListOfAttributes": {}
+                },
+                "0019_OTA Cluster": {
+                    "ClusterID": "0019",
+                    "ClusterName": "OTA Cluster",
+                    "ClusterType": "client",
+                    "ListOfAttributes": {
+                        "0000_upgradeServerId": {
+                            "AttributeID": "0000",
+                            "AttributeName": "upgradeServerId",
+                            "AttributeType": "F0",
+                            "DefaultValue": "0021ED000001F8DB",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "0001_file Offset": {
+                            "AttributeID": "0001",
+                            "AttributeName": "file Offset",
+                            "AttributeType": "23",
+                            "DefaultValue": "0002AE3E",
+                            "ReportableConfigState": "FFFF,FFFF,FFFFFFFF"
+                        },
+                        "0002_current File Version": {
+                            "AttributeID": "0002",
+                            "AttributeName": "current File Version",
+                            "AttributeType": "23",
+                            "DefaultValue": "08044640",
+                            "ReportableConfigState": "FFFF,FFFF,FFFFFFFF"
+                        },
+                        "0003_current ZigBee Stack Version": {
+                            "AttributeID": "0003",
+                            "AttributeName": "current ZigBee Stack Version",
+                            "AttributeType": "21",
+                            "DefaultValue": "0002",
+                            "ReportableConfigState": "FFFF,FFFF,FFFF"
+                        },
+                        "0004_downloaded File Version": {
+                            "AttributeID": "0004",
+                            "AttributeName": "downloaded File Version",
+                            "AttributeType": "23",
+                            "DefaultValue": "08044640",
+                            "ReportableConfigState": "FFFF,FFFF,FFFFFFFF"
+                        },
+                        "0005_downloaded ZigBee Stack Version": {
+                            "AttributeID": "0005",
+                            "AttributeName": "downloaded ZigBee Stack Version",
+                            "AttributeType": "21",
+                            "DefaultValue": "0000",
+                            "ReportableConfigState": "FFFF,FFFF,FFFF"
+                        },
+                        "0006_image Upgrade Status": {
+                            "AttributeID": "0006",
+                            "AttributeName": "image Upgrade Status",
+                            "AttributeType": "30",
+                            "DefaultValue": "00",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "0007_manufacturerId": {
+                            "AttributeID": "0007",
+                            "AttributeName": "manufacturerId",
+                            "AttributeType": "21",
+                            "DefaultValue": "1039",
+                            "ReportableConfigState": "FFFF,FFFF,FFFF"
+                        },
+                        "0008_imageTypeId": {
+                            "AttributeID": "0008",
+                            "AttributeName": "imageTypeId",
+                            "AttributeType": "21",
+                            "DefaultValue": "0202",
+                            "ReportableConfigState": "FFFF,FFFF,FFFF"
+                        }
+                    }
+                },
+                "0201_Thermostat Cluster": {
+                    "ClusterID": "0201",
+                    "ClusterName": "Thermostat Cluster",
+                    "ClusterType": "server",
+                    "ListOfAttributes": {
+                        "0000_localTemperature": {
+                            "AttributeID": "0000",
+                            "AttributeName": "localTemperature",
+                            "AttributeType": "29",
+                            "DefaultValue": "0A7E",
+                            "ReportableConfigState": "FFFF,FFFF,8000"
+                        },
+                        "0011_occupiedCoolingSetpoint": {
+                            "AttributeID": "0011",
+                            "AttributeName": "occupiedCoolingSetpoint",
+                            "AttributeType": "29",
+                            "DefaultValue": "0000",
+                            "ReportableConfigState": "FFFF,FFFF,8000"
+                        },
+                        "0012_occupiedHeatingSetpoint": {
+                            "AttributeID": "0012",
+                            "AttributeName": "occupiedHeatingSetpoint",
+                            "AttributeType": "29",
+                            "DefaultValue": "0064",
+                            "ReportableConfigState": "FFFF,FFFF,8000"
+                        },
+                        "0015_minHeatSetpointLimit": {
+                            "AttributeID": "0015",
+                            "AttributeName": "minHeatSetpointLimit",
+                            "AttributeType": "29",
+                            "DefaultValue": "01F4",
+                            "ReportableConfigState": "FFFF,FFFF,8000"
+                        },
+                        "0016_maxHeatSetpointLimit": {
+                            "AttributeID": "0016",
+                            "AttributeName": "maxHeatSetpointLimit",
+                            "AttributeType": "29",
+                            "DefaultValue": "0C80",
+                            "ReportableConfigState": "FFFF,FFFF,8000"
+                        },
+                        "001B_controlSequenceOfOperation": {
+                            "AttributeID": "001B",
+                            "AttributeName": "controlSequenceOfOperation",
+                            "AttributeType": "30",
+                            "DefaultValue": "02",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "001C_systemMode": {
+                            "AttributeID": "001C",
+                            "AttributeName": "systemMode",
+                            "AttributeType": "30",
+                            "DefaultValue": "00",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "001D_alarmMask": {
+                            "AttributeID": "001D",
+                            "AttributeName": "alarmMask",
+                            "AttributeType": "18",
+                            "DefaultValue": "00",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "0020_startOfWeek": {
+                            "AttributeID": "0020",
+                            "AttributeName": "startOfWeek",
+                            "AttributeType": "30",
+                            "DefaultValue": "01",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "0021_numberOfWeeklyTransitions": {
+                            "AttributeID": "0021",
+                            "AttributeName": "numberOfWeeklyTransitions",
+                            "AttributeType": "20",
+                            "DefaultValue": "2A",
+                            "ReportableConfigState": "FFFF,FFFF,FF"
+                        },
+                        "0022_numberOfDailyTransitions": {
+                            "AttributeID": "0022",
+                            "AttributeName": "numberOfDailyTransitions",
+                            "AttributeType": "20",
+                            "DefaultValue": "06",
+                            "ReportableConfigState": "FFFF,FFFF,FF"
+                        },
+                        "0023_temperatureSetpointHold": {
+                            "AttributeID": "0023",
+                            "AttributeName": "temperatureSetpointHold",
+                            "AttributeType": "30",
+                            "DefaultValue": "00",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "0024_temperatureSetpointHoldDuration": {
+                            "AttributeID": "0024",
+                            "AttributeName": "temperatureSetpointHoldDuration",
+                            "AttributeType": "21",
+                            "DefaultValue": "0000",
+                            "ReportableConfigState": "FFFF,FFFF,FFFF"
+                        },
+                        "0029_thermostatRunningState": {
+                            "AttributeID": "0029",
+                            "AttributeName": "thermostatRunningState",
+                            "AttributeType": "19",
+                            "DefaultValue": "0000",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        }
+                    }
+                },
+                "0402_Temperature Measurement Cluster": {
+                    "ClusterID": "0402",
+                    "ClusterName": "Temperature Measurement Cluster",
+                    "ClusterType": "client",
+                    "ListOfAttributes": {}
+                },
+                "FD00_BG Cluster": {
+                    "ClusterID": "FD00",
+                    "ClusterName": "BG Cluster",
+                    "ClusterType": "server",
+                    "ListOfAttributes": {
+                        "0000_algorithmModeSelector": {
+                            "AttributeID": "0000",
+                            "AttributeName": "algorithmModeSelector",
+                            "AttributeType": "18",
+                            "DefaultValue": "00",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "0001_delayCompensationTime": {
+                            "AttributeID": "0001",
+                            "AttributeName": "delayCompensationTime",
+                            "AttributeType": "21",
+                            "DefaultValue": "0000",
+                            "ReportableConfigState": "FFFF,FFFF,FFFF"
+                        },
+                        "0002_delayCompensatedTemperature": {
+                            "AttributeID": "0002",
+                            "AttributeName": "delayCompensatedTemperature",
+                            "AttributeType": "29",
+                            "DefaultValue": "0000",
+                            "ReportableConfigState": "FFFF,FFFF,8000"
+                        },
+                        "0003_propThreshold": {
+                            "AttributeID": "0003",
+                            "AttributeName": "propThreshold",
+                            "AttributeType": "20",
+                            "DefaultValue": "00",
+                            "ReportableConfigState": "FFFF,FFFF,FF"
+                        },
+                        "0004_integral": {
+                            "AttributeID": "0004",
+                            "AttributeName": "integral",
+                            "AttributeType": "20",
+                            "DefaultValue": "00",
+                            "ReportableConfigState": "FFFF,FFFF,FF"
+                        },
+                        "0005_rateEstimate": {
+                            "AttributeID": "0005",
+                            "AttributeName": "rateEstimate",
+                            "AttributeType": "21",
+                            "DefaultValue": "0000",
+                            "ReportableConfigState": "FFFF,FFFF,FFFF"
+                        },
+                        "0006_minOffCycles": {
+                            "AttributeID": "0006",
+                            "AttributeName": "minOffCycles",
+                            "AttributeType": "20",
+                            "DefaultValue": "03",
+                            "ReportableConfigState": "FFFF,FFFF,FF"
+                        },
+                        "0007_optStartMax": {
+                            "AttributeID": "0007",
+                            "AttributeName": "optStartMax",
+                            "AttributeType": "20",
+                            "DefaultValue": "3C",
+                            "ReportableConfigState": "FFFF,FFFF,FF"
+                        },
+                        "0008_minDeltaT": {
+                            "AttributeID": "0008",
+                            "AttributeName": "minDeltaT",
+                            "AttributeType": "20",
+                            "DefaultValue": "32",
+                            "ReportableConfigState": "FFFF,FFFF,FF"
+                        },
+                        "0009_advanceOffset": {
+                            "AttributeID": "0009",
+                            "AttributeName": "advanceOffset",
+                            "AttributeType": "20",
+                            "DefaultValue": "0F",
+                            "ReportableConfigState": "FFFF,FFFF,FF"
+                        },
+                        "000A_advanceFactor": {
+                            "AttributeID": "000A",
+                            "AttributeName": "advanceFactor",
+                            "AttributeType": "20",
+                            "DefaultValue": "64",
+                            "ReportableConfigState": "FFFF,FFFF,FF"
+                        },
+                        "0011_systemConfiguration": {
+                            "AttributeID": "0011",
+                            "AttributeName": "systemConfiguration",
+                            "AttributeType": "30",
+                            "DefaultValue": "00",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "0020_holidayModeEnabled": {
+                            "AttributeID": "0020",
+                            "AttributeName": "holidayModeEnabled",
+                            "AttributeType": "30",
+                            "DefaultValue": "00",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "0021_holidayModeActive": {
+                            "AttributeID": "0021",
+                            "AttributeName": "holidayModeActive",
+                            "AttributeType": "30",
+                            "DefaultValue": "00",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "0022_holidayStartDate": {
+                            "AttributeID": "0022",
+                            "AttributeName": "holidayStartDate",
+                            "AttributeType": "42",
+                            "DefaultValue": "",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "0023_holidayStartTime": {
+                            "AttributeID": "0023",
+                            "AttributeName": "holidayStartTime",
+                            "AttributeType": "21",
+                            "DefaultValue": "FFFF",
+                            "ReportableConfigState": "FFFF,FFFF,FFFF"
+                        },
+                        "0024_holidayEndDate": {
+                            "AttributeID": "0024",
+                            "AttributeName": "holidayEndDate",
+                            "AttributeType": "42",
+                            "DefaultValue": "",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "0025_holidayEndTime": {
+                            "AttributeID": "0025",
+                            "AttributeName": "holidayEndTime",
+                            "AttributeType": "21",
+                            "DefaultValue": "FFFF",
+                            "ReportableConfigState": "FFFF,FFFF,FFFF"
+                        },
+                        "0026_holidaySetpoint": {
+                            "AttributeID": "0026",
+                            "AttributeName": "holidaySetpoint",
+                            "AttributeType": "29",
+                            "DefaultValue": "02BC",
+                            "ReportableConfigState": "FFFF,FFFF,8000"
+                        },
+                        "0027_previousHeatMode": {
+                            "AttributeID": "0027",
+                            "AttributeName": "previousHeatMode",
+                            "AttributeType": "30",
+                            "DefaultValue": "00",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "0028_previousWaterMode": {
+                            "AttributeID": "0028",
+                            "AttributeName": "previousWaterMode",
+                            "AttributeType": "30",
+                            "DefaultValue": "00",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "0029_previousHeatSetpoint": {
+                            "AttributeID": "0029",
+                            "AttributeName": "previousHeatSetpoint",
+                            "AttributeType": "29",
+                            "DefaultValue": "FFFF",
+                            "ReportableConfigState": "FFFF,FFFF,8000"
+                        },
+                        "0030_firstScheduleSet": {
+                            "AttributeID": "0030",
+                            "AttributeName": "firstScheduleSet",
+                            "AttributeType": "30",
+                            "DefaultValue": "00",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "0031_frostProtectionSetpoint": {
+                            "AttributeID": "0031",
+                            "AttributeName": "frostProtectionSetpoint",
+                            "AttributeType": "29",
+                            "DefaultValue": "02BC",
+                            "ReportableConfigState": "FFFF,FFFF,8000"
+                        }
+                    }
+                }
+            }
+        },
+        "06": {
+            "EndPoint": "06",
+            "ListOfClusters": {
+                "0201_Thermostat Cluster": {
+                    "ClusterID": "0201",
+                    "ClusterName": "Thermostat Cluster",
+                    "ClusterType": "server",
+                    "ListOfAttributes": {
+                        "0000_localTemperature": {
+                            "AttributeID": "0000",
+                            "AttributeName": "localTemperature",
+                            "AttributeType": "29",
+                            "DefaultValue": "0000",
+                            "ReportableConfigState": "FFFF,FFFF,8000"
+                        },
+                        "0011_occupiedCoolingSetpoint": {
+                            "AttributeID": "0011",
+                            "AttributeName": "occupiedCoolingSetpoint",
+                            "AttributeType": "29",
+                            "DefaultValue": "0A28",
+                            "ReportableConfigState": "FFFF,FFFF,8000"
+                        },
+                        "0012_occupiedHeatingSetpoint": {
+                            "AttributeID": "0012",
+                            "AttributeName": "occupiedHeatingSetpoint",
+                            "AttributeType": "29",
+                            "DefaultValue": "0C80",
+                            "ReportableConfigState": "FFFF,FFFF,8000"
+                        },
+                        "0015_minHeatSetpointLimit": {
+                            "AttributeID": "0015",
+                            "AttributeName": "minHeatSetpointLimit",
+                            "AttributeType": "29",
+                            "DefaultValue": "05DC",
+                            "ReportableConfigState": "FFFF,FFFF,8000"
+                        },
+                        "0016_maxHeatSetpointLimit": {
+                            "AttributeID": "0016",
+                            "AttributeName": "maxHeatSetpointLimit",
+                            "AttributeType": "29",
+                            "DefaultValue": "0BB8",
+                            "ReportableConfigState": "FFFF,FFFF,8000"
+                        },
+                        "001B_controlSequenceOfOperation": {
+                            "AttributeID": "001B",
+                            "AttributeName": "controlSequenceOfOperation",
+                            "AttributeType": "30",
+                            "DefaultValue": "04",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "001C_systemMode": {
+                            "AttributeID": "001C",
+                            "AttributeName": "systemMode",
+                            "AttributeType": "30",
+                            "DefaultValue": "00",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "001D_alarmMask": {
+                            "AttributeID": "001D",
+                            "AttributeName": "alarmMask",
+                            "AttributeType": "18",
+                            "DefaultValue": "00",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "0020_startOfWeek": {
+                            "AttributeID": "0020",
+                            "AttributeName": "startOfWeek",
+                            "AttributeType": "30",
+                            "DefaultValue": "01",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "0021_numberOfWeeklyTransitions": {
+                            "AttributeID": "0021",
+                            "AttributeName": "numberOfWeeklyTransitions",
+                            "AttributeType": "20",
+                            "DefaultValue": "2A",
+                            "ReportableConfigState": "FFFF,FFFF,FF"
+                        },
+                        "0022_numberOfDailyTransitions": {
+                            "AttributeID": "0022",
+                            "AttributeName": "numberOfDailyTransitions",
+                            "AttributeType": "20",
+                            "DefaultValue": "06",
+                            "ReportableConfigState": "FFFF,FFFF,FF"
+                        },
+                        "0023_temperatureSetpointHold": {
+                            "AttributeID": "0023",
+                            "AttributeName": "temperatureSetpointHold",
+                            "AttributeType": "30",
+                            "DefaultValue": "00",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        },
+                        "0024_temperatureSetpointHoldDuration": {
+                            "AttributeID": "0024",
+                            "AttributeName": "temperatureSetpointHoldDuration",
+                            "AttributeType": "21",
+                            "DefaultValue": "0000",
+                            "ReportableConfigState": "FFFF,FFFF,FFFF"
+                        },
+                        "0029_thermostatRunningState": {
+                            "AttributeID": "0029",
+                            "AttributeName": "thermostatRunningState",
+                            "AttributeType": "19",
+                            "DefaultValue": "0000",
+                            "ReportableConfigState": "FFFF,FFFF,"
+                        }
+                    }
+                }
+            }
+        },
+        "07": {
+            "EndPoint": "07",
+            "ListOfClusters": {
+                "0402_Temperature Measurement Cluster": {
+                    "ClusterID": "0402",
+                    "ClusterName": "Temperature Measurement Cluster",
+                    "ClusterType": "server",
+                    "ListOfAttributes": {
+                        "0000_measuredValue": {
+                            "AttributeID": "0000",
+                            "AttributeName": "measuredValue",
+                            "AttributeType": "29",
+                            "DefaultValue": "0000",
+                            "ReportableConfigState": "FFFF,FFFF,8000"
+                        },
+                        "0001_minMeasuredValue": {
+                            "AttributeID": "0001",
+                            "AttributeName": "minMeasuredValue",
+                            "AttributeType": "29",
+                            "DefaultValue": "0000",
+                            "ReportableConfigState": "FFFF,FFFF,8000"
+                        },
+                        "0002_maxMeasuredValue": {
+                            "AttributeID": "0002",
+                            "AttributeName": "maxMeasuredValue",
+                            "AttributeType": "29",
+                            "DefaultValue": "1194",
+                            "ReportableConfigState": "FFFF,FFFF,8000"
+                        }
+                    }
+                }
+            }
+        },
+        "08": {
+            "EndPoint": "08",
+            "ListOfClusters": {
+                "0402_Temperature Measurement Cluster": {
+                    "ClusterID": "0402",
+                    "ClusterName": "Temperature Measurement Cluster",
+                    "ClusterType": "server",
+                    "ListOfAttributes": {
+                        "0000_measuredValue": {
+                            "AttributeID": "0000",
+                            "AttributeName": "measuredValue",
+                            "AttributeType": "29",
+                            "DefaultValue": "0000",
+                            "ReportableConfigState": "FFFF,FFFF,8000"
+                        },
+                        "0001_minMeasuredValue": {
+                            "AttributeID": "0001",
+                            "AttributeName": "minMeasuredValue",
+                            "AttributeType": "29",
+                            "DefaultValue": "0000",
+                            "ReportableConfigState": "FFFF,FFFF,8000"
+                        },
+                        "0002_maxMeasuredValue": {
+                            "AttributeID": "0002",
+                            "AttributeName": "maxMeasuredValue",
+                            "AttributeType": "29",
+                            "DefaultValue": "1194",
+                            "ReportableConfigState": "FFFF,FFFF,8000"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

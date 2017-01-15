@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+         <meta charset='UTF-8'>
+         <title>Hive - Automation Execution Results Summary</title>
+<style type='text/css'> 
+			 body { 
+				 background-color: #000000; 
+				 font-family: Verdana, Geneva, sans-serif; 
+				 text-align: center; 
+			 } 
+ 
+			 small { 
+				 font-size: 0.8em; 
+			 } 
+ 
+			 table { 
+				 border: 3px solid #FFFFFF; 
+				 border-collapse: collapse; 
+				 border-spacing: 0px; 
+				 width: 1200px; 
+				 margin-left: auto; 
+				 margin-right: auto; 
+			 } 
+			 .innertable { 
+				 border: 3px solid #FFFFFF; 
+				 border-collapse: collapse; 
+				 border-spacing: 0px; 
+				 width: 744px; 
+				 margin-left: auto; 
+				 margin-right: auto;
+				 text-align: center;  
+			 } 
+ 			.lefttable { 
+				 border: 3px solid #FFFFFF; 
+				 border-collapse: collapse; 
+				 border-spacing: 0px; 
+				 width: 744px; 
+				 margin-left: auto; 
+				 margin-right: auto;
+				 text-align: left;  
+			 } 
+			 tr.heading { 
+				 background-color: #5792FF; 
+				 color: #000000; 
+				 font-size: 0.9em; 
+				 font-weight: bold; 
+			 } 
+ 
+			 tr.subheading { 
+				 background-color: #002C7E; 
+				 color: #FFFFFF; 
+				 font-weight: bold; 		
+				 font-size: 0.9em; 
+				 text-align: justify; 
+			 } 
+ 
+			 tr.section { 
+				 background-color: #47747A; 
+				 color: #000000; 
+				 cursor: pointer; 
+				 font-weight: bold; 
+				 font-size: 0.9em; 
+				 text-align: justify; 
+			 } 
+ 
+			 tr.subsection { 
+				 cursor: pointer; 
+			 } 
+ 
+			 tr.content { 
+				 background-color: #C6FFEC; 
+				 color: #000000; 
+				 font-size: 0.9em; 
+				 display: table-row; 
+			 } 
+ 
+			 td, th { 
+				 padding: 4px; 
+				 text-align: inherit\0/; 
+			 } 
+ 
+			 td.justified { 
+				 text-align: Centre; 
+			 } 
+ 
+			 td.pass { 
+				 font-weight: bold; 
+				 color: #3DB700; 
+			 } 
+ 
+			 td.fail { 
+				 font-weight: bold; 
+				 color: red; 
+			 } 
+ 
+			 td.done, td.screenshot { 
+				 font-weight: bold; 
+				 color: black; 
+			 } 
+			 
+			  td.inprogress{ 
+				 font-weight: bold; 
+				 color: orange; 
+			 } 
+ 
+			 td.debug { 
+				 font-weight: bold; 
+				 color: blue; 
+			 } 
+ 
+			 td.warning { 
+				 font-weight: bold; 
+				 color: orange; 
+			 } 
+		 </style>  
+ 
+		 <script> 
+			 function toggleMenu(objID) { 
+				 if (!document.getElementById) return; 
+				 var ob = document.getElementById(objID).style; 
+				 if(ob.display === 'none') { 
+					 try { 
+						 ob.display='table-row-group'; 
+					 } catch(ex) { 
+						 ob.display='block'; 
+					 } 
+				 } 
+				 else { 
+					 ob.display='none'; 
+				 } 
+			 } 
+			 function toggleSubMenu(objId) { 
+				 for(i=1; i<10000; i++) { 
+					 var ob = document.getElementById(objId.concat(i)); 
+					 if(ob === null) { 
+						 break; 
+					 } 
+					 if(ob.style.display === 'none') { 
+						 try { 
+							 ob.style.display='table-row'; 
+						 } catch(ex) { 
+							 ob.style.display='block'; 
+						 } 
+					 } 
+					 else { 
+						 ob.style.display='none'; 
+					 } 
+				 } 
+			 } 
+		 </script> 
+		 
+		 
+</head>
+<body>
+<table id='header'>
+<colgroup>
+<col style='width: 25%' />
+<col style='width: 25%' />
+<col style='width: 25%' />
+<col style='width: 25%' />
+</colgroup>
+<thead>
+<tr class='heading'>
+<th colspan='4' style='font-family:Copperplate Gothic Bold; font-size:1.4em;'>
+Hive -  Automation Execution Result Summary
+</th>
+</tr>
+<tr class='subheading'>
+<th>&nbsp;Date&nbsp;&&nbsp;Time</th>
+<th>&nbsp;:&nbsp;01-Aug-2015 10:33:13</th>
+<th>&nbsp;OnError</th>
+<th>&nbsp;:&nbsp;Exit Test</th>
+</tr>
+<tr class='subheading'>
+<th>&nbsp;Application</th>
+<th>&nbsp;:&nbsp;Hive</th>
+<th>&nbsp;Environment</th>
+<th>&nbsp;:&nbsp;Beta_Env</th>
+</tr>
+<tr class='subheading'>
+<th>&nbsp;HUB Model</th>
+<th>&nbsp;:&nbsp;NANO1</th>
+<th>&nbsp;HUB Version</th>
+<th>&nbsp;:&nbsp;1.0.0-4251-0.0</th>
+</tr>
+</thead>
+</table>
+<table id='main'>
+<colgroup>
+<col style='width: 10%' />
+<col style='width: 10%' />
+<col style='width: 10%' />
+<col style='width: 44%' />
+<col style='width: 16%' />
+<col style='width: 10%' />
+</colgroup>
+<thead>
+<tr class='heading'>
+<th>Tag</th>
+<th>Feature_Filename</th>
+<th>Scenario_ID</th>
+<th>Scenario_Description</th>
+<th>Execution_Time</th>
+<th>Test_Status</th>
+</tr>
+</thead>
+<tr class='content' >
+<td class='justified'>BasicSmokeTestSC-HW-MC01HotWaterModeTestAll_ClientV6_AppNGD</td>
+<td class='justified'>11_Device_Web_Mobile/Water_ModeValidation</td>
+<td class='justified'><a href='./HTML/Hive-Beta_EnvBasicSmokeTestSC-HW-MC01HotWaterModeTestAll_ClientV6_AppNGD_SC-HW-MC01.HTML' target='about_blank'>SC-HW-MC01</a></td>
+<td class='justified'>SC-HW-MC01_Validate the Mode change for Hot Water on the Boiler Module </td>
+<td>6 minute(s), 17 seconds</td>
+<td class='fail'>FAILED</td>
+</tr>
+
+<tr class='content' >
+<td class='justified'>BasicSmokeTestSC-HW-SH01-01HotWaterScheduleTest6_EventVerifyAll_ClientAll_App</td>
+<td class='justified'>11_Device_Web_Mobile/Water_SceduleValidation-01_02_04_05</td>
+<td class='justified'><a href='./HTML/Hive-Beta_EnvBasicSmokeTestSC-HW-SH01-01HotWaterScheduleTest6_EventVerifyAll_ClientAll_App_SC-HW-SH01-01.HTML' target='about_blank'>SC-HW-SH01-01</a></td>
+<td class='justified'>SC-HW-SH01-01_Set the given default 'six' event schedule for the given day and verify the same for Hot Water </td>
+<td>4 minute(s), 0 seconds</td>
+<td class='fail'>FAILED</td>
+</tr>
+
+<tr class='content' >
+<td class='justified'>BasicSmokeTestSC-HW-SH02-02HotWaterScheduleTest4_EventVerifyAll_ClientAll_App</td>
+<td class='justified'>11_Device_Web_Mobile/Water_SceduleValidation-01_02_04_05</td>
+<td class='justified'><a href='./HTML/Hive-Beta_EnvBasicSmokeTestSC-HW-SH02-02HotWaterScheduleTest4_EventVerifyAll_ClientAll_App_SC-HW-SH02-02.HTML' target='about_blank'>SC-HW-SH02-02</a></td>
+<td class='justified'>SC-HW-SH02-02_Set the given customized 'four' event schedule for the given day and verify the same for Hot Water </td>
+<td>5 minute(s), 58 seconds</td>
+<td class='fail'>FAILED</td>
+</tr>
+
+</tbody>
+</table>
+<table>
+<script type='text/javascript'>
+window.onload = function () {
+CanvasJS.addColorSet('chartshades',
+[//colorSet Array
+'lightgreen',
+'red'           
+]);
+var chart = new CanvasJS.Chart('chartContainer',
+{
+colorSet: 'chartshades',
+zoomEnabled: true,
+title:{
+fontColor: '#C6FFEC',
+text: 'Execution Status'
+},
+animationEnabled: true,
+backgroundColor: 'black',
+legend:{
+fontColor: '#C6FFEC',
+verticalAlign: 'bottom',
+horizontalAlign: 'center'
+},data: [{        
+indexLabelFontSize: 20,
+indexLabelFontFamily: 'Monospace',     
+indexLabelFontColor: '#C6FFEC', 
+indexLabelLineColor: '#C6FFEC',     
+indexLabelPlacement: 'auto',
+type: 'pie',       
+showInLegend: true,
+toolTipContent: '{y} - <strong>#percent%</strong>',
+dataPoints: [
+{  y: 0, legendText:'PASS'},
+{  y: 3, legendText:'FAIL' , indexLabel: '{y}'}
+]}]});chart.render();}
+</script>
+<script type='text/javascript' src='./Screenshot/canvasjs.min.js'></script>
+<tr  class='content' ><td><div id='chartContainer' style='height: 300px; width: 100%;'></div></td></tr></table>
+<table id='footer'>
+<colgroup>
+<col style='width: 25%' />
+<col style='width: 25%' />
+<col style='width: 25%' />
+<col style='width: 25%' />
+</colgroup>
+<tfoot>
+<tr class='heading'>
+<th colspan='4'>Total Duration: 16 minute(s), 16 seconds</th>
+</tr>
+<tr class='subheading'>
+<td class='pass'>&nbsp;Tests passed</td>
+<td class='pass'>&nbsp;: 0</td>
+<td class='fail'>&nbsp;Tests failed</td>
+<td class='fail'>&nbsp;: 3</td>
+</tr>
+</tfoot>
+</table>
+</body>
+</html>

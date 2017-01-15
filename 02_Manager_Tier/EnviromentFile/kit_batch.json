@@ -1,0 +1,436 @@
+{
+    "kit_batch": {
+        "batch_execution": {
+            "current_batch_result_folder": "",
+            "current_kit_execution_time": "44 minute(s), 16 seconds",
+            "current_kit_result_summary_path": "BasicSmokeTest_23-Oct-2015_10-47-32/Hive-Beta_Env_Execution_Summary.HTML",
+            "current_kit_status": "PASSED",
+            "status": "NO"
+        },
+        "current_batch_id": "Beta_Android_Auto_Batch",
+        "list_of_batches": {
+            "Beta_Android_Auto_Batch": {
+                "list_of_kits": {
+                    "FlashTest7-Android-BST": {
+                        "apiValidationType": "Platform API",
+                        "currentAppVersion": "V6",
+                        "currentEnvironment": "isopBeta",
+                        "mainClient": {
+                            "appFileName": "Hive-productV6BetaInternalTesters-release-1.2.0.47.apk",
+                            "deviceName": "HiveAndroid",
+                            "name": "Android App",
+                            "platformVersion": "5.0"
+                        },
+                        "password": "password1",
+                        "priority": "0",
+                        "resultFolderLabel": "",
+                        "secondClient": {
+                            "browserName": "Firefox",
+                            "loginURL": "https://intprod-my.hivehome.net/login",
+                            "name": "Web App"
+                        },
+                        "secondClientValidateFlag": "YES",
+                        "test_suite": "BasicSmokeTest_Heating",
+                        "userName": "flashtest7@yopmail.com"
+                    },
+                    "FlashTest8-Android-BST": {
+                        "apiValidationType": "Platform API",
+                        "currentAppVersion": "V6",
+                        "currentEnvironment": "isopBeta",
+                        "mainClient": {
+                            "appFileName": "Hive-productV6BetaInternalTesters-release-1.2.0.47.apk",
+                            "deviceName": "HiveAndroid",
+                            "name": "Android App",
+                            "platformVersion": "5.0"
+                        },
+                        "password": "password1",
+                        "priority": "3",
+                        "resultFolderLabel": "",
+                        "secondClient": {
+                            "browserName": "Firefox",
+                            "loginURL": "https://beta-my.hivehome.com/login",
+                            "name": "Web App"
+                        },
+                        "secondClientValidateFlag": "YES",
+                        "test_suite": "BasicSmokeTest_Heating",
+                        "userName": "flashtest8@yopmail.com"
+                    }
+                }
+            },
+            "Beta_Auto_Batch": {
+                "list_of_kits": {
+                    "FlashTest7-Web-BST": {
+                        "apiValidationType": "Platform API",
+                        "currentAppVersion": "V6",
+                        "currentEnvironment": "isopBeta",
+                        "mainClient": {
+                            "browserName": "Firefox",
+                            "loginURL": "https://beta-my.hivehome.com/login",
+                            "name": "Web App"
+                        },
+                        "password": "password1",
+                        "priority": "0",
+                        "resultFolderLabel": "",
+                        "secondClient": {
+                            "browserName": "",
+                            "loginURL": "",
+                            "name": "Web App"
+                        },
+                        "test_suite": "Test_Batch",
+                        "userName": "flashtest7@yopmail.com"
+                    },
+                    "FlashTest7-iOS-BST": {
+                        "apiValidationType": "Platform API",
+                        "currentAppVersion": "V6",
+                        "currentEnvironment": "isopBeta",
+                        "mainClient": {
+                            "appFileName": "Hive.ipa",
+                            "deviceName": "iPhone",
+                            "name": "iOS App",
+                            "platformVersion": "8.4",
+                            "udid": "8d25ba7d4a8f82f1a32cc35d907ad2a928b6e808"
+                        },
+                        "password": "password1",
+                        "priority": "1",
+                        "resultFolderLabel": "",
+                        "secondClient": {
+                            "browserName": "",
+                            "loginURL": "",
+                            "name": "iOS App"
+                        },
+                        "test_suite": "BasicSmokeTest_Dual",
+                        "userName": "flashtest7@yopmail.com"
+                    },
+                    "FlashTest8-Web-BST": {
+                        "apiValidationType": "Platform API",
+                        "currentAppVersion": "V6",
+                        "currentEnvironment": "isopBeta",
+                        "mainClient": {
+                            "browserName": "Firefox",
+                            "loginURL": "https://beta-my.hivehome.com/login",
+                            "name": "Web App"
+                        },
+                        "password": "password1",
+                        "priority": "2",
+                        "resultFolderLabel": "",
+                        "secondClient": {
+                            "browserName": "",
+                            "loginURL": "",
+                            "name": "Web App"
+                        },
+                        "test_suite": "Test_Batch",
+                        "userName": "flashtest8@yopmail.com"
+                    },
+                    "FlashTest8-iOS-BST": {
+                        "apiValidationType": "Platform API",
+                        "currentAppVersion": "V6",
+                        "currentEnvironment": "isopBeta",
+                        "mainClient": {
+                            "appFileName": "Hive.ipa",
+                            "deviceName": "iPhone",
+                            "name": "iOS App",
+                            "platformVersion": "8.4",
+                            "udid": "8d25ba7d4a8f82f1a32cc35d907ad2a928b6e808"
+                        },
+                        "password": "password1",
+                        "priority": "3",
+                        "resultFolderLabel": "",
+                        "secondClient": {
+                            "browserName": "",
+                            "loginURL": "",
+                            "name": "iOS App"
+                        },
+                        "test_suite": "BasicSmokeTest_Heating",
+                        "userName": "flashtest8@yopmail.com"
+                    }
+                }
+            },
+            "New_test_batch": {
+                "list_of_kits": {
+                    "Kit1_1R1": {
+                        "apiValidationType": "Platform API",
+                        "currentAppVersion": "V6",
+                        "currentEnvironment": "isopInternProd",
+                        "mainClient": {
+                            "browserName": "Firefox",
+                            "loginURL": "https://intprod-my.hivehome.net/login",
+                            "name": "Web App"
+                        },
+                        "password": "password1",
+                        "priority": "0",
+                        "resultFolderLabel": "",
+                        "secondClient": {
+                            "browserName": "",
+                            "loginURL": "",
+                            "name": "Web App"
+                        },
+                        "test_suite": "Test_Batch",
+                        "userName": "auto1_v6"
+                    },
+                    "kit2_2R": {
+                        "apiValidationType": "Platform API",
+                        "currentAppVersion": "V6",
+                        "currentEnvironment": "isopInternProd",
+                        "mainClient": {
+                            "browserName": "Firefox",
+                            "loginURL": "https://intprod-my.hivehome.net/login",
+                            "name": "Web App"
+                        },
+                        "password": "password1",
+                        "priority": "1",
+                        "resultFolderLabel": "",
+                        "secondClient": {
+                            "browserName": "",
+                            "loginURL": "",
+                            "name": "Web App"
+                        },
+                        "test_suite": "Test_Batch",
+                        "userName": "auto1_v6"
+                    },
+                    "kit3_3R": {
+                        "apiValidationType": "Platform API",
+                        "currentAppVersion": "V6",
+                        "currentEnvironment": "isopInternProd",
+                        "mainClient": {
+                            "browserName": "Firefox",
+                            "loginURL": "https://intprod-my.hivehome.net/login",
+                            "name": "Web App"
+                        },
+                        "password": "password1",
+                        "priority": "2",
+                        "resultFolderLabel": "",
+                        "secondClient": {
+                            "browserName": "",
+                            "loginURL": "",
+                            "name": "Web App"
+                        },
+                        "test_suite": "Test_Batch",
+                        "userName": "auto1_v6"
+                    }
+                }
+            },
+            "Newbatch": {
+                "list_of_kits": {
+                    "Kit1_1R1": {
+                        "apiValidationType": "Platform API",
+                        "currentAppVersion": "V6",
+                        "currentEnvironment": "isopInternProd",
+                        "mainClient": {
+                            "appFileName": "Hive_109 2.ipa",
+                            "deviceName": "Test iPhone",
+                            "name": "iOS App",
+                            "platformVersion": "8.4",
+                            "udid": "8d25ba7d4a8f82f1a32cc35d907ad2a928b6e808"
+                        },
+                        "password": "Password1",
+                        "priority": "0",
+                        "resultFolderLabel": "",
+                        "secondClient": {
+                            "browserName": "",
+                            "loginURL": "",
+                            "name": "iOS App"
+                        },
+                        "test_suite": "Test_Batch",
+                        "userName": "tester23_v6"
+                    },
+                    "kit2_2R": {
+                        "apiValidationType": "Platform API",
+                        "currentAppVersion": "V6",
+                        "currentEnvironment": "isopInternProd",
+                        "mainClient": {
+                            "appFileName": "Hive_109 2.ipa",
+                            "deviceName": "Test iPhone",
+                            "name": "iOS App",
+                            "platformVersion": "8.4",
+                            "udid": "8d25ba7d4a8f82f1a32cc35d907ad2a928b6e808"
+                        },
+                        "password": "password1",
+                        "priority": "1",
+                        "resultFolderLabel": "",
+                        "secondClient": {
+                            "browserName": "",
+                            "loginURL": "",
+                            "name": "iOS App"
+                        },
+                        "test_suite": "Test_Batch",
+                        "userName": "auto1_v6"
+                    },
+                    "temp": {
+                        "apiValidationType": "Platform API",
+                        "currentAppVersion": "V6",
+                        "currentEnvironment": "isopInternProd",
+                        "mainClient": {
+                            "browserName": "Firefox",
+                            "loginURL": "https://intprod-my.hivehome.net/login",
+                            "name": "Web App"
+                        },
+                        "password": "Password1",
+                        "priority": "2",
+                        "resultFolderLabel": "",
+                        "secondClient": {
+                            "browserName": "",
+                            "loginURL": "",
+                            "name": "Web App"
+                        },
+                        "test_suite": "Test_Batch",
+                        "userName": "tester23_v6"
+                    }
+                }
+            },
+            "Regresttion_batch1": {
+                "list_of_kits": {
+                    "Kit1_1R1": {
+                        "apiValidationType": "Platform API",
+                        "currentAppVersion": "V6",
+                        "currentEnvironment": "isopInternProd",
+                        "mainClient": {
+                            "browserName": "Firefox",
+                            "loginURL": "https://intprod-my.hivehome.net/login",
+                            "name": "Web App"
+                        },
+                        "password": "Password1",
+                        "priority": "1",
+                        "resultFolderLabel": "",
+                        "secondClient": {
+                            "browserName": "",
+                            "loginURL": "",
+                            "name": "Web App"
+                        },
+                        "test_suite": "Test_Batch",
+                        "userName": "tester23_v6"
+                    },
+                    "kit2_2R": {
+                        "apiValidationType": "Platform API",
+                        "currentAppVersion": "V6",
+                        "currentEnvironment": "isopInternProd",
+                        "mainClient": {
+                            "browserName": "Firefox",
+                            "loginURL": "https://intprod-my.hivehome.net/login",
+                            "name": "Web App"
+                        },
+                        "password": "Password1",
+                        "priority": "2",
+                        "resultFolderLabel": "",
+                        "secondClient": {
+                            "browserName": "",
+                            "loginURL": "",
+                            "name": "Web App"
+                        },
+                        "test_suite": "Test_Batch",
+                        "userName": "tester23_v6"
+                    },
+                    "kit3_3R": {
+                        "apiValidationType": "Platform API",
+                        "currentAppVersion": "V6",
+                        "currentEnvironment": "isopInternProd",
+                        "mainClient": {
+                            "browserName": "Firefox",
+                            "loginURL": "https://intprod-my.hivehome.net/login",
+                            "name": "Web App"
+                        },
+                        "password": "password1",
+                        "priority": "0",
+                        "resultFolderLabel": "",
+                        "secondClient": {
+                            "browserName": "",
+                            "loginURL": "",
+                            "name": "Web App"
+                        },
+                        "test_suite": "Test_Batch",
+                        "userName": "auto1_v6"
+                    }
+                }
+            },
+            "Temp_Batch": {
+                "list_of_kits": {
+                    "Kit1_1R1": {
+                        "apiValidationType": "Platform API",
+                        "currentAppVersion": "V6",
+                        "currentEnvironment": "isopInternProd",
+                        "mainClient": {
+                            "appFileName": "Hive-productPlayStoreISOPBeta-release-1.1.0.79.apk",
+                            "deviceName": "HiveAndroid",
+                            "name": "Android App",
+                            "platformVersion": "5.0"
+                        },
+                        "password": "password1",
+                        "priority": "0",
+                        "resultFolderLabel": "",
+                        "secondClient": {
+                            "browserName": "",
+                            "loginURL": "",
+                            "name": "Android App"
+                        },
+                        "test_suite": "Test_Batch",
+                        "userName": "auto1_v6"
+                    },
+                    "a": {
+                        "apiValidationType": "Platform API",
+                        "currentAppVersion": "V6",
+                        "currentEnvironment": "isopInternProd",
+                        "mainClient": {
+                            "appFileName": "Hive.ipa",
+                            "deviceName": "iPhone",
+                            "name": "iOS App",
+                            "platformVersion": "8.4",
+                            "udid": "8d25ba7d4a8f82f1a32cc35d907ad2a928b6e808"
+                        },
+                        "password": "password1",
+                        "priority": "2",
+                        "resultFolderLabel": "",
+                        "secondClient": {
+                            "browserName": "",
+                            "loginURL": "",
+                            "name": "iOS App"
+                        },
+                        "test_suite": "Test_Batch",
+                        "userName": "auto1_v6"
+                    },
+                    "kit2_2R": {
+                        "apiValidationType": "Platform API",
+                        "currentAppVersion": "V6",
+                        "currentEnvironment": "isopInternProd",
+                        "mainClient": {
+                            "appFileName": "Hive.ipa",
+                            "deviceName": "iPhone",
+                            "name": "iOS App",
+                            "platformVersion": "8.4",
+                            "udid": "8d25ba7d4a8f82f1a32cc35d907ad2a928b6e808"
+                        },
+                        "password": "password1",
+                        "priority": "1",
+                        "resultFolderLabel": "",
+                        "secondClient": {
+                            "browserName": "",
+                            "loginURL": "",
+                            "name": "iOS App"
+                        },
+                        "test_suite": "Test_Batch",
+                        "userName": "auto1_v6"
+                    },
+                    "kit3_3R": {
+                        "apiValidationType": "Platform API",
+                        "currentAppVersion": "V6",
+                        "currentEnvironment": "isopInternProd",
+                        "mainClient": {
+                            "appFileName": "Hive-productPlayStoreISOPBeta-release-1.1.0.79.apk",
+                            "deviceName": "HiveAndroid",
+                            "name": "Android App",
+                            "platformVersion": "5.0"
+                        },
+                        "password": "password1",
+                        "priority": "3",
+                        "resultFolderLabel": "",
+                        "secondClient": {
+                            "browserName": "",
+                            "loginURL": "",
+                            "name": "Android App"
+                        },
+                        "test_suite": "Test_Batch",
+                        "userName": "auto1_v6"
+                    }
+                }
+            }
+        }
+    }
+}

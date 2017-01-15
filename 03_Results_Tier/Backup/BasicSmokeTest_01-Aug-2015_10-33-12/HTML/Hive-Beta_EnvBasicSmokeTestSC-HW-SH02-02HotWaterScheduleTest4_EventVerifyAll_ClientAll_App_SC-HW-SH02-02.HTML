@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html>
+<head>
+         <meta charset='UTF-8'>
+         <title>Hive Application - SC-HW-SH02-02 Automation Execution Results</title>
+<style type='text/css'> 
+			 body { 
+				 background-color: #000000; 
+				 font-family: Verdana, Geneva, sans-serif; 
+				 text-align: center; 
+			 } 
+ 
+			 small { 
+				 font-size: 0.8em; 
+			 } 
+ 
+			 table { 
+				 border: 3px solid #FFFFFF; 
+				 border-collapse: collapse; 
+				 border-spacing: 0px; 
+				 width: 1200px; 
+				 margin-left: auto; 
+				 margin-right: auto; 
+			 } 
+			 .innertable { 
+				 border: 3px solid #FFFFFF; 
+				 border-collapse: collapse; 
+				 border-spacing: 0px; 
+				 width: 744px; 
+				 margin-left: auto; 
+				 margin-right: auto;
+				 text-align: center;  
+			 } 
+ 			.lefttable { 
+				 border: 3px solid #FFFFFF; 
+				 border-collapse: collapse; 
+				 border-spacing: 0px; 
+				 width: 744px; 
+				 margin-left: auto; 
+				 margin-right: auto;
+				 text-align: left;  
+			 } 
+			 tr.heading { 
+				 background-color: #5792FF; 
+				 color: #000000; 
+				 font-size: 0.9em; 
+				 font-weight: bold; 
+			 } 
+ 
+			 tr.subheading { 
+				 background-color: #002C7E; 
+				 color: #FFFFFF; 
+				 font-weight: bold; 		
+				 font-size: 0.9em; 
+				 text-align: justify; 
+			 } 
+ 
+			 tr.section { 
+				 background-color: #47747A; 
+				 color: #000000; 
+				 cursor: pointer; 
+				 font-weight: bold; 
+				 font-size: 0.9em; 
+				 text-align: justify; 
+			 } 
+ 
+			 tr.subsection { 
+				 cursor: pointer; 
+			 } 
+ 
+			 tr.content { 
+				 background-color: #C6FFEC; 
+				 color: #000000; 
+				 font-size: 0.9em; 
+				 display: table-row; 
+			 } 
+ 
+			 td, th { 
+				 padding: 4px; 
+				 text-align: inherit\0/; 
+			 } 
+ 
+			 td.justified { 
+				 text-align: Centre; 
+			 } 
+ 
+			 td.pass { 
+				 font-weight: bold; 
+				 color: #3DB700; 
+			 } 
+ 
+			 td.fail { 
+				 font-weight: bold; 
+				 color: red; 
+			 } 
+ 
+			 td.done, td.screenshot { 
+				 font-weight: bold; 
+				 color: black; 
+			 } 
+			 
+			  td.inprogress{ 
+				 font-weight: bold; 
+				 color: orange; 
+			 } 
+ 
+			 td.debug { 
+				 font-weight: bold; 
+				 color: blue; 
+			 } 
+ 
+			 td.warning { 
+				 font-weight: bold; 
+				 color: orange; 
+			 } 
+		 </style>  
+ 
+		 <script> 
+			 function toggleMenu(objID) { 
+				 if (!document.getElementById) return; 
+				 var ob = document.getElementById(objID).style; 
+				 if(ob.display === 'none') { 
+					 try { 
+						 ob.display='table-row-group'; 
+					 } catch(ex) { 
+						 ob.display='block'; 
+					 } 
+				 } 
+				 else { 
+					 ob.display='none'; 
+				 } 
+			 } 
+			 function toggleSubMenu(objId) { 
+				 for(i=1; i<10000; i++) { 
+					 var ob = document.getElementById(objId.concat(i)); 
+					 if(ob === null) { 
+						 break; 
+					 } 
+					 if(ob.style.display === 'none') { 
+						 try { 
+							 ob.style.display='table-row'; 
+						 } catch(ex) { 
+							 ob.style.display='block'; 
+						 } 
+					 } 
+					 else { 
+						 ob.style.display='none'; 
+					 } 
+				 } 
+			 } 
+		 </script> 
+		 
+		 
+</head>
+<body>
+<table id='header'>
+<colgroup>
+<col style='width: 25%' />
+<col style='width: 25%' />
+<col style='width: 25%' />
+<col style='width: 25%' />
+</colgroup>
+<thead>
+<tr class='heading'>
+<th colspan='4' style='font-family:Copperplate Gothic Bold; font-size:1.4em;'>
+Hive Application - SC-HW-SH02-02 Automation Execution Results
+</th>
+</tr>
+<tr class='subheading'>
+<th>&nbsp;Date&nbsp;&&nbsp;Time</th>
+<th>&nbsp;:&nbsp;01-Aug-2015 10:43:31</th>
+<th>&nbsp;Iterations</th>
+<th>&nbsp;:&nbsp;1</th>
+</tr>
+<tr class='subheading'>
+<th>&nbsp;Terminal</th>
+<th>&nbsp;:&nbsp;Mac</th>
+<th>&nbsp;Executed&nbsp;on</th>
+<th>&nbsp;:&nbsp;34:36:3b:cb:48:8c</th>
+</tr>
+<tr class='subheading'>
+<th>&nbsp;Node&nbsp;ID</th>
+<th>&nbsp;:&nbsp;B684</th>
+<th>&nbsp;End&nbsp;Point</th>
+<th>&nbsp;:&nbsp;05 - Central Heating</th>
+</tr>
+</thead>
+</table>
+<table id='main'>
+<colgroup>
+<col style='width: 5%' />
+<col style='width: 10%' />
+<col style='width: 12%' />
+<col style='width: 65%' />
+<col style='width: 8%' />
+</colgroup>
+<thead>
+<tr class='heading'>
+<th>Log_No</th>
+<th>Time_Stamp</th>
+<th>Validation Type</th>
+<th>Log_Details</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='section'>
+<td colspan='5' onclick="toggleMenu('Iteration1')">+ Iteration: 1</td>
+</tr>
+</tbody>
+<tbody id='Iteration1' style='display:table-row-group'>
+<tr class='subheading subsection'>
+<td colspan='5' onclick="toggleSubMenu('Iteration1Scenario Details')">&nbsp;+ Scenario Details</td>
+</tr>
+<tr class='content' id='Iteration1Scenario Details1'>
+<td>1</td>
+<td><small>01-Aug-2015 10:43:31</small></td>
+<td class='justified'>Test</td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD><B>Feature: </B>Validate the schedules for the central heating end point in the boiler module</TD>
+</TR>
+<TR>
+<TD><B>Scenario: </B>SC-HW-SH02-02_Set the given customized 'four' event schedule for the given day and verify the same for Hot Water </TD>
+</TR>
+</TABLE>
+</td><td class='done'>DONE</td>
+</tr>
+<tr class='content' id='Iteration1Scenario Details2'>
+<td></td>
+<td><small></small></td>
+<td class='justified'></td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD><B>Given : </B>The Hive product is paired and setup for <B>Hot</B> <B>Water</B> with <B>Platform API</B> Validation</TD>
+</TR>
+</TABLE>
+</td><td class=''></td>
+</tr>
+<tr class='content' id='Iteration1Scenario Details3'>
+<td></td>
+<td><small></small></td>
+<td class='justified'></td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD><B>When : </B>The below schedule is set for Today on the <B>Web App</B></TD>
+</TR>
+</TABLE>
+</td><td class=''></td>
+</tr>
+<tr class='content' id='Iteration1Scenario Details4'>
+<td></td>
+<td><small></small></td>
+<td class='justified'></td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Hot Water State</FONT></TH>
+<TH><FONT COLOR=BLACK>Start Time</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>08:30</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>12:00</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>14:00</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>16:30</FONT></TD>
+</TR>
+</TABLE>
+</td><td class=''></td>
+</tr>
+<tr class='content' id='Iteration1Scenario Details5'>
+<td></td>
+<td><small></small></td>
+<td class='justified'></td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR>
+<TD><B>Then : </B>Verify if the Schedule is set</TD>
+</TR>
+</TABLE>
+</td><td class=''></td>
+</tr>
+<tr class='content' id='Iteration1Scenario Details6'>
+<td>6</td>
+<td><small>01-Aug-2015 10:43:39</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR>
+<TD>Web App : The Hive Desktop Application is successfully Logged in</TD>
+</TR>
+</TABLE>
+</td><td class='pass'><a href='./../Screenshot/HiveBasicSmokeTestSC-HW-SH02-02HotWaterScheduleTest4_EventVerifyAll_ClientAll_App-SC-HW-SH02-02-17.png'>PASS</a></td>
+</tr>
+<tr class='subheading subsection'>
+<td colspan='5' onclick="toggleSubMenu('Iteration1Initial Setup before test')">&nbsp;+ Initial Setup before test</td>
+</tr>
+<tr class='content' id='Iteration1Initial Setup before test1'>
+<td>1</td>
+<td><small>01-Aug-2015 10:43:41</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='lefttable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Attributes</FONT></TH>
+<TH><FONT COLOR=BLACK>Expected-Test  and Actual-Thermostat Values</FONT></TH>
+<TR\>
+<TR>
+<TD ><FONT COLOR=BLACK>Current System mode</FONT></TD>
+<TD ><FONT COLOR=BLACK>AUTO-OFF</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Current Thermostat Running State</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='done'>DONE</td>
+</tr>
+<tr class='subheading subsection'>
+<td colspan='5' onclick="toggleSubMenu('Iteration1Setting the given Schedule')">&nbsp;+ Setting the given Schedule</td>
+</tr>
+<tr class='content' id='Iteration1Setting the given Schedule1'>
+<td>1</td>
+<td><small>01-Aug-2015 10:48:21</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR>
+<TD>Please find below the Schedule that has been set</TD>
+</TR>
+</TABLE>
+</td><td class='done'>DONE</td>
+</tr>
+<tr class='content' id='Iteration1Setting the given Schedule2'>
+<td>2</td>
+<td><small>01-Aug-2015 10:48:21</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Schedule Day</FONT></TH>
+<TH><FONT COLOR=BLACK>Event Type</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 1</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 2</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 3</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 4</FONT></TH>
+<TR\>
+<TR>
+<TD rowspan= 2 ><FONT COLOR=BLACK>sat</FONT></TD>
+<TD ><FONT COLOR=BLACK>Start Time</FONT></TD>
+<TD ><FONT COLOR=BLACK>08:30</FONT></TD>
+<TD ><FONT COLOR=BLACK>12:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>14:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>16:30</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Hot Water State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='done'>DONE</td>
+</tr>
+<tr class='content' id='Iteration1Setting the given Schedule3'>
+<td>3</td>
+<td><small>01-Aug-2015 10:48:28</small></td>
+<td class='justified'>Test Validation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR>
+<TD>Web APP : Successfully Hot Water Mode mode is set to <B>AUTO</TD>
+</TR>
+</TABLE>
+</td><td class='pass'><a href='./../Screenshot/HiveBasicSmokeTestSC-HW-SH02-02HotWaterScheduleTest4_EventVerifyAll_ClientAll_App-SC-HW-SH02-02-18.png'>PASS</a></td>
+</tr>
+<tr class='subheading subsection'>
+<td colspan='5' onclick="toggleSubMenu('Iteration1Validating the remaining days of the schedule')">&nbsp;+ Validating the remaining days of the schedule</td>
+</tr>
+<tr class='content' id='Iteration1Validating the remaining days of the schedule1'>
+<td>1</td>
+<td><small>01-Aug-2015 10:49:30</small></td>
+<td class='justified'>TestValidation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Value Type</FONT></TH>
+<TH><FONT COLOR=BLACK>Schedule Day</FONT></TH>
+<TH><FONT COLOR=BLACK>Event Type</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 1</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 2</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 3</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 4</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 5</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 6</FONT></TH>
+<TR\>
+<TR>
+<TD rowspan= 2><FONT COLOR=BLACK>Expected</FONT></TD>
+<TD rowspan= 2 ><FONT COLOR=BLACK>sun</FONT></TD>
+<TD ><FONT COLOR=BLACK>Start Time</FONT></TD>
+<TD ><FONT COLOR=BLACK>06:30</FONT></TD>
+<TD ><FONT COLOR=BLACK>08:30</FONT></TD>
+<TD ><FONT COLOR=BLACK>12:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>14:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>16:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>21:30</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Hot Water State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+<TR>
+<TD rowspan= 2><FONT COLOR=BLACK>Actual</FONT></TD>
+<TD rowspan= 2 ><FONT COLOR=BLACK>sun</FONT></TD>
+<TD ><FONT COLOR=BLACK>Start Time</FONT></TD>
+<TD ><FONT COLOR=BLACK>06:30</FONT></TD>
+<TD ><FONT COLOR=BLACK>08:30</FONT></TD>
+<TD ><FONT COLOR=BLACK>12:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>14:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>16:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>21:30</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Hot Water State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='content' id='Iteration1Validating the remaining days of the schedule2'>
+<td>2</td>
+<td><small>01-Aug-2015 10:49:30</small></td>
+<td class='justified'>TestValidation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Value Type</FONT></TH>
+<TH><FONT COLOR=BLACK>Schedule Day</FONT></TH>
+<TH><FONT COLOR=BLACK>Event Type</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 1</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 2</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 3</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 4</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 5</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 6</FONT></TH>
+<TR\>
+<TR>
+<TD rowspan= 2><FONT COLOR=BLACK>Expected</FONT></TD>
+<TD rowspan= 2 ><FONT COLOR=BLACK>tue</FONT></TD>
+<TD ><FONT COLOR=BLACK>Start Time</FONT></TD>
+<TD ><FONT COLOR=BLACK>06:30</FONT></TD>
+<TD ><FONT COLOR=BLACK>08:30</FONT></TD>
+<TD ><FONT COLOR=BLACK>12:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>14:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>16:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>21:30</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Hot Water State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+<TR>
+<TD rowspan= 2><FONT COLOR=BLACK>Actual</FONT></TD>
+<TD rowspan= 2 ><FONT COLOR=BLACK>tue</FONT></TD>
+<TD ><FONT COLOR=BLACK>Start Time</FONT></TD>
+<TD ><FONT COLOR=BLACK>06:30</FONT></TD>
+<TD ><FONT COLOR=BLACK>08:30</FONT></TD>
+<TD ><FONT COLOR=BLACK>12:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>14:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>16:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>21:30</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Hot Water State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='content' id='Iteration1Validating the remaining days of the schedule3'>
+<td>3</td>
+<td><small>01-Aug-2015 10:49:30</small></td>
+<td class='justified'>TestValidation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Value Type</FONT></TH>
+<TH><FONT COLOR=BLACK>Schedule Day</FONT></TH>
+<TH><FONT COLOR=BLACK>Event Type</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 1</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 2</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 3</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 4</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 5</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 6</FONT></TH>
+<TR\>
+<TR>
+<TD rowspan= 2><FONT COLOR=BLACK>Expected</FONT></TD>
+<TD rowspan= 2 ><FONT COLOR=BLACK>fri</FONT></TD>
+<TD ><FONT COLOR=BLACK>Start Time</FONT></TD>
+<TD ><FONT COLOR=BLACK>06:30</FONT></TD>
+<TD ><FONT COLOR=BLACK>08:30</FONT></TD>
+<TD ><FONT COLOR=BLACK>12:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>14:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>16:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>21:30</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Hot Water State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+<TR>
+<TD rowspan= 2><FONT COLOR=BLACK>Actual</FONT></TD>
+<TD rowspan= 2 ><FONT COLOR=BLACK>fri</FONT></TD>
+<TD ><FONT COLOR=BLACK>Start Time</FONT></TD>
+<TD ><FONT COLOR=BLACK>06:30</FONT></TD>
+<TD ><FONT COLOR=BLACK>08:30</FONT></TD>
+<TD ><FONT COLOR=BLACK>12:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>14:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>16:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>21:30</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Hot Water State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='content' id='Iteration1Validating the remaining days of the schedule4'>
+<td>4</td>
+<td><small>01-Aug-2015 10:49:30</small></td>
+<td class='justified'>TestValidation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Value Type</FONT></TH>
+<TH><FONT COLOR=BLACK>Schedule Day</FONT></TH>
+<TH><FONT COLOR=BLACK>Event Type</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 1</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 2</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 3</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 4</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 5</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 6</FONT></TH>
+<TR\>
+<TR>
+<TD rowspan= 2><FONT COLOR=BLACK>Expected</FONT></TD>
+<TD rowspan= 2 ><FONT COLOR=BLACK>thu</FONT></TD>
+<TD ><FONT COLOR=BLACK>Start Time</FONT></TD>
+<TD ><FONT COLOR=BLACK>06:30</FONT></TD>
+<TD ><FONT COLOR=BLACK>08:30</FONT></TD>
+<TD ><FONT COLOR=BLACK>12:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>14:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>16:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>21:30</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Hot Water State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+<TR>
+<TD rowspan= 2><FONT COLOR=BLACK>Actual</FONT></TD>
+<TD rowspan= 2 ><FONT COLOR=BLACK>thu</FONT></TD>
+<TD ><FONT COLOR=BLACK>Start Time</FONT></TD>
+<TD ><FONT COLOR=BLACK>06:30</FONT></TD>
+<TD ><FONT COLOR=BLACK>08:30</FONT></TD>
+<TD ><FONT COLOR=BLACK>12:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>14:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>16:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>21:30</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Hot Water State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='content' id='Iteration1Validating the remaining days of the schedule5'>
+<td>5</td>
+<td><small>01-Aug-2015 10:49:30</small></td>
+<td class='justified'>TestValidation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Value Type</FONT></TH>
+<TH><FONT COLOR=BLACK>Schedule Day</FONT></TH>
+<TH><FONT COLOR=BLACK>Event Type</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 1</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 2</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 3</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 4</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 5</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 6</FONT></TH>
+<TR\>
+<TR>
+<TD rowspan= 2><FONT COLOR=BLACK>Expected</FONT></TD>
+<TD rowspan= 2 ><FONT COLOR=BLACK>mon</FONT></TD>
+<TD ><FONT COLOR=BLACK>Start Time</FONT></TD>
+<TD ><FONT COLOR=BLACK>06:30</FONT></TD>
+<TD ><FONT COLOR=BLACK>08:30</FONT></TD>
+<TD ><FONT COLOR=BLACK>12:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>14:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>16:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>21:30</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Hot Water State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+<TR>
+<TD rowspan= 2><FONT COLOR=BLACK>Actual</FONT></TD>
+<TD rowspan= 2 ><FONT COLOR=BLACK>mon</FONT></TD>
+<TD ><FONT COLOR=BLACK>Start Time</FONT></TD>
+<TD ><FONT COLOR=BLACK>06:30</FONT></TD>
+<TD ><FONT COLOR=BLACK>08:30</FONT></TD>
+<TD ><FONT COLOR=BLACK>12:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>14:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>16:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>21:30</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Hot Water State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='content' id='Iteration1Validating the remaining days of the schedule6'>
+<td>6</td>
+<td><small>01-Aug-2015 10:49:30</small></td>
+<td class='justified'>TestValidation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Value Type</FONT></TH>
+<TH><FONT COLOR=BLACK>Schedule Day</FONT></TH>
+<TH><FONT COLOR=BLACK>Event Type</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 1</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 2</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 3</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 4</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 5</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 6</FONT></TH>
+<TR\>
+<TR>
+<TD rowspan= 2><FONT COLOR=BLACK>Expected</FONT></TD>
+<TD rowspan= 2 ><FONT COLOR=BLACK>wed</FONT></TD>
+<TD ><FONT COLOR=BLACK>Start Time</FONT></TD>
+<TD ><FONT COLOR=BLACK>06:30</FONT></TD>
+<TD ><FONT COLOR=BLACK>08:30</FONT></TD>
+<TD ><FONT COLOR=BLACK>12:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>14:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>16:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>21:30</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Hot Water State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+<TR>
+<TD rowspan= 2><FONT COLOR=BLACK>Actual</FONT></TD>
+<TD rowspan= 2 ><FONT COLOR=BLACK>wed</FONT></TD>
+<TD ><FONT COLOR=BLACK>Start Time</FONT></TD>
+<TD ><FONT COLOR=BLACK>06:30</FONT></TD>
+<TD ><FONT COLOR=BLACK>08:30</FONT></TD>
+<TD ><FONT COLOR=BLACK>12:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>14:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>16:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>21:30</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Hot Water State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='pass'>PASS</td>
+</tr>
+<tr class='subheading subsection'>
+<td colspan='5' onclick="toggleSubMenu('Iteration1Verifying if the Schedule is set')">&nbsp;+ Verifying if the Schedule is set</td>
+</tr>
+<tr class='content' id='Iteration1Verifying if the Schedule is set1'>
+<td>1</td>
+<td><small>01-Aug-2015 10:49:30</small></td>
+<td class='justified'>TestValidation</td>
+<td class='justified'>
+<TABLE class='innertable'  BORDER='1'>
+<TR align=center>
+<TH><FONT COLOR=BLACK>Value Type</FONT></TH>
+<TH><FONT COLOR=BLACK>Schedule Day</FONT></TH>
+<TH><FONT COLOR=BLACK>Event Type</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 1</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 2</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 3</FONT></TH>
+<TH><FONT COLOR=BLACK>Event 4</FONT></TH>
+<TR\>
+<TR>
+<TD rowspan= 2><FONT COLOR=BLACK>Expected</FONT></TD>
+<TD rowspan= 2 ><FONT COLOR=BLACK>sat</FONT></TD>
+<TD ><FONT COLOR=BLACK>Start Time</FONT></TD>
+<TD ><FONT COLOR=BLACK>08:30</FONT></TD>
+<TD ><FONT COLOR=BLACK>12:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>14:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>16:30</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Hot Water State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+<TR>
+<TD rowspan= 2><FONT COLOR=BLACK>Actual</FONT></TD>
+<TD rowspan= 2 ><FONT COLOR=BLACK>sat</FONT></TD>
+<TD ><FONT COLOR=BLACK>Start Time</FONT></TD>
+<TD ><FONT COLOR=BLACK>08:30</FONT></TD>
+<TD ><FONT COLOR=BLACK>12:00</FONT></TD>
+<TD ><FONT COLOR=BLACK>14:00</FONT></TD>
+<TD ><FONT COLOR=RED><B>16:00</FONT></TD>
+</TR>
+<TR>
+<TD ><FONT COLOR=BLACK>Hot Water State</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+<TD ><FONT COLOR=BLACK>ON</FONT></TD>
+<TD ><FONT COLOR=BLACK>OFF</FONT></TD>
+</TR>
+</TABLE>
+</td><td class='fail'>FAIL</td>
+</tr>
+</tbody>
+</table>
+<table>
+<script type='text/javascript'>
+window.onload = function () {
+CanvasJS.addColorSet('chartshades',
+[//colorSet Array
+'lightgreen',
+'red'           
+]);
+var chart = new CanvasJS.Chart('chartContainer',
+{
+colorSet: 'chartshades',
+zoomEnabled: true,
+title:{
+fontColor: '#C6FFEC',
+text: 'Execution Status'
+},
+animationEnabled: true,
+backgroundColor: 'black',
+legend:{
+fontColor: '#C6FFEC',
+verticalAlign: 'bottom',
+horizontalAlign: 'center'
+},data: [{        
+indexLabelFontSize: 20,
+indexLabelFontFamily: 'Monospace',     
+indexLabelFontColor: '#C6FFEC', 
+indexLabelLineColor: '#C6FFEC',     
+indexLabelPlacement: 'auto',
+type: 'pie',       
+showInLegend: true,
+toolTipContent: '{y} - <strong>#percent%</strong>',
+dataPoints: [
+{  y: 8, legendText:'PASS', indexLabel: '{y}' },
+{  y: 1, legendText:'FAIL' , indexLabel: '{y}'}
+]}]});chart.render();}
+</script>
+<script type='text/javascript' src='./../Screenshot/canvasjs.min.js'></script>
+<tr  class='content' ><td><div id='chartContainer' style='height: 300px; width: 100%;'></div></td></tr></table>
+<table id='footer'>
+<colgroup>
+<col style='width: 25%' />
+<col style='width: 25%' />
+<col style='width: 25%' />
+<col style='width: 25%' />
+</colgroup>
+<tfoot>
+<tr class='heading'>
+<th colspan='4'>Execution Duration: 5 minute(s), 58 seconds</th>
+</tr>
+<tr class='subheading'>
+<td class='pass'>&nbsp;Steps passed</td>
+<td class='pass'>&nbsp;: 8</td>
+<td class='fail'>&nbsp;Steps failed</td>
+<td class='fail'>&nbsp;: 1</td>
+</tr>
+</tfoot>
+</table>
+</body>
+</html>

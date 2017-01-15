@@ -1,0 +1,3 @@
+#!/bin/sh
+killall node
+/Applications/Appium.app/Contents/Resources/node/bin/node /Applications/Appium.app/Contents/Resources/node_modules/appium/bin/appium.js --address 127.0.0.1 --command-timeout "7200" --debug-log-spacing --platform-version "8.4" --platform-name "iOS" --app "uk.co.britishgas.hive" --udid "8d25ba7d4a8f82f1a32cc35d907ad2a928b6e808" --no-reset --show-ios-log --device-name "iPhone" --native-instruments-lib

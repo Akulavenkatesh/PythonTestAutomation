@@ -1,0 +1,12 @@
+{
+    "android_devicelist": {
+        "device1": {
+            "appium_connection_string": "/Applications/Appium.app/Contents/Resources/node/bin/node /Applications/Appium.app/Contents/Resources/node_modules/appium/bin/appium.js  --log-level error -p 4723 -bp 4724",
+            "bootstrap": "4724",
+            "device_id": "ZX1G42BJHK",
+            "execution_start_time": "",
+            "port": "4723",
+            "status": "IN PROGRESS"
+        }
+    }
+}
